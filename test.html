@@ -1,0 +1,7 @@
+$.ajax({
+url: "wordpress/?page_id=146",
+cache: false
+}).done(function( html ) {
+$("#jobsWidget").append(html);
+$(".learnmore").css("display", "inline");
+});
