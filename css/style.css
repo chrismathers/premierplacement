@@ -151,8 +151,9 @@ h2 {
       margin: 0 47px 0 0; }
     #container nav li, #container .menu li {
       float: left;
-      display: inline;
+      display: inline-block;
       list-style: none;
+      list-style-type: none;
       line-height: 3em; }
       #container nav li.selected, #container nav li.current-menu-item a, #container .menu li.selected, #container .menu li.current-menu-item a {
         text-decoration: none;
@@ -388,7 +389,7 @@ h2 {
         list-style: none; }
       #container #rightBk .contentDiv.jobListingsPage,
       #container #rightBk #blogContainer.jobListingsPage {
-        margin: 0 30px; }
+        width: 100%; }
         #container #rightBk .contentDiv.jobListingsPage p,
         #container #rightBk #blogContainer.jobListingsPage p {
           line-height: 1.3em; }
@@ -651,6 +652,33 @@ h2 {
       #container #rightBk .contentDiv.contactUs h2,
       #container #rightBk #blogContainer.contactUs h2 {
         font-size: 1em; }
+      #container #rightBk .contentDiv .signature,
+      #container #rightBk #blogContainer .signature {
+        height: 174px; }
+        #container #rightBk .contentDiv .signature a,
+        #container #rightBk #blogContainer .signature a {
+          float: left; }
+          #container #rightBk .contentDiv .signature a img,
+          #container #rightBk #blogContainer .signature a img {
+            border: 2px solid #a99005;
+            border-radius: 4px; }
+        #container #rightBk .contentDiv .signature .signature-details,
+        #container #rightBk #blogContainer .signature .signature-details {
+          float: left;
+          margin: 8px 0 0 26px; }
+          #container #rightBk .contentDiv .signature .signature-details h2, #container #rightBk .contentDiv .signature .signature-details h3, #container #rightBk .contentDiv .signature .signature-details p,
+          #container #rightBk #blogContainer .signature .signature-details h2,
+          #container #rightBk #blogContainer .signature .signature-details h3,
+          #container #rightBk #blogContainer .signature .signature-details p {
+            margin: 0;
+            text-align: left; }
+          #container #rightBk .contentDiv .signature .signature-details h2,
+          #container #rightBk #blogContainer .signature .signature-details h2 {
+            font-size: 1.3em;
+            font-family: 'calibri'; }
+          #container #rightBk .contentDiv .signature .signature-details h3,
+          #container #rightBk #blogContainer .signature .signature-details h3 {
+            font-size: 1em; }
     #container #rightBk #blogContainer ul li {
       list-style-type: none;
       margin-left: 0; }
@@ -896,6 +924,35 @@ ul#listticker {
   .myButton:visited {
     color: white; }
 
+.contactUsButton {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #6cb82b), color-stop(1, #337f00));
+  background: -moz-linear-gradient(center top, #6cb82b 5%, #337f00 100%);
+  background-color: #6cb82b;
+  height: 37px;
+  width: 138px;
+  text-align: center;
+  font-size: 1.1em;
+  color: white;
+  line-height: 1.4em;
+  text-decoration: none;
+  margin-top: 16px;
+  padding: 9px 6px;
+  border-radius: 9px;
+  -moz-box-shadow: 0px 2px 0px 0px #555555;
+  -webkit-box-shadow: 0px 2px 0px 0px #555555;
+  box-shadow: 0px 2px 0px 0px #555555; }
+  .contactUsButton:hover {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #337f00), color-stop(1, #6cb82b));
+    background: -moz-linear-gradient(center top, #337f00 5%, #6cb82b 100%);
+    background-color: #337f00;
+    cursor: pointer;
+    color: white; }
+  .contactUsButton:active {
+    position: relative;
+    top: 1px; }
+  .contactUsButton:visited {
+    color: white; }
+
 .submitButton {
   -moz-box-shadow: inset 0px -1px 3px 0px #555555 inset;
   -webkit-box-shadow: inset 0px -1px 3px 0px #555555 inset;
@@ -1064,7 +1121,8 @@ ul#listticker {
     .widget-area.blog .search-input-div a {
       display: inline; }
       .widget-area.blog .search-input-div a :hover {
-        color: white; }
+        color: white;
+        cursor: pointer; }
       .widget-area.blog .search-input-div a:after {
         content: "";
         text-decoration: none;
@@ -1126,3 +1184,61 @@ ul#listticker {
 
 .placeholder {
   color: #aaa; }
+
+img.size-auto,
+img.size-large,
+img.size-full,
+img.size-medium {
+  max-width: 100%;
+  height: auto; }
+
+.alignleft,
+img.alignleft {
+  display: inline;
+  float: left;
+  margin-right: 24px;
+  margin-top: 4px; }
+
+.alignright,
+img.alignright {
+  display: inline;
+  float: right;
+  margin-left: 24px;
+  margin-top: 4px; }
+
+.aligncenter,
+img.aligncenter {
+  clear: both;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+img.alignleft,
+img.alignright,
+img.aligncenter {
+  margin-bottom: 12px; }
+
+.wp-caption {
+  background: #f1f1f1;
+  border: none;
+  -khtml-border-radius: 0;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  color: #888;
+  font-size: 12px;
+  line-height: 18px;
+  margin-bottom: 20px;
+  max-width: 632px !important;
+  /* prevent too-wide images from breaking layout */
+  padding: 4px;
+  text-align: center; }
+
+.wp-caption img {
+  margin: 5px; }
+
+.wp-caption p.wp-caption-text {
+  margin: 0 0 4px; }
+
+.wp-smiley {
+  margin: 0; }
