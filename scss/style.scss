@@ -69,8 +69,8 @@ body {
 
 @font-face {
   font-family: 'EurasiaWideBold';
-  src: url("..//fonts/eurawb__-webfont.eot");
-  src: url("..//fonts/eurawb__-webfont.eot?#iefix") format("embedded-opentype"), url("..//fonts/eurawb__-webfont.woff") format("woff"), url("..//fonts/eurawb__-webfont.ttf") format("truetype"), url("..//fonts/eurawb__-webfont.eot?#iefix") format("embedded-opentype"), url("..//fonts/eurawb__-webfont.woff") format("woff"), url("..//fonts/eurawb__-webfont.ttf") format("truetype");
+  src: url("../fonts/eurawb__-webfont.eot");
+  src: url("../fonts/eurawb__-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/eurawb__-webfont.woff") format("woff"), url("../fonts/eurawb__-webfont.ttf") format("truetype"), url("../fonts/eurawb__-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/eurawb__-webfont.woff") format("woff"), url("../fonts/eurawb__-webfont.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -113,8 +113,7 @@ h2 {
 #container {
   position: relative;
   background-color: #75CA71;
-  width: 960px;
-  max-width: 960px;
+  width: 1024px;
   margin: 0 auto;
   #leftBk {
     background: url("../images/new_lft_side.png") repeat-y scroll 0 0 transparent;
@@ -123,7 +122,6 @@ h2 {
     position: relative;
     top: 0;
     width: 100%;
-    max-width: 958px;
     -moz-box-shadow: 0 12px 17px 11px #888888;
     -webkit-box-shadow: 0 12px 17px 11px #888888;
     box-shadow: 0 0 11px 2px #888888;
@@ -248,7 +246,7 @@ h2 {
     background: url("../images/right_side.png") repeat-y scroll right 0 #fff;
     float: right;
     min-height: 1100px;
-    width: 820px;
+    width: 886px;
     text-align: center;
     -moz-box-shadow: 0px 12px 17px 11px #888888;
     -webkit-box-shadow: 0px 12px 17px 11px #888888;
@@ -1106,7 +1104,7 @@ ul#listticker {
         }
         input {
           margin: 0 0 12px 16px;
-          width: 181px;
+          width: 174px;
         }
         input.submitButton {
           width: 78px;
