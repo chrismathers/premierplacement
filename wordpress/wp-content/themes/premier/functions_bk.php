@@ -568,25 +568,3 @@ function am_get_content($length, $desc) {
   // Return the $final_content variable!
   return $final_content;
 }
-
-// custom menu created using the Appearance > Menu section of GUI
-add_action( 'init', 'register_my_menu' );
-
-function register_my_menu() {
-	register_nav_menu( 'primary-nav', __( 'Primary Nav' ) );
-}
-
-// Add Signature Image after single post
-add_filter('the_content','add_signature', 1);
-function add_signature($text) {
- global $post;
- if(($post->post_type == 'post'))
-    $text .= '<div class="signature">
-      <a href="/contact-us/" rel="attachment wp-att-211"><img class="" title="Laura Schmieder" src="../images/lauraheadshop.jpg" alt="Laura Schmieder" width="150" height="150" /></a><div class="signature-details">
-      <h2>Laura Schmieder</h2>
-      <h3>President of Premier Placement, Inc.</h3>
-      <p>(610) 395-9123</p>
-      <a class="contactUsButton">CLICK HERE TO GET IN TOUCH</a>
-      </div></div>';
-    return $text;
-}

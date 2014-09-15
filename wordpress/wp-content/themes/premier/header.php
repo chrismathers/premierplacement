@@ -8,8 +8,8 @@
  */
 
 global $mypath;
-$mypath = "http://localhost/premierplacement/";
-//$mypath = "http://www.premierplacement.com";
+//$mypath = "http://localhost/premierplacement/";
+$mypath = "http://www.premierplacement.com";
 ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
@@ -19,13 +19,13 @@ $mypath = "http://localhost/premierplacement/";
 <TITLE>Laura Schmieder - Premier Placement, Inc., which specializes in the placement of Manufacturing, Supply Chain, Production Management, Engineering, HR, IT, Finance, Sales, and Marketing candidates.</TITLE>
 <META name="keywords" content="Pennsylvania jobs, New Jersey jobs, manufacturing jobs, engineering jobs, jobs, premierplacement.com, career opportunities, resume, employment">
 <META name="description" content="Finding Premier people for Premier career opportunities since 1987, Premier Placement, Inc. provides search and recruiting services.  Specializing in the placement of Engineering, Manufacturing, Materials Management, and Finance candidates, as well as Sales, MIS, and HR personnel, we concentrate primarily in Eastern Pennsylvania and Western New Jersey">
-<link rel="stylesheet" type="text/css" media="all" href="http://localhost/premierplacement/css/style.css" />
+<link rel="stylesheet" type="text/css" media="all" href="/css/style.css" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 <!--[if lte IE 8]> <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> <![endif]--> 
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-<script type="text/javascript" src="../scripts/jquery.cookie.js"></script>
+<script type="text/javascript" src="/scripts/jquery.cookie.js"></script>
 <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
-<script type="text/javascript" src="../fonts/calibri.cufonfonts.js"></script>
+<script type="text/javascript" src="/fonts/calibri.cufonfonts.js"></script>
 <script>
 Cufon.replace('.calibri_italic', { fontFamily: 'Calibri Italic', hover: true });
 Cufon.replace('.calibri', { fontFamily: 'Calibri', hover: true });
@@ -41,14 +41,15 @@ Cufon.replace('.calibri', { fontFamily: 'Calibri', hover: true });
 
 	<div id="container">
 		<div id="leftBk">
-      <header>
-        <img src="<?php echo($mypath); ?>/images/logo_no_text.png" />
-        <div id="bannerText" onclick="document.location='http://premierplacement.com'">
-        <h2 style="display:none">PREMIER</h2>
-            <h3 style="display:none">PLACEMENT, INC.</h3>
-          </div>
-      </header>
+            <header>
+		          <img src="<?php echo($mypath); ?>/images/logo_no_text.png" />
+            	<div id="bannerText" onclick="document.location='http://premierplacement.com'">
+	            <h2 style="display:none">PREMIER</h2>
+    	            <h3 style="display:none">PLACEMENT, INC.</h3>
+                </div>
+            </header>
 
 			<div id="rightBk">
-			  	<?php wp_nav_menu(); ?>
+			  <?php wp_nav_menu(); ?>
+				<?php get_template_part( 'nav' );?>
 				<article>

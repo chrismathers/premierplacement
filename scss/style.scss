@@ -110,10 +110,17 @@ h2 {
   font-size: 1.3em;
 }
 
+input {
+  -webkit-appearance: none;
+  -webkit-border-radius:0;
+  border-radius:0;
+}
+
 #container {
   position: relative;
   background-color: #75CA71;
   width: 1024px;
+  //max-width: 960px;
   margin: 0 auto;
   #leftBk {
     background: url("../images/new_lft_side.png") repeat-y scroll 0 0 transparent;
@@ -122,6 +129,7 @@ h2 {
     position: relative;
     top: 0;
     width: 100%;
+    //max-width: 958px;
     -moz-box-shadow: 0 12px 17px 11px #888888;
     -webkit-box-shadow: 0 12px 17px 11px #888888;
     box-shadow: 0 0 11px 2px #888888;
@@ -178,7 +186,7 @@ h2 {
     }
     #bannerText {
       height: 78px;
-      margin: 1px auto;
+      margin: 2px auto;
       padding: 0 10px;
       width: 282px;
       min-width: 238px;
@@ -983,7 +991,8 @@ ul#listticker {
 #slogan {
   height: 32px;
   margin: 1.7em 0 0 80px;
-  width: 633px;
+  width: 100%;
+  max-width: 640px;
   font-size: 1.5em;
   letter-spacing: .4px;
   color: #222;
@@ -1404,6 +1413,7 @@ ul#listticker {
     input[type="submit"] {
       width: 26px;
       height: 22px;
+      background-color: #ccc;
       border: 1px solid #ccc;
       border-top-right-radius: 4px;
       border-bottom-right-radius: 4px;
