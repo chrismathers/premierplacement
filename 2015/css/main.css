@@ -1,0 +1,16 @@
+body {
+  margin: 0; }
+
+#content {
+  width: 1024px; }
+
+#col-left {
+  border: 1px solid red;
+  float: left;
+  width: auto; }
+
+#col-right {
+  border: 1px solid blue;
+  float: right;
+  width: 20%;
+  min-width: 316px; }
