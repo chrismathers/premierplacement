@@ -22,7 +22,7 @@ define('DB_NAME', 'premierplacement_xemedia1si109635');
 define('DB_USER', 'premier1');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'b@ssme1');
+define('DB_PASSWORD', 'l0ggerd0gger');
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');
