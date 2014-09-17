@@ -1,4 +1,0 @@
-Sitemap: http://www.premierplacement.com/sitemap.xml
-User-agent: *
-Disallow: /2012/
-Disallow: /2008/
