@@ -1,39 +1,28 @@
-/*
-@media only screen
-and (min-device-width: 768px)
-and (max-device-width: 1024px)
-and (orientation: portrait) {
-  height: 100px;
-}
-@media only screen
-and (min-width : 320px)
-and (max-width : 518px) {
-  display: none;
-}
-*/
-/* responsive-nav.js 1.0.32 by @viljamis */
-.nav-collapse {
-  display: none; }
+/*! responsive-nav.js 1.0.32 by @viljamis */
 
+.nav-collapse {
+  display: none;
+}
 @media only screen
 and (min-width : 320px)
 and (max-width : 518px) {
   display: none;
+
   .nav-collapse ul {
     margin: 0;
     padding: 0;
     width: 100%;
     display: block;
-    list-style: none; }
-
+    list-style: none;
+  }
   .nav-collapse * {
-    box-sizing: border-box; }
-
+    box-sizing: border-box;
+  }
   .nav-collapse li {
     width: 100%;
     display: block;
-    float: left; }
-    .nav-collapse li a {
+    float: left;
+    a {
       text-transform: uppercase;
       font-weight: 400;
       font-size: 112.5%;
@@ -44,7 +33,9 @@ and (max-width : 518px) {
       background: #766E4A;
       border-bottom: 1px solid white;
       padding: .5em 1em;
-      float: left; }
+      float: left;
+    }
+  }
 
   .js .nav-collapse {
     clip: rect(0 0 0 0);
@@ -52,13 +43,16 @@ and (max-width : 518px) {
     position: absolute;
     display: block;
     overflow: hidden;
-    zoom: 1; }
+    zoom: 1;
+  }
 
   .nav-collapse.opened {
-    max-height: 9999px; }
+    max-height: 9999px;
+  }
 
   .disable-pointer-events {
-    pointer-events: none !important; }
+    pointer-events: none !important;
+  }
 
   .nav-toggle {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -72,6 +66,7 @@ and (max-width : 518px) {
     text-indent: -9999px;
     overflow: hidden;
     display: block;
+
     border: 1px solid #374C77;
     border-radius: 3px 3px 3px 3px;
     cursor: pointer;
@@ -87,63 +82,26 @@ and (max-width : 518px) {
     background: -o-linear-gradient(top, #777777 0%, #777777 100%);
     background: -ms-linear-gradient(top, #777777 0%, #777777 100%);
     background: linear-gradient(to bottom, #777777 0%, #777777 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#777777', endColorstr='#777777', GradientType=0); }
-    .nav-toggle div {
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#777777', endColorstr='#777777', GradientType=0);
+    div {
       background-color: #fff;
       border: 1px solid #eee;
       border-radius: 2px 2px 2px 2px;
       height: 2px;
       margin-top: 3px;
-      width: 90%; } }
-@media only screen
-and (min-width : 320px)
-and (max-width : 518px) and screen and (min-width: 684px) {
-  .js .nav-collapse {
-    position: relative; }
+      width: 90%;
+    }
+  }
 
-  .js .nav-collapse.closed {
-    max-height: none; }
-
-  .nav-toggle {
-    display: none; } }
-body {
-  margin: 0; }
-
-#pp-logo {
-  min-height: 142px;
-  min-width: 500px;
-  background: white url(../images/pp-logo.png) no-repeat 0 0;
-  background-size: 100%; }
-  @media only screen
-  and (min-width : 320px)
-  and (max-width : 518px) {
-    #pp-logo {
-      min-height: 68px;
-      min-width: inherit;
-      background-size: auto 68%; } }
-
-#content {
-  width: 1024px; }
-
-#col-left {
-  border: 1px solid red;
-  float: left;
-  width: auto; }
-  @media only screen
-  and (min-width : 320px)
-  and (max-width : 518px) {
-    #col-left {
-      width: 100%;
-      float: none; } }
-
-#col-right {
-  border: 1px solid blue;
-  float: right;
-  width: 20%;
-  min-width: 316px; }
-  @media only screen
-  and (min-width : 320px)
-  and (max-width : 518px) {
-    #col-right {
-      width: 100%;
-      float: none; } }
+  @media screen and (min-width: 684px) {
+    .js .nav-collapse {
+      position: relative;
+    }
+    .js .nav-collapse.closed {
+      max-height: none;
+    }
+    .nav-toggle {
+      display: none;
+    }
+  }
+}
