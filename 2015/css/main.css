@@ -16,7 +16,7 @@ and (max-width : 518px) {
   display: none; }
 
 @media only screen
-and (min-width : 320px)
+and (min-width : 0px)
 and (max-width : 518px) {
   display: none;
   .nav-collapse ul {
@@ -96,7 +96,7 @@ and (max-width : 518px) {
       margin-top: 3px;
       width: 90%; } }
 @media only screen
-and (min-width : 320px)
+and (min-width : 0px)
 and (max-width : 518px) and screen and (min-width: 684px) {
   .js .nav-collapse {
     position: relative; }
@@ -107,7 +107,8 @@ and (max-width : 518px) and screen and (min-width: 684px) {
   .nav-toggle {
     display: none; } }
 html {
-  font-family: "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif; }
+  font-family: "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif;
+  font-size: 80%; }
 
 body {
   margin: 0; }
@@ -118,19 +119,33 @@ UL {
 
 #pp-logo {
   max-height: 142px;
+  min-height: 142px;
   max-width: 500px;
-  background: white url(../images/pp-logo.png) no-repeat 0 0;
-  background-size: 100%; }
+  background-size: 100%;
+  border: 1px solid red; }
+  @media only screen
+  and (max-width : 320px) {
+    #pp-logo {
+      min-height: 68px;
+      max-height: 68px;
+      max-width: auto;
+      background-size: auto 68%;
+      border: 1px solid blue; } }
   @media only screen
   and (min-width : 320px)
   and (max-width : 518px) {
     #pp-logo {
       min-height: 68px;
       min-width: inherit;
-      background-size: auto 68%; } }
+      background-size: auto 68%;
+      border: 1px solid green; } }
 
 #content {
   width: 1024px; }
+  @media only screen
+  and (max-width : 320px) {
+    #content {
+      width: auto; } }
   @media only screen
   and (min-width : 320px)
   and (max-width : 518px) {
@@ -140,10 +155,9 @@ UL {
 #col-left {
   border: 1px solid red;
   float: left;
-  width: auto; }
+  width: 68%; }
   @media only screen
-  and (min-width : 320px)
-  and (max-width : 518px) {
+  and (max-width : 320px) {
     #col-left {
       width: 100%;
       float: none; } }
@@ -154,15 +168,13 @@ UL {
   width: 20%;
   min-width: 316px; }
   @media only screen
-  and (min-width : 320px)
-  and (max-width : 518px) {
+  and (max-width : 320px) {
     #col-right {
       width: 100%;
       float: none; } }
 
 @media only screen
-  and (min-width : 320px)
-  and (max-width : 518px) {
+  and (max-width : 320px) {
   nav {
     display: none; } }
 nav li {
@@ -177,3 +189,12 @@ nav li {
   and (max-width : 518px) {
     #buttonBlock {
       float: none; } }
+
+#jobsWidget h3 {
+  font-weight: bold;
+  font-size: 1em;
+  color: #566770; }
+#jobsWidget p {
+  font-weight: normal;
+  font-size: 1em;
+  color: #434343; }

@@ -16,6 +16,7 @@ and (max-width : 518px) {
 
 html {
   font-family: "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif;
+  font-size: 80%;
 }
 
 body {
@@ -29,21 +30,36 @@ UL {
 
 #pp-logo {
   max-height: 142px;
+  min-height: 142px;
   max-width: 500px;
-  background: white url(../images/pp-logo.png) no-repeat 0 0;
+  //background: white url(../images/pp-logo.png) no-repeat 0 0;
   background-size: 100%;
+  border: 1px solid red;
+  @media only screen
+  and (max-width : 320px) {
+    min-height: 68px;
+    max-height: 68px;
+    max-width: auto;
+    background-size: auto 68%;
+    border: 1px solid blue;
+  }
   @media only screen
   and (min-width : 320px)
   and (max-width : 518px) {
     min-height: 68px;
     min-width: inherit;
     background-size: auto 68%;
+    border: 1px solid green;
   }
 
 }
 
 #content {
   width: 1024px;
+  @media only screen
+  and (max-width : 320px) {
+    width: auto;
+  }
   @media only screen
   and (min-width : 320px)
   and (max-width : 518px) {
@@ -53,10 +69,9 @@ UL {
 #col-left {
   border: 1px solid red;
   float: left;
-  width: auto;
+  width: 68%;
   @media only screen
-  and (min-width : 320px)
-  and (max-width : 518px) {
+  and (max-width : 320px) {
     width: 100%;
     float: none;
   }
@@ -67,8 +82,7 @@ UL {
   width: 20%;
   min-width: 316px;
   @media only screen
-  and (min-width : 320px)
-  and (max-width : 518px) {
+  and (max-width : 320px) {
     width: 100%;
     float: none;
   }
@@ -76,8 +90,7 @@ UL {
 
 nav {
   @media only screen
-  and (min-width : 320px)
-  and (max-width : 518px) {
+  and (max-width : 320px) {
     display: none;
   }
   ul {
@@ -96,5 +109,18 @@ nav {
   and (min-width : 320px)
   and (max-width : 518px) {
     float: none;
+  }
+}
+
+#jobsWidget {
+  h3 {
+    font-weight: bold;
+    font-size: 1em;
+    color: #566770;
+  }
+  p {
+    font-weight: normal;
+    font-size: 1em;
+    color: #434343;
   }
 }
