@@ -1,3 +1,22 @@
+
+$btn-color: #67154f;
+$btn-a-color: #3d1d7f;
+$btn-b-color: #ff8400;
+$btn-c-color: #046b8d;
+
+$h2-color: #3d1d7f; // purple
+$h3-color: #566770;
+$body-color: #434343;
+$link-color: #bfd53d; // green
+$nav-link-color: #656565;
+
+/*
+16px = 1em
+14px = 0.875em
+13px = 0.813em
+24px = 1.5em
+*/
+
 /*
 @media only screen
 and (min-device-width: 768px)
@@ -16,11 +35,22 @@ and (max-width : 518px) {
 
 html {
   font-family: "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif;
-  font-size: 80%;
+  font-size: 100%;
+  color: $body-color;
 }
 
 body {
   margin: 0;
+}
+
+.clearFix:before,
+.cf:after {
+  content: " ";
+  display: table;
+  width: 100%;
+}
+.clearFix:after {
+  clear: both;
 }
 
 UL {
@@ -28,20 +58,40 @@ UL {
   padding: 0;
 }
 
+h2, h3, p {
+  margin: 0;
+  padding: 0;
+  line-height: 1.3em;
+}
+
+h2 {
+  font-size: 1.5em;
+  color: $h2-color;
+}
+h3 {
+  font-size: 12px;
+  color: $h3-color;
+  line-height: 1.5em;
+}
+
 #pp-logo {
   max-height: 142px;
   min-height: 142px;
   max-width: 500px;
-  //background: white url(../images/pp-logo.png) no-repeat 0 0;
-  background-size: 100%;
-  border: 1px solid red;
+  //border: 1px solid red;
+  @media only screen
+  and (min-width : 768px)
+  and (max-width : 1024px) {
+    width: 100%;
+    height: auto;
+  }
   @media only screen
   and (max-width : 320px) {
     min-height: 68px;
     max-height: 68px;
     max-width: auto;
     background-size: auto 68%;
-    border: 1px solid blue;
+    //border: 1px solid blue;
   }
   @media only screen
   and (min-width : 320px)
@@ -49,13 +99,22 @@ UL {
     min-height: 68px;
     min-width: inherit;
     background-size: auto 68%;
-    border: 1px solid green;
+    //border: 1px solid green;
   }
 
 }
 
 #content {
-  width: 1024px;
+  max-width: 1024px;
+  width: auto;
+  margin: 0 auto;
+
+  @media only screen
+  and (max-width: 768px) {
+    min-width: 0;
+    max-width: 768px;
+    //border: 1px solid yellow;
+  }
   @media only screen
   and (max-width : 320px) {
     width: auto;
@@ -66,21 +125,45 @@ UL {
     width: auto;
   }
 }
+
 #col-left {
-  border: 1px solid red;
+  //border: 1px solid red;
   float: left;
-  width: 68%;
+  width: 62%;
+  margin-left: 14px;
+  @media only screen
+  and (max-width: 1024px)
+  and (min-width: 768px) {
+    width: 58%;
+  }
   @media only screen
   and (max-width : 320px) {
     width: 100%;
     float: none;
   }
+
+  h2 {
+    max-width: 494px;
+    text-transform: uppercase;
+  }
 }
 #col-right {
-  border: 1px solid blue;
+  //border: 1px solid blue;
   float: right;
   width: 20%;
   min-width: 316px;
+  //margin-right: 20px;
+  margin: 0 14px;
+
+  @media only screen
+  and (max-width: 1024px)
+  and (min-width: 768px) {
+    min-width: 239px;
+  }
+  @media only screen
+  and (max-width: 768px) {
+    float: left;
+  }
   @media only screen
   and (max-width : 320px) {
     width: 100%;
@@ -89,27 +172,112 @@ UL {
 }
 
 nav {
+  height: 45px;
+  border-bottom: 1px solid $link-color;
+  display: inline-block;
+  float: left;
+  //border: 1px solid red;
+
+/*  @media only screen
+  and (min-width : 320px)
+  and (max-width : 518px) {
+    display: none;
+  }*/
   @media only screen
   and (max-width : 320px) {
     display: none;
   }
   ul {
-
+    //border: 1px solid green;
   }
   li {
-    float: left;
+    display: inline-block;
     list-style: none;
-    margin: 0 9px;
+    margin-left: 7px;
+    a {
+      display: inline-block;
+      line-height: 3.3em;
+      font-size: 0.813em;
+      color: $nav-link-color;
+      text-decoration: none;
+      &:hover {
+        color: $h3-color;
+      }
+    }
+    &.selected a {
+      color: $link-color;
+    }
+    &:first-child {
+      margin-left: 0;
+    }
   }
+
 }
+
 
 #buttonBlock {
   float: right;
+  text-align: right;
+  .btn {
+    float: left;
+  }
+  .btn-a {
+    margin-left: 10px;
+  }
+
+  @media only screen
+  and (max-width: 768px) {
+    //width: 20%;
+    //border: 1px solid yellow;
+    .btn {
+      min-width: 104px;
+      margin-bottom: 1em;
+    }
+  }
   @media only screen
   and (min-width : 320px)
   and (max-width : 518px) {
     float: none;
   }
+}
+
+
+.btn {
+  background: $btn-color url('../images/btn-bg.png') repeat-x 0 100%;
+  display: inline-block;
+  height: 35px;
+  width: auto;
+  text-align: center;
+  font-size: 0.813em;
+  line-height: 2.2em;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0 8px;
+  &:hover {
+    background-color: lighten( $btn-color, 10% );
+  }
+  &:active {
+    background-color: lighten( $btn-color, 30% );
+  }
+}
+
+.btn-a {
+  @extend .btn;
+  background-color: $btn-a-color;
+}
+.btn-b {
+  @extend .btn;
+  background-color: $btn-b-color;
+}
+.btn-c {
+  @extend .btn;
+  background-color: $btn-c-color;
+}
+
+#submit {
+  width: 100%;
+  clear: both;
 }
 
 #jobsWidget {
@@ -123,4 +291,33 @@ nav {
     font-size: 1em;
     color: #434343;
   }
+}
+
+#job-listings {
+  position: relative;
+  li {
+    list-style: none;
+  }
+  p {
+    margin-bottom: 1em;
+  }
+}
+
+#seealljobs {
+  float: right;
+}
+
+.learnmore {
+  a {
+    color: $link-color;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.more,
+.submitButton {
+  float: right;
 }

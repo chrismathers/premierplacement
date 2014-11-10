@@ -1,4 +1,10 @@
 /*
+16px = 1em
+14px = 0.875em
+13px = 0.813em
+24px = 1.5em
+*/
+/*
 @media only screen
 and (min-device-width: 768px)
 and (max-device-width: 1024px)
@@ -108,40 +114,73 @@ and (max-width : 518px) and screen and (min-width: 684px) {
     display: none; } }
 html {
   font-family: "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif;
-  font-size: 80%; }
+  font-size: 100%;
+  color: #434343; }
 
 body {
   margin: 0; }
+
+.clearFix:before,
+.cf:after {
+  content: " ";
+  display: table;
+  width: 100%; }
+
+.clearFix:after {
+  clear: both; }
 
 UL {
   margin: 0;
   padding: 0; }
 
+h2, h3, p {
+  margin: 0;
+  padding: 0;
+  line-height: 1.3em; }
+
+h2 {
+  font-size: 1.5em;
+  color: #3d1d7f; }
+
+h3 {
+  font-size: 12px;
+  color: #566770;
+  line-height: 1.5em; }
+
 #pp-logo {
   max-height: 142px;
   min-height: 142px;
-  max-width: 500px;
-  background-size: 100%;
-  border: 1px solid red; }
+  max-width: 500px; }
+  @media only screen
+  and (min-width : 768px)
+  and (max-width : 1024px) {
+    #pp-logo {
+      width: 100%;
+      height: auto; } }
   @media only screen
   and (max-width : 320px) {
     #pp-logo {
       min-height: 68px;
       max-height: 68px;
       max-width: auto;
-      background-size: auto 68%;
-      border: 1px solid blue; } }
+      background-size: auto 68%; } }
   @media only screen
   and (min-width : 320px)
   and (max-width : 518px) {
     #pp-logo {
       min-height: 68px;
       min-width: inherit;
-      background-size: auto 68%;
-      border: 1px solid green; } }
+      background-size: auto 68%; } }
 
 #content {
-  width: 1024px; }
+  max-width: 1024px;
+  width: auto;
+  margin: 0 auto; }
+  @media only screen
+  and (max-width: 768px) {
+    #content {
+      min-width: 0;
+      max-width: 768px; } }
   @media only screen
   and (max-width : 320px) {
     #content {
@@ -153,42 +192,121 @@ UL {
       width: auto; } }
 
 #col-left {
-  border: 1px solid red;
   float: left;
-  width: 68%; }
+  width: 62%;
+  margin-left: 14px; }
+  @media only screen
+  and (max-width: 1024px)
+  and (min-width: 768px) {
+    #col-left {
+      width: 58%; } }
   @media only screen
   and (max-width : 320px) {
     #col-left {
       width: 100%;
       float: none; } }
+  #col-left h2 {
+    max-width: 494px;
+    text-transform: uppercase; }
 
 #col-right {
-  border: 1px solid blue;
   float: right;
   width: 20%;
-  min-width: 316px; }
+  min-width: 316px;
+  margin: 0 14px; }
+  @media only screen
+  and (max-width: 1024px)
+  and (min-width: 768px) {
+    #col-right {
+      min-width: 239px; } }
+  @media only screen
+  and (max-width: 768px) {
+    #col-right {
+      float: left; } }
   @media only screen
   and (max-width : 320px) {
     #col-right {
       width: 100%;
       float: none; } }
 
-@media only screen
-  and (max-width : 320px) {
-  nav {
-    display: none; } }
-nav li {
+nav {
+  height: 45px;
+  border-bottom: 1px solid #bfd53d;
+  display: inline-block;
   float: left;
-  list-style: none;
-  margin: 0 9px; }
+  /*  @media only screen
+    and (min-width : 320px)
+    and (max-width : 518px) {
+      display: none;
+    }*/ }
+  @media only screen
+  and (max-width : 320px) {
+    nav {
+      display: none; } }
+  nav li {
+    display: inline-block;
+    list-style: none;
+    margin-left: 7px; }
+    nav li a {
+      display: inline-block;
+      line-height: 3.3em;
+      font-size: 0.813em;
+      color: #656565;
+      text-decoration: none; }
+      nav li a:hover {
+        color: #566770; }
+    nav li.selected a {
+      color: #bfd53d; }
+    nav li:first-child {
+      margin-left: 0; }
 
 #buttonBlock {
-  float: right; }
+  float: right;
+  text-align: right; }
+  #buttonBlock .btn, #buttonBlock .btn-a, #buttonBlock .btn-b, #buttonBlock .btn-c {
+    float: left; }
+  #buttonBlock .btn-a {
+    margin-left: 10px; }
+  @media only screen
+  and (max-width: 768px) {
+    #buttonBlock .btn, #buttonBlock .btn-a, #buttonBlock .btn-b, #buttonBlock .btn-c {
+      min-width: 104px;
+      margin-bottom: 1em; } }
   @media only screen
   and (min-width : 320px)
   and (max-width : 518px) {
     #buttonBlock {
       float: none; } }
+
+.btn, .btn-a, .btn-b, .btn-c {
+  background: #67154f url("../images/btn-bg.png") repeat-x 0 100%;
+  display: inline-block;
+  height: 35px;
+  width: auto;
+  text-align: center;
+  font-size: 0.813em;
+  line-height: 2.2em;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0 8px; }
+  .btn:hover, .btn-a:hover, .btn-b:hover, .btn-c:hover {
+    background-color: #911e6f; }
+  .btn:active, .btn-a:active, .btn-b:active, .btn-c:active {
+    background-color: #d83daa; }
+
+.btn-a {
+  background-color: #3d1d7f; }
+
+.btn-b {
+  background-color: #ff8400; }
+
+.btn-c {
+  background-color: #046b8d; }
+
+#submit {
+  width: 100%;
+  clear: both; }
 
 #jobsWidget h3 {
   font-weight: bold;
@@ -198,3 +316,23 @@ nav li {
   font-weight: normal;
   font-size: 1em;
   color: #434343; }
+
+#job-listings {
+  position: relative; }
+  #job-listings li {
+    list-style: none; }
+  #job-listings p {
+    margin-bottom: 1em; }
+
+#seealljobs {
+  float: right; }
+
+.learnmore a {
+  color: #bfd53d;
+  text-decoration: none; }
+  .learnmore a:hover {
+    text-decoration: underline; }
+
+.more,
+.submitButton {
+  float: right; }
