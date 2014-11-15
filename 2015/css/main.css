@@ -2,6 +2,7 @@
 16px = 1em
 14px = 0.875em
 13px = 0.813em
+12px = 0.750em
 24px = 1.5em
 */
 /*
@@ -133,6 +134,9 @@ UL {
   margin: 0;
   padding: 0; }
 
+h1 {
+  font-size: 1em; }
+
 h2, h3, p {
   margin: 0;
   padding: 0;
@@ -206,7 +210,7 @@ h3 {
       width: 100%;
       float: none; } }
   #col-left h2 {
-    max-width: 494px;
+    max-width: 602px;
     text-transform: uppercase; }
 
 #col-right {
@@ -231,9 +235,10 @@ h3 {
 
 nav {
   height: 45px;
-  border-bottom: 1px solid #bfd53d;
   display: inline-block;
   float: left;
+  letter-spacing: -0.2px;
+  margin-top: 9px;
   /*  @media only screen
     and (min-width : 320px)
     and (max-width : 518px) {
@@ -243,13 +248,16 @@ nav {
   and (max-width : 320px) {
     nav {
       display: none; } }
+  nav ul {
+    border-bottom: 1px solid #bfd53d; }
   nav li {
     display: inline-block;
     list-style: none;
-    margin-left: 7px; }
+    margin-left: 7px;
+    line-height: 1.7em; }
     nav li a {
       display: inline-block;
-      line-height: 3.3em;
+      line-height: 2em;
       font-size: 0.813em;
       color: #656565;
       text-decoration: none; }
@@ -262,11 +270,15 @@ nav {
 
 #buttonBlock {
   float: right;
-  text-align: right; }
+  text-align: right;
+  width: 100%;
+  margin-bottom: 2em; }
   #buttonBlock .btn, #buttonBlock .btn-a, #buttonBlock .btn-b, #buttonBlock .btn-c {
-    float: left; }
+    float: left;
+    width: 40%; }
   #buttonBlock .btn-a {
-    margin-left: 10px; }
+    margin-left: 10px;
+    float: right; }
   @media only screen
   and (max-width: 768px) {
     #buttonBlock .btn, #buttonBlock .btn-a, #buttonBlock .btn-b, #buttonBlock .btn-c {
@@ -306,7 +318,45 @@ nav {
 
 #submit {
   width: 100%;
-  clear: both; }
+  clear: both;
+  border: 1px solid #c8c8ca;
+  position: relative;
+  margin-bottom: 2em; }
+  #submit h2 {
+    background: white;
+    position: absolute;
+    top: -16px;
+    left: 11px;
+    padding: 0 6px; }
+
+#formDiv {
+  width: 100%;
+  margin: 35px 0; }
+
+form {
+  margin: 7px 0px; }
+  form label {
+    float: left;
+    font-weight: bold;
+    font-size: 11px;
+    padding-top: 4px;
+    width: 64px;
+    text-align: right;
+    padding-left: 14px; }
+  form input {
+    margin: 0 0 12px 16px;
+    width: 59%; }
+  form input.submitButton {
+    width: auto;
+    float: right;
+    margin-top: 1px;
+    margin-right: -1px; }
+
+#emailError {
+  display: none;
+  text-align: right;
+  margin: -10px 0 10px;
+  color: #B94A48; }
 
 #jobsWidget h3 {
   font-weight: bold;
@@ -319,20 +369,50 @@ nav {
 
 #job-listings {
   position: relative; }
+  #job-listings h2 {
+    margin-top: 1.3em;
+    margin-bottom: .3em; }
   #job-listings li {
     list-style: none; }
   #job-listings p {
-    margin-bottom: 1em; }
+    margin-bottom: 1em;
+    font-size: .750em; }
 
 #seealljobs {
   float: right; }
 
 .learnmore a {
   color: #bfd53d;
-  text-decoration: none; }
+  text-decoration: none;
+  font-size: .875em; }
   .learnmore a:hover {
     text-decoration: underline; }
 
 .more,
 .submitButton {
   float: right; }
+
+.blog h2 {
+  margin: 0 0 9px 0;
+  letter-spacing: 1.3px; }
+  .blog h2 span {
+    font-size: .8em; }
+.blog .entry-title {
+  margin: 0; }
+  .blog .entry-title a {
+    color: #566770;
+    font-size: 1em;
+    text-decoration: none; }
+    .blog .entry-title a:hover {
+      text-decoration: underline; }
+.blog p {
+  font-size: .750em; }
+  .blog p a {
+    text-decoration: none;
+    color: #bfd53d;
+    display: inline-block;
+    margin-bottom: 2em; }
+  .blog p span.meta-nav {
+    display: none; }
+.blog.full-page .digg_digg {
+  display: none; }

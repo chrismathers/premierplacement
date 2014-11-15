@@ -2,431 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c5a0950a-c297-40a5-a42e-9e135d68d1a3" name="Default" comment="Updated page width to 1024 to fix spacing issue on iPad">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/premier_cfusion/images/1.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/premier_cfusion/images/2.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/3644976.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/3644976_a.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/3644976_a.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/BU005399.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/BU007963.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/BU011174.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/BU011174.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/BU011174.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/images/old/FINDER.DAT" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wordpress/wp-content/uploads/2014/02/PP_button_green-150x150.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wordpress/wp-content/uploads/2014/02/PP_button_green-300x119.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wordpress/wp-content/uploads/2014/02/PP_button_green-900x198.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wordpress/wp-content/uploads/2014/02/PP_button_green.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/Resume Guide.doc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/Thumbs.db" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/Thumbs.db" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/images/old/about_us.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/about_us_text.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/premier_cfusion/images/about_us_text.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/area_off.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/downloaded_images/area_off.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/premier_cfusion/images/area_off.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/area_on.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/downloaded_images/area_on.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/premier_cfusion/images/area_on.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/mail/areas.psd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/banner-bg-2012.psd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/banner-bg-2012_left.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/banner-bg-2012_mid.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/banner-bg-2012_right.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/banner.psd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/banner.psd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/banner_new.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/banner_text.psd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/blue_banner.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/premier_cfusion/images/blue_banner.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/blue_spacer.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/premier_cfusion/images/blue_spacer.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/blue_spacer1.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/images/blue_spacer1.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/premier_cfusion/images/blue_spacer1.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/mail/buttons.psd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/images/old/career_links.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/images/old/contact_us.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/contact_us_text.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/premier_cfusion/images/contact_us_text.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/crosshatch.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/dk_green_banner.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/donts.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/premier_cfusion/images/donts.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/double_blue_line.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/premier_cfusion/images/double_blue_line.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/double_green.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/premier_cfusion/images/double_green.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/double_green1.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/double_orange.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/premier_cfusion/images/double_orange.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/double_pink_line.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/premier_cfusion/images/double_red.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/employ_areas.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/downloaded_images/employ_areas.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/images/employ_areas.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/premier_cfusion/images/employ_areas.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/employ_areas.psd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/images/employ_areas.psd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/mail/employ_areas.psd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/employ_areas1.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/downloaded_images/employ_areas1.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/images/employ_areas1.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/premier_cfusion/images/employ_areas1.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/employ_areas1.psd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/images/employ_areas1.psd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/mail/employ_areas1.psd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/engineer_off.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/premier_cfusion/images/engineer_off.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/engineer_off1.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/premier_cfusion/images/engineer_off1.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/engineer_on.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/premier_cfusion/images/engineer_on.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/engineer_over.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/premier_cfusion/images/engineer_over.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/engineer_over1.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/premier_cfusion/images/engineer_over1.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/downloaded_images/engineering.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/images/engineering.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/engineering.psd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/images/engineering.psd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/mail/engineering.psd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/downloaded_images/engineering1.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/images/engineering1.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/engineering_01.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/premier_cfusion/images/engineering_01.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/engineering_02.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/premier_cfusion/images/engineering_02.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/engineering_04.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/premier_cfusion/images/engineering_04.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/engineering_05.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/premier_cfusion/images/engineering_05.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/engineering_06.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/premier_cfusion/images/engineering_06.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/engineering_07.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/premier_cfusion/images/engineering_07.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/engineering_08.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/premier_cfusion/images/engineering_08.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/engineering_09.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/premier_cfusion/images/engineering_09.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/fact.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/premier_cfusion/images/fact.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/favicon.ico" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/downloaded_images/financial.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/images/financial.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/financial.psd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/images/financial.psd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/mail/financial.psd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/downloaded_images/financial1.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/images/financial1.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/formDivider.psd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/green_banner.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/premier_cfusion/images/green_banner.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/green_banner_text.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/green_spacer.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/premier_cfusion/images/green_spacer.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/green_spacer.psd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/green_spacer1.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/green_spacer1.psd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/home.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/downloaded_images/home.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/images/home.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/premier_cfusion/images/home.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/images/home.psd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/mail/home.psd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/home2012.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/home2012.psd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/home_blue.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/premier_cfusion/images/home_blue.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/home_blue_on.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/premier_cfusion/images/home_blue_on.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/home_green.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/home_green_on.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/home_on.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/downloaded_images/home_on.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/images/home_on.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/premier_cfusion/images/home_on.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/home_orange.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/premier_cfusion/images/home_orange.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/home_orange_on.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/premier_cfusion/images/home_orange_on.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/home_pink.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/home_pink_on.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wordpress/wp-content/uploads/2014/02/iStock_000021652636Large-1024x682.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wordpress/wp-content/uploads/2014/02/iStock_000021652636Large-150x150.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wordpress/wp-content/uploads/2014/02/iStock_000021652636Large-300x199.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wordpress/wp-content/uploads/2014/02/iStock_000021652636Large-940x198.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wordpress/wp-content/uploads/2014/02/iStock_000021652636Large.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/laura.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/downloaded_images/laura.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/images/laura.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/premier_cfusion/images/laura.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/left_bk.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/left_nav_0.psd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/images/old/left_nav_0.psd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/mail/left_nav_0.psd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/left_nav_1.psd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/images/left_nav_1.psd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/mail/left_nav_1.psd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/left_nav_2.psd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/images/left_nav_2.psd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/mail/left_nav_2.psd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/left_nav_about.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/downloaded_images/left_nav_about.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/images/left_nav_about.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/premier_cfusion/images/left_nav_about.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/left_nav_about_off.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/downloaded_images/left_nav_about_off.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/images/left_nav_about_off.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/left_nav_contact.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/downloaded_images/left_nav_contact.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/images/left_nav_contact.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/left_nav_contact_off.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/downloaded_images/left_nav_contact_off.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/images/left_nav_contact_off.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/left_nav_links.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/downloaded_images/left_nav_links.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/images/left_nav_links.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/left_nav_links_off.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/downloaded_images/left_nav_links_off.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/images/left_nav_links_off.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/left_nav_resume.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/downloaded_images/left_nav_resume.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/images/left_nav_resume.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/left_nav_resume_off.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/downloaded_images/left_nav_resume_off.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/images/left_nav_resume_off.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/downloaded_images/left_nav_testimonials.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/images/left_nav_testimonials.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/downloaded_images/left_nav_testimonials_off.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/images/left_nav_testimonials_off.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/lft_bk.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/lft_bot_bk.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/lft_bot_bk.psd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/lft_side.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/lft_side.psd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/lft_tp_bk.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/lft_tp_bk.psd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/linkedin_20x20.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/logo.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/downloaded_images/logo.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/images/logo.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/manu_off.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/manu_on.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/manu_on1.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/manu_over.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/manu_over1.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/manuf_01.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/manuf_02.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/manuf_04.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/manuf_05.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/manuf_06.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/manuf_07.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/manuf_08.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/manuf_09.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/downloaded_images/manufac.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/images/manufac.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/manufac.psd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/images/manufac.psd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/mail/manufac.psd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/downloaded_images/manufac1.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/images/manufac1.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/material_off.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/material_on.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/material_on1.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/material_over.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/downloaded_images/materials.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/images/materials.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/materials.psd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/images/materials.psd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/mail/materials.psd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/downloaded_images/materials1.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/images/materials1.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/materials_01.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/materials_02.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/materials_03.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/mail/materials_03.psd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/materials_04.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/materials_05.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/materials_06.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/materials_07.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/materials_08.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/materials_09.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/mail/mockup_2ndpage.psd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/mail/mockup_engineering.psd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/mail/mockup_manuf.psd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/mail/mockup_materials.psd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/images/motto.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/motto.psd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/images/motto.psd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/motto_lft.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/downloaded_images/motto_lft.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/mail/motto_new.psd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/mail/motto_old.psd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/motto_right1.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/downloaded_images/motto_right1.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/mail/nav_bar.psd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/nav_bar_01.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/nav_bar_02.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/nav_bar_03.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/nav_bar_04.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/nav_bar_05.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/nav_bar_06.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/nav_off_01.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/nav_off_02.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/nav_off_03.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/nav_off_04.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/nav_off_05.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/nav_off_06.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/nav_spacer.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/downloaded_images/nav_spacer.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/images/nav_spacer.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/new_lft_side.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wordpress/wp-content/uploads/2013/06/oq7fhBM-1024x678.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wordpress/wp-content/uploads/2013/06/oq7fhBM-150x150.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wordpress/wp-content/uploads/2013/06/oq7fhBM-300x198.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wordpress/wp-content/uploads/2013/06/oq7fhBM-940x198.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wordpress/wp-content/uploads/2013/06/oq7fhBM.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/orange_banner.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/orange_spacer.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/pink_banner.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/pink_spacer.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/images/old/post_jobs.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/images/old/post_jobs.psd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/mail/post_jobs.psd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/downloaded_images/post_jobs_on.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/images/old/post_jobs_on.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/post_resumes_off.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/downloaded_images/post_resumes_off.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/images/post_resumes_off.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/post_resumes_on.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/downloaded_images/post_resumes_on.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/images/post_resumes_on.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2015/JPEGs/pp-home-1024.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2015/PSDs/pp-home-1024.psd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2015/JPEGs/pp-home-320.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2015/PSDs/pp-home-320.psd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2015/JPEGs/pp-home-768.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2015/PSDs/pp-home-768.psd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2015/images/pp-logo-sprite.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/premierPlacementLogo.bmp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/premier_100709" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premlogo4.psd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/images/reg_logo.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/mail/reg_logo.psd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/reg_logo2.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/downloaded_images/reg_logo2.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/premier_cfusion/registration.mdb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/images/old/resume_guide.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/mail/resume_guide.psd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/resume_guide_text.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/right_side.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/right_side.psd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/rt_bk.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/rt_bk.psd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/downloaded_images/s_jobs_button.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/images/old/s_jobs_button.psd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/mail/s_jobs_button.psd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/downloaded_images/s_jobs_button1.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share-this/screenshot-1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share-this/screenshot-2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share-this/screenshot-3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share-this/screenshot-4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/search_jobs.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/downloaded_images/search_jobs.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/images/old/search_jobs.psd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/mail/search_jobs.psd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/search_jobs_on.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/downloaded_images/search_jobs_on.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/search_jobs_text.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/search_post_off.psd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/mail/search_post_off.psd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/search_post_on.psd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/mail/search_post_on.psd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/images/old/testimonials.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/to_top_arrow.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/top_space.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/downloaded_images/top_space.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/twitter_24x24.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/white_space.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/downloaded_images/white_space.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share-this/widget-icons-sprite.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.name" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Emailapp.rtf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/Premier Bio.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share-this/README.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/README" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/README" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WS_FTP.LOG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images_pre2012/WS_FTP.LOG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/downloaded_images/WS_FTP.LOG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/about_us.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/premier_cfusion/admin.cfm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/contact_us.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/premier_cfusion/doform.cfm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/engineering.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/error.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/file-upload.cgi" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/formmail1.cgi" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/general-template-custom.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/hackney.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home_old.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2015/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share-this/jquery.carousel.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share-this/jquery.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2015/css/main.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2015/scss/main.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/manufacturing.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/materials.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/premier_cfusion/post_resume.cfm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/post_resume.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/post_resume.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/premier.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/premier.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/premierplacement.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/premier_cfusion/resume.cfm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/resume.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/resume.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/resume_guide.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/premier_cfusion/sendmail.cfm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share-this/sharethis.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share-this/sharethis.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sitetitle.wordpress.2013-11-28.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sitetitle.wordpress.2014-08-27.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/test_resume.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/premier_cfusion/testform.cfm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/premier_cfusion/thankyou.cfm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/upload.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share-this/wp_st_opt.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xxx.htaccess" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/working/premier_saved usi/yahoo.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scss/style.css" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/premier/.job-listings-template.php.swp" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/premier/.job-listings-template.php.swp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/lauraheadshop.jpg" afterPath="$PROJECT_DIR$/images/lauraheadshop.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.htaccess" afterPath="$PROJECT_DIR$/.htaccess" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/premier/functions.php" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/premier/functions.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/premier/functions_bk.php" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/premier/functions_bk.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/premier/header.php" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/premier/header.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/premier/nav.php" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/premier/nav.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/premier/premier-blog-template.php" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/premier/premier-blog-template.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/premier/searchform.php" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/premier/searchform.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/style.scss" afterPath="$PROJECT_DIR$/scss/style.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/2015/index.html" afterPath="$PROJECT_DIR$/2015/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/2015/css/main.css" afterPath="$PROJECT_DIR$/2015/css/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/2015/scss/main.scss" afterPath="$PROJECT_DIR$/2015/scss/main.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="premierplacement.iws" />
     <ignored path=".idea/workspace.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -446,114 +29,99 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="style.scss" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="style.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scss/style.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="398" max-vertical-offset="23070">
-              <caret line="50" column="31" selection-start-line="50" selection-start-column="31" selection-end-line="50" selection-end-column="31" />
+            <state vertical-scroll-proportion="-1.0980393" vertical-offset="216" max-vertical-offset="26146">
+              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="712">
-              <caret line="0" column="6" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="functions.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="functions.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wordpress/wp-content/themes/premier/functions.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="7916" max-vertical-offset="8865">
+            <state vertical-scroll-proportion="0.0" vertical-offset="9724" max-vertical-offset="10047">
               <caret line="572" column="7" selection-start-line="572" selection-start-column="7" selection-end-line="572" selection-end-column="7" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="wp-config.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wordpress/wp-config.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="420" max-vertical-offset="1440">
-              <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".htaccess" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.htaccess">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
-              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-              <folding>
-                <marker date="1409154972000" expanded="true" signature="19:218" placeholder="&lt;IfModule mod_rewrite.c&gt;" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/2015/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="360">
-              <caret line="6" column="61" selection-start-line="6" selection-start-column="61" selection-end-line="6" selection-end-column="61" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.scss" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="main.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/2015/scss/main.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="405">
-              <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+            <state vertical-scroll-proportion="0.6368932" vertical-offset="6812" max-vertical-offset="7429">
+              <caret line="420" column="20" selection-start-line="420" selection-start-column="20" selection-end-line="420" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wordpress/wp-content/themes/premier/home.php">
+      <file leaf-file-name="nav-toggle.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/2015/scss/nav-toggle.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="450" max-vertical-offset="975">
-              <caret line="30" column="26" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="1938">
+              <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="header.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="premier-homepage-template.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wordpress/wp-content/themes/premier/premier-homepage-template.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="918" max-vertical-offset="3298">
+              <caret line="54" column="30" selection-start-line="32" selection-start-column="24" selection-end-line="54" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="header.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wordpress/wp-content/themes/premier/header.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="147" max-vertical-offset="900">
-              <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="75" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="459" max-vertical-offset="1020">
+              <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="nav.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="nav.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wordpress/wp-content/themes/premier/nav.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="210">
+            <state vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="238">
               <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="job-listings-template.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wordpress/wp-content/themes/premier/job-listings-template.php">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/2015/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1065">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+            <state vertical-scroll-proportion="-14.269231" vertical-offset="5018" max-vertical-offset="5814">
+              <caret line="317" column="33" selection-start-line="317" selection-start-column="33" selection-end-line="317" selection-end-column="33" />
+              <folding>
+                <element signature="n#style#0;n#span#0;n#p#0;n#li#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#p#0;n#li#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#p#0;n#li#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#p#0;n#li#3;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#p#0;n#li#4;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#p#0;n#li#5;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#p#0;n#li#6;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#p#0;n#li#7;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#p#0;n#li#8;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#p#0;n#li#9;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#p#0;n#li#10;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#p#0;n#li#11;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#p#0;n#li#12;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#p#0;n#li#13;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#p#0;n#li#14;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#p#0;n#li#15;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -569,38 +137,32 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
-    <option name="changedFiles">
+    <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/wordpress/wp-config.php" />
-        <option value="$PROJECT_DIR$/wordpress/wp-content/themes/premier/home.php" />
-        <option value="$PROJECT_DIR$/wordpress/wp-content/themes/premier/premier-homepage-template.php" />
-        <option value="$PROJECT_DIR$/wordpress/wp-content/themes/premier/nav.php" />
-        <option value="$PROJECT_DIR$/wordpress/wp-content/themes/premier/header.php" />
-        <option value="$PROJECT_DIR$/2015/index.html" />
         <option value="$PROJECT_DIR$/scss/style.scss" />
+        <option value="$PROJECT_DIR$/2015/index.html" />
         <option value="$PROJECT_DIR$/2015/scss/main.scss" />
-        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+  </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1280" />
-    <option name="y" value="-378" />
-    <option name="width" value="1920" />
-    <option name="height" value="1108" />
+    <option name="x" value="10" />
+    <option name="y" value="13" />
+    <option name="width" value="1705" />
+    <option name="height" value="1006" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
-    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="false" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
     <ConfirmationsSetting value="0" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
-  </component>
-  <component name="ProjectReloadState">
-    <option name="STATE" value="0" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -615,7 +177,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -630,63 +191,94 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="premierplacement1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
               <option name="myItemId" value="premierplacement" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="premierplacement1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scss" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="premierplacement" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="premierplacement1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="2015" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="premierplacement" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="premierplacement1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="2015" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scss" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="FullScreen" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="options.lastSelected" value="preferences.fileTypes" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../premierplacement-nogit/index.php" />
+    <property name="options.lastSelected" value="preferences.externalTools" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="257" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="229" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="270" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="240" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="274" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="244" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="1068" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="946" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="266" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="237" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="267" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="238" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="271" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="241" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="1065" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="943" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
+    <property name="LayoutCode.rearrangeEntriesHTML" value="false" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
-      <option name="VMOptions" />
-      <option name="arguments" />
-      <option name="filePath" />
-      <option name="scope" value="ALL" />
-      <option name="testName" />
       <method />
     </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
-      <option name="VMOptions" />
-      <option name="arguments" />
-      <option name="filePath" />
-      <option name="name" value="Dart" />
-      <option name="saveOutputToFile" value="false" />
-      <option name="showConsoleOnStdErr" value="false" />
-      <option name="showConsoleOnStdOut" value="false" />
-      <method />
-    </configuration>
-    <configuration default="true" type="CucumberJavaScriptRunConfigurationType" factoryName="Cucumber.js">
-      <option name="cucumberJsArguments" />
-      <option name="executablePath" />
-      <option name="filePath" />
       <method />
     </configuration>
     <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
@@ -706,6 +298,20 @@
     <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
       <method />
     </configuration>
+    <configuration default="true" type="cucumber.js" factoryName="Cucumber.js">
+      <option name="cucumberJsArguments" value="" />
+      <option name="executablePath" />
+      <option name="filePath" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <pass-parent-envs>true</pass-parent-envs>
+      <envs />
+      <method />
+    </configuration>
     <list size="0" />
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
@@ -716,41 +322,53 @@
     <task active="true" id="Default" summary="Default task">
       <changelist id="c5a0950a-c297-40a5-a42e-9e135d68d1a3" name="Default" comment="" />
       <created>1398428543808</created>
+      <option name="number" value="Default" />
       <updated>1398428543808</updated>
     </task>
     <task id="LOCAL-00001" summary="Updated page width to 1024 to fix spacing issue on iPad">
       <created>1409192079820</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
       <updated>1409192079820</updated>
     </task>
     <task id="LOCAL-00002" summary="remove wp-admin and wp-includes from commit">
       <created>1410749545558</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
       <updated>1410749545558</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Updated page width to 1024 to fix spacing issue on iPad">
+      <created>1414413021398</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1414413021398</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1280" y="-378" width="1920" height="1108" extended-state="6" />
+    <frame x="10" y="13" width="1705" height="1006" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924527" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25252524" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2522936" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33715597" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16535018" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1651865" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34977064" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32768363" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32762095" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30504587" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.11205273" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924527" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -768,15 +386,23 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Updated page width to 1024 to fix spacing issue on iPad" />
     <MESSAGE value="Updated page width to 1024 to fix spacing issue on iPad.&#10;Input corners, bg color, logo margin" />
     <MESSAGE value="remove wp-admin and wp-includes from commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove wp-admin and wp-includes from commit" />
+    <MESSAGE value="Updated page width to 1024 to fix spacing issue on iPad" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated page width to 1024 to fix spacing issue on iPad" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
+    <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/wordpress/wp-content/themes/premier/job-listings-template.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1207">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/wordpress/wp-content/themes/premier/nav.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="210">
@@ -789,7 +415,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1065">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -808,29 +433,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wordpress/wp-config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="405" max-vertical-offset="1440">
-          <caret line="27" column="31" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.htaccess">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="270">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding>
-            <marker date="1409154972000" expanded="true" signature="19:218" placeholder="&lt;IfModule mod_rewrite.c&gt;" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wordpress/wp-content/themes/premier/home.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="450" max-vertical-offset="975">
           <caret line="30" column="26" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -879,29 +485,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wordpress/wp-config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="405" max-vertical-offset="1440">
-          <caret line="27" column="31" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.htaccess">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="270">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding>
-            <marker date="1409154972000" expanded="true" signature="19:218" placeholder="&lt;IfModule mod_rewrite.c&gt;" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wordpress/wp-content/themes/premier/home.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="450" max-vertical-offset="975">
           <caret line="30" column="26" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1058,14 +645,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wordpress/wp-content/themes/premier/nav.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="210">
-          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wordpress/wp-content/themes/premier/premier-blog-template.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1034">
@@ -1073,65 +652,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wordpress/wp-content/themes/premier/job-listings-template.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1065">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wordpress/wp-content/themes/premier/premier-homepage-template.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.058765914" vertical-offset="0" max-vertical-offset="2910">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wordpress/wp-content/themes/premier/premier-page-template.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1034">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wordpress/wp-content/themes/premier/home.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="975">
-          <caret line="30" column="26" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wordpress/wp-content/themes/premier/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="147" max-vertical-offset="900">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="75" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/2015/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="360">
-          <caret line="6" column="61" selection-start-line="6" selection-start-column="61" selection-end-line="6" selection-end-column="61" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/2015/scss/main.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="405">
-          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scss/style.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="398" max-vertical-offset="23070">
-          <caret line="50" column="31" selection-start-line="50" selection-start-column="31" selection-end-line="50" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1143,32 +667,127 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wordpress/wp-config.php">
+    <entry file="file://C:/wamp/bin/apache/Apache2.2.21/conf/httpd.conf">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1440">
-          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+        <state vertical-scroll-proportion="1.1426175" vertical-offset="7972" max-vertical-offset="9078">
+          <caret line="509" column="41" selection-start-line="509" selection-start-column="41" selection-end-line="509" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../premierplacement-nogit/wordpress/wp-config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.49275362" vertical-offset="0" max-vertical-offset="1632">
+          <caret line="18" column="29" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../premierplacement-nogit/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="541">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wordpress/wp-content/themes/premier/job-listings-template.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.71022725" vertical-offset="169" max-vertical-offset="1207">
+          <caret line="32" column="78" selection-start-line="32" selection-start-column="78" selection-end-line="32" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wordpress/wp-content/themes/premier/home.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6598891" vertical-offset="153" max-vertical-offset="1105">
+          <caret line="30" column="26" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wordpress/wp-content/themes/premier/loop-page.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.8595194" vertical-offset="1006" max-vertical-offset="1547">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wordpress/wp-content/themes/premier/loop-single.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.6968577" vertical-offset="377" max-vertical-offset="1224">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2015/scss/nav-toggle.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="1938">
+          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.htaccess">
+    <entry file="file://$PROJECT_DIR$/wordpress/wp-content/themes/premier/nav.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="210">
+          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wordpress/wp-content/themes/premier/premier-homepage-template.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="495" max-vertical-offset="3298">
+          <caret line="54" column="30" selection-start-line="32" selection-start-column="24" selection-end-line="54" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wordpress/wp-content/themes/premier/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="1020">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.0980393" vertical-offset="216" max-vertical-offset="26146">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2015/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.269231" vertical-offset="5018" max-vertical-offset="5814">
+          <caret line="317" column="33" selection-start-line="317" selection-start-column="33" selection-end-line="317" selection-end-column="33" />
           <folding>
-            <marker date="1409154972000" expanded="true" signature="19:218" placeholder="&lt;IfModule mod_rewrite.c&gt;" />
+            <element signature="n#style#0;n#span#0;n#p#0;n#li#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#p#0;n#li#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#p#0;n#li#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#p#0;n#li#3;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#p#0;n#li#4;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#p#0;n#li#5;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#p#0;n#li#6;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#p#0;n#li#7;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#p#0;n#li#8;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#p#0;n#li#9;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#p#0;n#li#10;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#p#0;n#li#11;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#p#0;n#li#12;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#p#0;n#li#13;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#p#0;n#li#14;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#p#0;n#li#15;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/2015/scss/main.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="712">
-          <caret line="0" column="6" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
+        <state vertical-scroll-proportion="0.6368932" vertical-offset="6812" max-vertical-offset="7429">
+          <caret line="420" column="20" selection-start-line="420" selection-start-column="20" selection-end-line="420" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
   </component>
 </project>
-
