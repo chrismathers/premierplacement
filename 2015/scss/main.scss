@@ -32,7 +32,7 @@ and (max-width : 518px) {
 }
 */
 
-@import 'bootstrap';
+//@import 'bootstrap';
 @import 'nav-toggle';
 
 html {
@@ -154,13 +154,14 @@ h3 {
   }
 
 
-  nav {
+  #main-nav {
     display: inline-block;
     float: left;
     letter-spacing: -0.2px;
-    margin: 9px 0;
-    //border: 1px solid red;
+    margin-bottom: 14px;
+    width: 100%;
 
+    //border: 1px solid red;
 
     @media only screen
     and (max-width: 600px) {
@@ -172,18 +173,30 @@ h3 {
     }
     ul {
       border-bottom: 1px solid $link-color;
+      padding: 2px 0 0 0;
+      width: 100%;
+      //display: inline-block;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      display: flex;
+      align-items: center;
+      li > a {
+        text-align: center;
+        &:hover {
+          color: #bfd53d;
+        }
+      }
     }
     li {
-      display: inline-block;
       list-style: none;
-      margin-left: 7px;
-      line-height: 1.7em;
+      margin: 0 15px;
+
       a {
         display: inline-block;
-        line-height: 2em;
         font-size: 0.813em;
         color: $nav-link-color;
         text-decoration: none;
+        padding: 9px 0;
         &:hover {
           color: $h3-color;
         }
@@ -194,8 +207,56 @@ h3 {
       &:first-child {
         margin-left: 0;
       }
-    }
 
+      &.dropdown-container {
+        position: relative;
+        a.dropdown-toggle {
+          &:after {
+            display: inline-block;
+            width: 0;
+            height: 0;
+            margin-left: 4px;
+            margin-bottom: 3px;
+            vertical-align: middle;
+            border-top: 4px solid;
+            border-right: 4px solid transparent;
+            border-left: 4px solid transparent;
+            position: absolute;
+            top: 43%;
+            right: -14px;
+            content: '';
+          }
+        }
+        .dropdown {
+          position: absolute;
+          //display: none;
+          overflow:hidden;
+          height: 0;
+          background-color: white;
+          min-width: 118px;
+          border: 1px solid #bfd53d;
+          border-top: none;
+          border-radius: 3px;
+          -webkit-transition: height .4s ease;
+          .dropdown-menu {
+            display: block;
+            border: none;
+            li, li a {
+              margin: 0;
+              width: 100%;
+              white-space: nowrap;
+              &:focus {
+                outline: none;
+              }
+            }
+          }
+          &.open {
+            //display: block;
+            height: 77px;
+          }
+        }
+      }
+    }
   }
 
 
@@ -254,16 +315,10 @@ h3 {
       margin-bottom: 1em;
     }
   }
-
-  @media only screen
-  and (min-width : 320px)
-  and (max-width : 518px) {
-    float: none;
-  }
 }
 
 @media only screen
-and (max-width: 860px)
+and (max-width: 866px)
 and (min-width: 320px) {
   #buttonBlock {
     text-align: center;
@@ -273,7 +328,9 @@ and (min-width: 320px) {
       float: none;
     }
     .btn {
-      margin: 0 0 10px 0;
+      float: none;
+      display: block;
+      margin: 0 auto 1em;
     }
   }
 }

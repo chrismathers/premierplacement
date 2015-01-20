@@ -1,0 +1,21 @@
+body {
+  margin: 0; }
+
+.header {
+  height: 66px;
+  width: 100%;
+  background-color: pink; }
+
+.parent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: yellow; }
+
+.child {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0 auto;
+  width: 100%;
+  background-color: teal; }
