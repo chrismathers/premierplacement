@@ -350,5 +350,15 @@
             $(this).next('.dropdown').toggleClass('open');
         });
     });
+
+    var jobListUL = $("#job-listings ul");
+
+    $(document).ready(function() {
+        jobListUL.height($(window).height() - jobListUL.offset().top - 100);
+    });
+
+    $(window).resize(function() {
+        jobListUL.height($(window).height() - jobListUL.offset().top - 100);
+    });
 </script>
 </html>

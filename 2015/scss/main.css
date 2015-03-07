@@ -116,7 +116,11 @@ and (max-width : 518px) and screen and (min-width: 684px) {
 html {
   font-family: "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif;
   font-size: 100%;
-  color: #434343; }
+  color: #434343;
+  overflow: hidden;
+  height: 100%; }
+  html * {
+    box-sizing: border-box; }
 
 body {
   margin: 0; }
@@ -232,13 +236,18 @@ h3 {
       justify-content: space-between;
       display: flex;
       align-items: center; }
-      #col-left #main-nav ul li > a {
-        text-align: center; }
-        #col-left #main-nav ul li > a:hover {
-          color: #bfd53d; }
     #col-left #main-nav li {
       list-style: none;
-      margin: 0 15px; }
+      margin: 0 15px;
+      display: inline-block;
+      text-align: center;
+      vertical-align: middle; }
+      @media only screen
+      and (max-width: 768px) {
+        #col-left #main-nav li {
+          width: 68px; }
+          #col-left #main-nav li:first-of-type {
+            width: auto; } }
       #col-left #main-nav li a {
         display: inline-block;
         font-size: 0.813em;
@@ -345,6 +354,7 @@ and (min-width: 320px) {
       margin: 0 auto 1em; } }
 .btn, .btn-a, .btn-b, .btn-c {
   background: #67154f url("../images/btn-bg.png") repeat-x 0 100%;
+  border: none;
   display: inline-block;
   height: 35px;
   width: auto;
@@ -355,10 +365,12 @@ and (min-width: 320px) {
   text-decoration: none;
   text-transform: uppercase;
   padding: 0 8px; }
-  .btn:hover, .btn-a:hover, .btn-b:hover, .btn-c:hover {
-    background-color: #911e6f; }
+  .btn:hover, .btn-a:hover, .btn-b:hover, .btn-c:hover, .btn:focus, .btn-a:focus, .btn-b:focus, .btn-c:focus {
+    background-color: #911e6f;
+    outline: none; }
   .btn:active, .btn-a:active, .btn-b:active, .btn-c:active {
-    background-color: #d83daa; }
+    background-color: #d83daa;
+    outline: none; }
 
 .btn-a {
   background-color: #3d1d7f; }
@@ -412,7 +424,7 @@ form {
     form input {
       margin: 0 0 12px 6px;
       width: 50%;
-      border: 1px solid red; } }
+      border-radius: 0; } }
   form input.submitButton {
     width: auto;
     float: right;
@@ -436,6 +448,10 @@ form {
 
 #job-listings {
   position: relative; }
+  #job-listings ul {
+    overflow: hidden;
+    overflow-y: auto;
+    margin-bottom: 1em; }
   #job-listings h2 {
     margin-top: 1.3em;
     margin-bottom: .3em; }
