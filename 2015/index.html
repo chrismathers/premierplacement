@@ -310,7 +310,6 @@
                 </form>
             </div>
         </div>
-        <div id="raw"></div>
 
         <div class="blog full-page">
             <h2>Premier Perspectives</h2>
@@ -333,7 +332,31 @@
 
             <a class="more btn-a" href="/blog/">All Posts</a>
         </div>
+
+        <ul id="follow-list">
+            <li>
+                <a id="follow-lnkd" href="http://www.linkedin.com/company/premier-placement-inc" target="_blank">LinkedIn</a>
+            </li>
+            <li>
+                <a id="follow-twtr" href="https://twitter.com/LauraSchmieder" target="_blank">Twitter</a>
+            </li>
+            <li>
+                <a id="follow-fb" href="https://www.facebook.com/pages/Premier-Placement-Inc/10150132945420483?fref=ts" target="_blank">Facebook</a>
+            </li>
+        </ul>
     </div>
+
+    <footer>
+        <div class="menu-primary-nav-container">
+            <ul id="menu-primary-nav-1" class="menu"><li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-258 current_page_item menu-item-313"><a href="http://www.premierplacement.com/">Home</a></li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-314"><a href="http://www.premierplacement.com/blog/">Blog</a></li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-316"><a href="http://www.premierplacement.com/interview-guide/">Interview Guide</a></li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-317"><a href="http://www.premierplacement.com/resume-guide/">Resume Guide</a></li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-318"><a href="http://www.premierplacement.com/about-us/">About Us</a></li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-315"><a href="http://www.premierplacement.com/contact-us/">Contact Us</a></li>
+            </ul>
+        </div>
+    </footer>
 </div>
 
 
@@ -352,13 +375,23 @@
     });
 
     var jobListUL = $("#job-listings ul");
-
     $(document).ready(function() {
-        jobListUL.height($(window).height() - jobListUL.offset().top - 100);
+        if( $(window).width() > 600 ) {
+            scalejobList();
+        }
     });
 
     $(window).resize(function() {
-        jobListUL.height($(window).height() - jobListUL.offset().top - 100);
+        if( $(window).width() > 600 ) {
+            console.log('in');
+            scalejobList();
+        } else {
+            jobListUL.height(242+"px");
+        }
     });
+
+    function scalejobList() {
+        jobListUL.height($(window).height() - jobListUL.offset().top - 100);
+    }
 </script>
 </html>

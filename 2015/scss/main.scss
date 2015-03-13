@@ -115,6 +115,7 @@ h3 {
   @media only screen
   and (max-width : 320px) {
     width: auto;
+    margin: 10px;
   }
   @media only screen
   and (min-width : 320px)
@@ -141,7 +142,8 @@ h3 {
   }
   @media only screen
   and (max-width: 600px) {
-    width: 100%;
+    width: auto;
+    margin: 14px;
     float: none;
 
     h1 {
@@ -157,6 +159,8 @@ h3 {
   and (max-width : 320px) {
     width: 100%;
     float: none;
+    padding: 0;
+    margin: 0;
   }
 
 
@@ -291,12 +295,15 @@ h3 {
 
   @media only screen
   and (max-width: 600px) {
-    width: 100%;
+    width: auto;
     float: none;
+    #buttonBlock {
+      display: none;
+    }
   }
   @media only screen
   and (max-width : 320px) {
-    width: 100%;
+    width: auto;
     float: none;
   }
 }
@@ -311,6 +318,7 @@ h3 {
   .btn {
     float: left;
     width: 40%;
+    min-width: 108px;
     margin-bottom: 1em;
   }
   .btn-a {
@@ -319,18 +327,8 @@ h3 {
   }
 
   @media only screen
-  and (max-width: 768px) {
-    .btn {
-      min-width: 104px;
-      margin-bottom: 1em;
-    }
-  }
-}
-
-@media only screen
-and (max-width: 866px)
-and (min-width: 320px) {
-  #buttonBlock {
+  and (max-width: 866px)
+  and (min-width: 320px) {
     text-align: center;
     .btn,
     .btn-a {
@@ -410,31 +408,45 @@ form {
     float: left;
     font-weight: bold;
     font-size: 11px;
-    width: 64px;
+    width: 78px;
     text-align: right;
-    padding: 4px 6px 0 10px;
+    padding: 4px 0 0 10px;
   }
   input {
     margin: 0 6px 12px 10px;
-    width: 59%;
+    width: 60%;
   }
   @media only screen
   and (min-width: 320px)
   and (max-width: 866px) {
     label {
-      float: left;
+      float: none;
+      display: block;
       font-weight: bold;
       font-size: 11px;
-      padding-top: 4px;
-      width: 64px;
-      text-align: right;
-      padding-left: 6px;
+      width: auto;
+      text-align: left;
+      padding: 4px 14px;
     }
 
     input {
-      margin: 0 0 12px 6px;
-      width: 50%;
+      margin: 0 0 12px 14px;
+      width: 86%;
       border-radius: 0;
+    }
+  }
+
+  @media only screen
+  and (max-width: 600px) {
+    input {
+      width: 92%;
+    }
+  }
+
+  @media only screen
+  and (max-width : 320px) {
+    input {
+      width: 89%;
     }
   }
 
@@ -478,9 +490,14 @@ form {
   }
   @media only screen
   and (max-width: 600px) {
-    height: 100px;
-    overflow: hidden;
-    overflow-y: scroll;
+    height: 242px;
+    padding-bottom: 330px;
+    margin-bottom: 2em;
+    ul {
+      height: inherit;
+      overflow: hidden;
+      overflow-y: scroll;
+    }
     h2 {
       margin-top: .5em;
     }
@@ -555,8 +572,48 @@ form {
   }
 
   &.full-page {
+    padding-bottom: 64px;
     .digg_digg {
       display: none;
     }
+  }
+}
+
+
+#follow-list {
+  margin-left: 13px;
+
+  li {
+    float: left;
+    position: relative;
+    margin-right: 17px;
+    zoom: 1;
+    display: inline;
+  }
+  li:last-child {
+    margin-right: 0;
+  }
+  li .follow-div {
+    margin: 0;
+    padding: 0;
+    width: 33px;
+    height: 38px;
+  }
+  li a {
+    display: block;
+    width: 33px;
+    height: 38px;
+    text-indent: -9999px;
+    background: url('../images/sprite3.png');
+  }
+  li a#follow-lnkd {
+    background-position: 0 0;
+  }
+  li a#follow-twtr {
+    background-position: -33px 0;
+  }
+  li a#follow-fb {
+    background-position: -66px 0;
+    width: 32px;
   }
 }
