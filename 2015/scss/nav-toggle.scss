@@ -6,7 +6,7 @@
 }
 @media only screen
 and (min-width : 0px)
-and (max-width : 518px) {
+and (max-width : 600px) {
   display: none;
 
   .nav-collapse ul {
@@ -31,7 +31,7 @@ and (max-width : 518px) {
       color: white;
       text-decoration: none;
       width: 100%;
-      background: #766E4A;
+      background: $h3-color;
       border-bottom: 1px solid white;
       padding: .5em 1em;
       float: left;
@@ -69,22 +69,22 @@ and (max-width : 518px) {
     overflow: hidden;
     display: block;
 
-    border: 1px solid #374C77;
+    //border: 1px solid #374C77;
     border-radius: 3px 3px 3px 3px;
     cursor: pointer;
     height: 24px;
-    padding: 3px 4px 3px;
+    padding: 3px 3px 3px 5px;
     margin: 5px 7px 0 0;
     position: relative;
     width: 25px;
-    background: #777777;
-    background: -moz-linear-gradient(top, #777777 0%, #777777 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #777777), color-stop(100%, #777777));
-    background: -webkit-linear-gradient(top, #777777 0%, #777777 100%);
-    background: -o-linear-gradient(top, #777777 0%, #777777 100%);
-    background: -ms-linear-gradient(top, #777777 0%, #777777 100%);
-    background: linear-gradient(to bottom, #777777 0%, #777777 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#777777', endColorstr='#777777', GradientType=0);
+    background: $link-color;
+    background: -moz-linear-gradient(top, $link-color 0%, $link-color 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $link-color), color-stop(100%, $link-color));
+    background: -webkit-linear-gradient(top, $link-color 0%, $link-color 100%);
+    background: -o-linear-gradient(top, $link-color 0%, $link-color 100%);
+    background: -ms-linear-gradient(top, $link-color 0%, $link-color 100%);
+    background: linear-gradient(to bottom, $link-color 0%, $link-color 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$link-color', endColorstr='$link-color', GradientType=0);
     div {
       background-color: #fff;
       border: 1px solid #eee;
