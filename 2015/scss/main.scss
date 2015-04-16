@@ -7,7 +7,7 @@ $btn-c-color: #046b8d;
 $h2-color: #3d1d7f; // purple
 $h3-color: #566770;
 $body-color: #434343;
-$link-color: #bfd53d; // green
+$link-color: #b8cf32; // green
 $nav-link-color: #656565;
 
 /*
@@ -86,6 +86,11 @@ h3 {
   font-size: 12px;
   color: $h3-color;
   line-height: 1.5em;
+}
+
+a {
+  font-size: 1em;
+  letter-spacing: 0.4px;
 }
 
 #pp-logo {
@@ -327,7 +332,7 @@ h3 {
 
   .btn {
     float: left;
-    width: 40%;
+    width: 48%;
     min-width: 108px;
     margin-bottom: 1em;
   }
@@ -532,7 +537,7 @@ form {
   a {
     color: $link-color;
     text-decoration: none;
-    font-size: .875em;
+    font-size: 1em;
     &:hover {
       text-decoration: underline;
     }
@@ -599,6 +604,14 @@ form {
   }
 }
 
+.affiliates {
+  text-align: center;
+  img {
+    width: 80%;
+    margin-bottom: 2em;
+  }
+
+}
 
 #follow-list {
   margin: 0 auto;

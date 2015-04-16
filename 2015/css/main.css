@@ -87,13 +87,13 @@ and (max-width : 600px) {
     margin: 5px 7px 0 0;
     position: relative;
     width: 25px;
-    background: #bfd53d;
-    background: -moz-linear-gradient(top, #bfd53d 0%, #bfd53d 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #bfd53d), color-stop(100%, #bfd53d));
-    background: -webkit-linear-gradient(top, #bfd53d 0%, #bfd53d 100%);
-    background: -o-linear-gradient(top, #bfd53d 0%, #bfd53d 100%);
-    background: -ms-linear-gradient(top, #bfd53d 0%, #bfd53d 100%);
-    background: linear-gradient(to bottom, #bfd53d 0%, #bfd53d 100%);
+    background: #b8cf32;
+    background: -moz-linear-gradient(top, #b8cf32 0%, #b8cf32 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #b8cf32), color-stop(100%, #b8cf32));
+    background: -webkit-linear-gradient(top, #b8cf32 0%, #b8cf32 100%);
+    background: -o-linear-gradient(top, #b8cf32 0%, #b8cf32 100%);
+    background: -ms-linear-gradient(top, #b8cf32 0%, #b8cf32 100%);
+    background: linear-gradient(to bottom, #b8cf32 0%, #b8cf32 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$link-color', endColorstr='$link-color', GradientType=0); }
     .nav-toggle div {
       background-color: #fff;
@@ -156,6 +156,10 @@ h3 {
   font-size: 12px;
   color: #566770;
   line-height: 1.5em; }
+
+a {
+  font-size: 1em;
+  letter-spacing: 0.4px; }
 
 #pp-logo {
   max-height: 142px;
@@ -235,7 +239,7 @@ h3 {
       #col-left #main-nav {
         display: none; } }
     #col-left #main-nav ul {
-      border-bottom: 1px solid #bfd53d;
+      border-bottom: 1px solid #b8cf32;
       padding: 2px 0 0 0;
       width: 100%;
       flex-flow: row nowrap;
@@ -264,7 +268,7 @@ h3 {
         #col-left #main-nav li a:hover {
           color: #566770; }
       #col-left #main-nav li.selected a {
-        color: #bfd53d; }
+        color: #b8cf32; }
       #col-left #main-nav li:first-child {
         margin-left: 0; }
       #col-left #main-nav li.dropdown-container {
@@ -343,7 +347,7 @@ h3 {
   margin-bottom: 1em; }
   #buttonBlock .btn, #buttonBlock .btn-a, #buttonBlock .btn-b, #buttonBlock .btn-c {
     float: left;
-    width: 40%;
+    width: 48%;
     min-width: 108px;
     margin-bottom: 1em; }
   #buttonBlock .btn-a {
@@ -498,9 +502,9 @@ form {
   float: right; }
 
 .learnmore a {
-  color: #bfd53d;
+  color: #b8cf32;
   text-decoration: none;
-  font-size: .875em; }
+  font-size: 1em; }
   .learnmore a:hover {
     text-decoration: underline; }
 
@@ -529,7 +533,7 @@ form {
   font-size: .750em; }
   .blog p a {
     text-decoration: none;
-    color: #bfd53d;
+    color: #b8cf32;
     display: inline-block;
     margin-bottom: 2em; }
     .blog p a:hover {
@@ -540,6 +544,12 @@ form {
   padding-bottom: 64px; }
   .blog.full-page .digg_digg {
     display: none; }
+
+.affiliates {
+  text-align: center; }
+  .affiliates img {
+    width: 80%;
+    margin-bottom: 2em; }
 
 #follow-list {
   margin: 0 auto;
