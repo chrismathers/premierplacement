@@ -18,13 +18,11 @@ and (max-width : 518px) {
   display: none;
 }
 */
-/* responsive-nav.js 1.0.32 by @viljamis */
+/*! responsive-nav.js 1.0.32 by @viljamis */
 .nav-collapse {
   display: none; }
 
-@media only screen
-and (min-width : 0px)
-and (max-width : 600px) {
+@media only screen and (min-width: 0px) and (max-width: 518px) {
   display: none;
   .nav-collapse ul {
     margin: 0;
@@ -48,7 +46,7 @@ and (max-width : 600px) {
       color: white;
       text-decoration: none;
       width: 100%;
-      background: #566770;
+      background: #766E4A;
       border-bottom: 1px solid white;
       padding: .5em 1em;
       float: left; }
@@ -69,7 +67,7 @@ and (max-width : 600px) {
     pointer-events: none !important; }
 
   .nav-toggle {
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -80,21 +78,22 @@ and (max-width : 600px) {
     text-indent: -9999px;
     overflow: hidden;
     display: block;
+    border: 1px solid #374C77;
     border-radius: 3px 3px 3px 3px;
     cursor: pointer;
     height: 24px;
-    padding: 3px 3px 3px 5px;
+    padding: 3px 4px 3px;
     margin: 5px 7px 0 0;
     position: relative;
     width: 25px;
-    background: #b8cf32;
-    background: -moz-linear-gradient(top, #b8cf32 0%, #b8cf32 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #b8cf32), color-stop(100%, #b8cf32));
-    background: -webkit-linear-gradient(top, #b8cf32 0%, #b8cf32 100%);
-    background: -o-linear-gradient(top, #b8cf32 0%, #b8cf32 100%);
-    background: -ms-linear-gradient(top, #b8cf32 0%, #b8cf32 100%);
-    background: linear-gradient(to bottom, #b8cf32 0%, #b8cf32 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$link-color', endColorstr='$link-color', GradientType=0); }
+    background: #777777;
+    background: -moz-linear-gradient(top, #777777 0%, #777777 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #777777), color-stop(100%, #777777));
+    background: -webkit-linear-gradient(top, #777777 0%, #777777 100%);
+    background: -o-linear-gradient(top, #777777 0%, #777777 100%);
+    background: -ms-linear-gradient(top, #777777 0%, #777777 100%);
+    background: linear-gradient(to bottom, #777777 0%, #777777 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#777777', endColorstr='#777777', GradientType=0); }
     .nav-toggle div {
       background-color: #fff;
       border: 1px solid #eee;
@@ -102,9 +101,7 @@ and (max-width : 600px) {
       height: 2px;
       margin-top: 3px;
       width: 90%; } }
-@media only screen
-and (min-width : 0px)
-and (max-width : 600px) and screen and (min-width: 684px) {
+@media only screen and (min-width: 0px) and (max-width: 518px) and (min-width: 684px) {
   .js .nav-collapse {
     position: relative; }
 
@@ -123,9 +120,7 @@ html {
     box-sizing: border-box; }
 
 body {
-  margin: 0;
-  overflow-y: auto;
-  height: 100%; }
+  margin: 0; }
 
 .clearFix:before,
 .cf:after {
@@ -157,17 +152,11 @@ h3 {
   color: #566770;
   line-height: 1.5em; }
 
-a {
-  font-size: 1em;
-  letter-spacing: 0.4px; }
-
 #pp-logo {
   max-height: 142px;
   min-height: 142px;
   max-width: 500px; }
-  @media only screen
-  and (max-width: 860px)
-  and (min-width: 320px) {
+  @media only screen and (max-width: 860px) and (min-width: 320px) {
     #pp-logo {
       max-width: 100%;
       min-height: 0;
@@ -177,19 +166,15 @@ a {
   max-width: 1024px;
   width: auto;
   margin: 0 auto; }
-  @media only screen
-  and (max-width: 768px) {
+  @media only screen and (max-width: 768px) {
     #content {
       min-width: 0;
       max-width: 768px; } }
-  @media only screen
-  and (max-width : 320px) {
+  @media only screen and (max-width: 320px) {
     #content {
       width: auto;
       margin: 10px; } }
-  @media only screen
-  and (min-width : 320px)
-  and (max-width : 518px) {
+  @media only screen and (min-width: 320px) and (max-width: 518px) {
     #content {
       width: auto; } }
 
@@ -197,18 +182,13 @@ a {
   float: left;
   width: 65%;
   margin-left: 14px; }
-  @media only screen
-  and (max-width: 1024px)
-  and (min-width: 860px) {
+  @media only screen and (max-width: 1024px) and (min-width: 860px) {
     #col-left {
       width: 65%; } }
-  @media only screen
-  and (max-width: 860px)
-  and (min-width: 600px) {
+  @media only screen and (max-width: 860px) and (min-width: 600px) {
     #col-left {
       width: 60%; } }
-  @media only screen
-  and (max-width: 600px) {
+  @media only screen and (max-width: 600px) {
     #col-left {
       width: auto;
       margin: 14px;
@@ -217,8 +197,7 @@ a {
         font-size: .7em; }
       #col-left h2 {
         font-size: 1em; } }
-  @media only screen
-  and (max-width : 320px) {
+  @media only screen and (max-width: 320px) {
     #col-left {
       width: 100%;
       float: none;
@@ -230,16 +209,14 @@ a {
     letter-spacing: -0.2px;
     margin-bottom: 14px;
     width: 100%; }
-    @media only screen
-    and (max-width: 600px) {
+    @media only screen and (max-width: 600px) {
       #col-left #main-nav {
         display: none; } }
-    @media only screen
-    and (max-width : 320px) {
+    @media only screen and (max-width: 320px) {
       #col-left #main-nav {
         display: none; } }
     #col-left #main-nav ul {
-      border-bottom: 1px solid #b8cf32;
+      border-bottom: 1px solid #bfd53d;
       padding: 2px 0 0 0;
       width: 100%;
       flex-flow: row nowrap;
@@ -252,11 +229,9 @@ a {
       display: inline-block;
       text-align: center;
       vertical-align: middle; }
-      @media only screen
-      and (max-width: 768px) {
+      @media only screen and (max-width: 768px) {
         #col-left #main-nav li {
-          width: 68px;
-          font-size: 14px; }
+          width: 68px; }
           #col-left #main-nav li:first-of-type {
             width: auto; } }
       #col-left #main-nav li a {
@@ -268,7 +243,7 @@ a {
         #col-left #main-nav li a:hover {
           color: #566770; }
       #col-left #main-nav li.selected a {
-        color: #b8cf32; }
+        color: #bfd53d; }
       #col-left #main-nav li:first-child {
         margin-left: 0; }
       #col-left #main-nav li.dropdown-container {
@@ -315,30 +290,20 @@ a {
 #col-right {
   float: right;
   width: 30%;
-  margin: 0 14px 3em; }
-  @media only screen
-  and (max-width: 1024px)
-  and (min-width: 860px) {
+  margin: 0 14px; }
+  @media only screen and (max-width: 1024px) and (min-width: 860px) {
     #col-right {
       min-width: 228px; } }
-  @media only screen
-  and (max-width: 600px) {
+  @media only screen and (max-width: 600px) {
     #col-right {
       width: auto;
       float: none; }
       #col-right #buttonBlock {
         display: none; } }
-  @media only screen
-  and (max-width : 320px) {
+  @media only screen and (max-width: 320px) {
     #col-right {
       width: auto;
       float: none; } }
-  #col-right .right {
-    font-size: 11px;
-    line-height: 30px;
-    width: 100%;
-    text-align: center;
-    display: inline-block; }
 
 #buttonBlock {
   float: right;
@@ -347,15 +312,13 @@ a {
   margin-bottom: 1em; }
   #buttonBlock .btn, #buttonBlock .btn-a, #buttonBlock .btn-b, #buttonBlock .btn-c {
     float: left;
-    width: 48%;
+    width: 40%;
     min-width: 108px;
     margin-bottom: 1em; }
   #buttonBlock .btn-a {
     margin-left: 10px;
     float: right; }
-  @media only screen
-  and (max-width: 866px)
-  and (min-width: 320px) {
+  @media only screen and (max-width: 866px) and (min-width: 320px) {
     #buttonBlock {
       text-align: center; }
       #buttonBlock .btn, #buttonBlock .btn-a, #buttonBlock .btn-b, #buttonBlock .btn-c,
@@ -425,9 +388,7 @@ form {
   form input {
     margin: 0 6px 12px 10px;
     width: 60%; }
-  @media only screen
-  and (min-width: 320px)
-  and (max-width: 866px) {
+  @media only screen and (min-width: 320px) and (max-width: 866px) {
     form label {
       float: none;
       display: block;
@@ -440,12 +401,10 @@ form {
       margin: 0 0 12px 14px;
       width: 86%;
       border-radius: 0; } }
-  @media only screen
-  and (max-width: 600px) {
+  @media only screen and (max-width: 600px) {
     form input {
       width: 92%; } }
-  @media only screen
-  and (max-width : 320px) {
+  @media only screen and (max-width: 320px) {
     form input {
       width: 89%; } }
   form input.submitButton {
@@ -470,18 +429,15 @@ form {
   color: #434343; }
 
 #job-listings {
-  position: relative;
-  padding-bottom: 3em; }
+  position: relative; }
   #job-listings ul {
-    margin-bottom: 1em;
     overflow: hidden;
-    overflow-y: scroll;
-    -webkit-overflow-scrolling: touch; }
+    overflow-y: auto;
+    margin-bottom: 1em; }
   #job-listings h2 {
     margin-top: 1.3em;
     margin-bottom: .3em; }
-  @media only screen
-  and (max-width: 600px) {
+  @media only screen and (max-width: 600px) {
     #job-listings {
       height: 242px;
       padding-bottom: 330px;
@@ -502,9 +458,9 @@ form {
   float: right; }
 
 .learnmore a {
-  color: #b8cf32;
+  color: #bfd53d;
   text-decoration: none;
-  font-size: 1em; }
+  font-size: .875em; }
   .learnmore a:hover {
     text-decoration: underline; }
 
@@ -514,13 +470,9 @@ form {
 
 .blog h2 {
   margin: 0 0 9px 0;
-  letter-spacing: 0; }
+  letter-spacing: 1.3px; }
   .blog h2 span {
     font-size: .8em; }
-  @media only screen
-    and (max-width: 996px) {
-    .blog h2 {
-      letter-spacing: 1px; } }
 .blog .entry-title {
   margin: 0; }
   .blog .entry-title a {
@@ -533,11 +485,9 @@ form {
   font-size: .750em; }
   .blog p a {
     text-decoration: none;
-    color: #b8cf32;
+    color: #bfd53d;
     display: inline-block;
     margin-bottom: 2em; }
-    .blog p a:hover {
-      text-decoration: underline; }
   .blog p span.meta-nav {
     display: none; }
 .blog.full-page {
@@ -545,16 +495,8 @@ form {
   .blog.full-page .digg_digg {
     display: none; }
 
-.affiliates {
-  text-align: center; }
-  .affiliates img {
-    width: 80%;
-    margin-bottom: 2em; }
-
 #follow-list {
-  margin: 0 auto;
-  width: 136px;
-  height: 42px; }
+  margin-left: 13px; }
   #follow-list li {
     float: left;
     position: relative;
@@ -581,3 +523,5 @@ form {
   #follow-list li a#follow-fb {
     background-position: -66px 0;
     width: 32px; }
+
+/*# sourceMappingURL=main.css.map */
