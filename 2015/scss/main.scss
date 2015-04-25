@@ -10,6 +10,7 @@ $body-color: #434343;
 $link-color: #b8cf32; // green
 $nav-link-color: #656565;
 
+$marginLeft: 50px;
 /*
 16px = 1em
 14px = 0.875em
@@ -63,7 +64,7 @@ body {
   clear: both;
 }
 
-UL {
+ul {
   margin:0;
   padding: 0;
 }
@@ -91,6 +92,11 @@ h3 {
 a {
   font-size: 1em;
   letter-spacing: 0.4px;
+}
+
+input[type="submit"] {
+  width: auto;
+  height: 35px;
 }
 
 #pp-logo {
@@ -335,6 +341,7 @@ a {
     width: 48%;
     min-width: 108px;
     margin-bottom: 1em;
+    border-radius: 0;
   }
   .btn-a {
     margin-left: 10px;
@@ -376,9 +383,13 @@ a {
   &:focus {
     background-color: lighten( $btn-color, 10% );
     outline: none;
+    color: white;
+    background-position: 0 100%;
+    text-decoration: none;
   }
   &:active {
     background-color: lighten( $btn-color, 30% );
+    background-position: 0 100%;
     outline: none;
   }
 }
@@ -427,9 +438,12 @@ form {
     text-align: right;
     padding: 4px 0 0 10px;
   }
-  input {
+  input,
+  select {
     margin: 0 6px 12px 10px;
     width: 60%;
+    border-radius: 0;
+    height: 24px;
   }
   @media only screen
   and (min-width: 320px)
@@ -463,6 +477,11 @@ form {
     input {
       width: 89%;
     }
+  }
+
+  textarea {
+    border-radius: 0;
+    margin-left: 10px;
   }
 
   input.submitButton {
@@ -653,3 +672,261 @@ form {
   }
 }
 
+.intro {
+  text-align: left;
+  width: 100%;
+  margin: 14px 0;
+
+  h4 {
+    color: #20871E;
+    float: left;
+    width: 50%;
+    padding: 0 0 0 40px;
+  }
+  div {
+    float: right;
+    height: 20px;
+    margin: 0 40px 0 0;
+    text-align: right;
+    width: 100px;
+    a {
+      display: block;
+      float: right;
+    }
+    p {
+      float: right;
+      line-height: 4.7em;
+      text-align: right;
+      width: 100%;
+    }
+  }
+}
+
+.asterisk {
+  color: red;
+  display: inline-block;
+  font-family: verdana;
+  font-size: 11px;
+  font-weight: bold;
+  padding: 2px 3px 0 0;
+  vertical-align: middle;
+}
+
+.form-horizontal {
+  .asterisk {
+    margin: 0 -11px 0 0;
+    padding: 2px 10px 0 3px;
+  }
+
+  .formDivider {
+    background: url("../images/formDivider.png") repeat-x 0 0;
+    height: 3px;
+    margin: 10px 0 16px 120px;
+    width: 553px;
+  }
+
+  .continue {
+    display: inline-block;
+    float: right;
+    margin-right: 160px;
+    outline: medium none;
+    padding: 0;
+    text-align: right;
+    width: 100%;
+    height: 2em;
+  }
+  .back {
+    float: left;
+  }
+
+  .control-group {
+    margin-left: 0;
+    .control-label {
+      text-align: left;
+      width: 190px;
+    }
+    .controls {
+      margin-left: 209px;
+      &.radioGroup {
+        margin: 0 0 5px $marginLeft;
+        *margin-left: 0px;
+        label {
+          float: left;
+          margin: 0 10px 0 0;
+          padding-top: 5px;
+          text-align: left;
+          &.first {
+            margin-left: 20px;
+          }
+        }
+      }
+      *padding-left: 0;
+      *display: inline;
+      *margin-left: 20px;
+      &.salutation {
+        width: 64px;
+        select {
+          width: 100%;
+        }
+      }
+    }
+
+    .firstMiddle {
+      .firstName {
+        float: left;
+        width: 193px;
+      }
+      label {
+        width: 28px;
+        padding-right: 6px;
+      }
+
+      .middleInitial {
+        float: left;
+        width: 33px;
+        input {
+          width: 33px;
+        }
+      }
+    }
+    &.phone, &.optionalPhone {
+      margin: 0 0 6px 0;
+      .phoneType {
+        width: 80px;
+      }
+    }
+    &.addPhone, &.removePhone {
+      margin: 0;
+      padding: 0;
+      label {
+        text-align: left;
+        margin: 0;
+        padding: 0;
+      }
+    }
+    &.removePhone {
+      display: none;
+    }
+
+    &.salary {
+      .controls {
+        &.salaryDesired {
+          span {
+            float: left;
+            padding: 5px 6px 0;
+          }
+          label.desired {
+            margin-left: 0px;
+            width: 55px;
+          }
+
+          input {
+            margin-left: 0;
+            width: 118px;
+            float: left;
+          }
+        }
+        .salaryDesired {
+          *float: left;
+        }
+      }
+    }
+    &.level {
+
+      input {
+        margin: 0 9px 0 0;
+        &.year, &.gpa {
+          width: 38px;
+          margin-left: 9px;
+        }
+      }
+    }
+
+    #level-select {
+      display: none;
+      width: 100px;
+      margin: 0 9px 0 17px;
+    }
+    #career-select, #education-select {
+      width: 292px;
+    }
+  }
+
+  #moreInfoAsk {
+    margin: 0 40px 18px;
+    height: 116px;
+    display: none;
+    p {
+      margin: 0;
+    }
+    button {
+      margin: 20px 0;
+      &#continue {
+        float: right;
+        margin-right: 20px;
+      }
+      &#submit2 {
+        float: right;
+        margin-right: 160px;
+      }
+    }
+  }
+
+  #moreInfo {
+    display: none;
+    .control-group {
+      margin: 0 40px 18px;
+    }
+    .controls {
+      margin: 10px 0;
+    }
+    textarea {
+      width: 100%;
+    }
+    p {
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  #finalButtons {
+    display: none;
+  }
+
+  #visa {
+    width: 292px;
+  }
+
+  input#gradDegreeEarned.error, input#undergradDegreeEarned.error {
+    color: #b94a48;
+    border-color: #b94a48;
+    &:focus {
+      border-color: #953b39;
+      -webkit-box-shadow: 0 0 6px #d59392;
+      -moz-box-shadow: 0 0 6px #d59392;
+      box-shadow: 0 0 6px #d59392;
+    }
+  }
+
+  *.datepicker table {
+    width: 100px;
+  }
+
+  .optionalPhone {
+    display: none;
+  }
+
+  #emailError {
+    display: none;
+  }
+
+  .form-actions {
+    padding-right: 160px;
+    text-align: right;
+  }
+
+  .add-on {
+    cursor: pointer;
+  }
+
+}

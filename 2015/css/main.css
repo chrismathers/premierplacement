@@ -22,7 +22,7 @@ and (max-width : 518px) {
 .nav-collapse {
   display: none; }
 
-@media only screen and (min-width: 0px) and (max-width: 518px) {
+@media only screen and (min-width: 0px) and (max-width: 600px) {
   display: none;
   .nav-collapse ul {
     margin: 0;
@@ -46,7 +46,7 @@ and (max-width : 518px) {
       color: white;
       text-decoration: none;
       width: 100%;
-      background: #766E4A;
+      background: #566770;
       border-bottom: 1px solid white;
       padding: .5em 1em;
       float: left; }
@@ -78,22 +78,21 @@ and (max-width : 518px) {
     text-indent: -9999px;
     overflow: hidden;
     display: block;
-    border: 1px solid #374C77;
     border-radius: 3px 3px 3px 3px;
     cursor: pointer;
     height: 24px;
-    padding: 3px 4px 3px;
+    padding: 3px 3px 3px 5px;
     margin: 5px 7px 0 0;
     position: relative;
     width: 25px;
-    background: #777777;
-    background: -moz-linear-gradient(top, #777777 0%, #777777 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #777777), color-stop(100%, #777777));
-    background: -webkit-linear-gradient(top, #777777 0%, #777777 100%);
-    background: -o-linear-gradient(top, #777777 0%, #777777 100%);
-    background: -ms-linear-gradient(top, #777777 0%, #777777 100%);
-    background: linear-gradient(to bottom, #777777 0%, #777777 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#777777', endColorstr='#777777', GradientType=0); }
+    background: #b8cf32;
+    background: -moz-linear-gradient(top, #b8cf32 0%, #b8cf32 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #b8cf32), color-stop(100%, #b8cf32));
+    background: -webkit-linear-gradient(top, #b8cf32 0%, #b8cf32 100%);
+    background: -o-linear-gradient(top, #b8cf32 0%, #b8cf32 100%);
+    background: -ms-linear-gradient(top, #b8cf32 0%, #b8cf32 100%);
+    background: linear-gradient(to bottom, #b8cf32 0%, #b8cf32 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$link-color', endColorstr='$link-color', GradientType=0); }
     .nav-toggle div {
       background-color: #fff;
       border: 1px solid #eee;
@@ -101,7 +100,7 @@ and (max-width : 518px) {
       height: 2px;
       margin-top: 3px;
       width: 90%; } }
-@media only screen and (min-width: 0px) and (max-width: 518px) and (min-width: 684px) {
+@media only screen and (min-width: 0px) and (max-width: 600px) and (min-width: 684px) {
   .js .nav-collapse {
     position: relative; }
 
@@ -120,7 +119,9 @@ html {
     box-sizing: border-box; }
 
 body {
-  margin: 0; }
+  margin: 0;
+  overflow-y: auto;
+  height: 100%; }
 
 .clearFix:before,
 .cf:after {
@@ -131,7 +132,7 @@ body {
 .clearFix:after {
   clear: both; }
 
-UL {
+ul {
   margin: 0;
   padding: 0; }
 
@@ -151,6 +152,14 @@ h3 {
   font-size: 12px;
   color: #566770;
   line-height: 1.5em; }
+
+a {
+  font-size: 1em;
+  letter-spacing: 0.4px; }
+
+input[type="submit"] {
+  width: auto;
+  height: 35px; }
 
 #pp-logo {
   max-height: 142px;
@@ -216,7 +225,7 @@ h3 {
       #col-left #main-nav {
         display: none; } }
     #col-left #main-nav ul {
-      border-bottom: 1px solid #bfd53d;
+      border-bottom: 1px solid #b8cf32;
       padding: 2px 0 0 0;
       width: 100%;
       flex-flow: row nowrap;
@@ -231,7 +240,8 @@ h3 {
       vertical-align: middle; }
       @media only screen and (max-width: 768px) {
         #col-left #main-nav li {
-          width: 68px; }
+          width: 68px;
+          font-size: 14px; }
           #col-left #main-nav li:first-of-type {
             width: auto; } }
       #col-left #main-nav li a {
@@ -243,7 +253,7 @@ h3 {
         #col-left #main-nav li a:hover {
           color: #566770; }
       #col-left #main-nav li.selected a {
-        color: #bfd53d; }
+        color: #b8cf32; }
       #col-left #main-nav li:first-child {
         margin-left: 0; }
       #col-left #main-nav li.dropdown-container {
@@ -290,7 +300,7 @@ h3 {
 #col-right {
   float: right;
   width: 30%;
-  margin: 0 14px; }
+  margin: 0 14px 3em; }
   @media only screen and (max-width: 1024px) and (min-width: 860px) {
     #col-right {
       min-width: 228px; } }
@@ -304,6 +314,12 @@ h3 {
     #col-right {
       width: auto;
       float: none; } }
+  #col-right .right {
+    font-size: 11px;
+    line-height: 30px;
+    width: 100%;
+    text-align: center;
+    display: inline-block; }
 
 #buttonBlock {
   float: right;
@@ -312,9 +328,10 @@ h3 {
   margin-bottom: 1em; }
   #buttonBlock .btn, #buttonBlock .btn-a, #buttonBlock .btn-b, #buttonBlock .btn-c {
     float: left;
-    width: 40%;
+    width: 48%;
     min-width: 108px;
-    margin-bottom: 1em; }
+    margin-bottom: 1em;
+    border-radius: 0; }
   #buttonBlock .btn-a {
     margin-left: 10px;
     float: right; }
@@ -345,9 +362,13 @@ h3 {
   padding: 0 8px; }
   .btn:hover, .btn-a:hover, .btn-b:hover, .btn-c:hover, .btn:focus, .btn-a:focus, .btn-b:focus, .btn-c:focus {
     background-color: #911e6f;
-    outline: none; }
+    outline: none;
+    color: white;
+    background-position: 0 100%;
+    text-decoration: none; }
   .btn:active, .btn-a:active, .btn-b:active, .btn-c:active {
     background-color: #d83daa;
+    background-position: 0 100%;
     outline: none; }
 
 .btn-a {
@@ -385,9 +406,12 @@ form {
     width: 78px;
     text-align: right;
     padding: 4px 0 0 10px; }
-  form input {
+  form input,
+  form select {
     margin: 0 6px 12px 10px;
-    width: 60%; }
+    width: 60%;
+    border-radius: 0;
+    height: 24px; }
   @media only screen and (min-width: 320px) and (max-width: 866px) {
     form label {
       float: none;
@@ -407,6 +431,9 @@ form {
   @media only screen and (max-width: 320px) {
     form input {
       width: 89%; } }
+  form textarea {
+    border-radius: 0;
+    margin-left: 10px; }
   form input.submitButton {
     width: auto;
     float: right;
@@ -429,11 +456,13 @@ form {
   color: #434343; }
 
 #job-listings {
-  position: relative; }
+  position: relative;
+  padding-bottom: 3em; }
   #job-listings ul {
+    margin-bottom: 1em;
     overflow: hidden;
-    overflow-y: auto;
-    margin-bottom: 1em; }
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch; }
   #job-listings h2 {
     margin-top: 1.3em;
     margin-bottom: .3em; }
@@ -458,9 +487,9 @@ form {
   float: right; }
 
 .learnmore a {
-  color: #bfd53d;
+  color: #b8cf32;
   text-decoration: none;
-  font-size: .875em; }
+  font-size: 1em; }
   .learnmore a:hover {
     text-decoration: underline; }
 
@@ -470,9 +499,12 @@ form {
 
 .blog h2 {
   margin: 0 0 9px 0;
-  letter-spacing: 1.3px; }
+  letter-spacing: 0; }
   .blog h2 span {
     font-size: .8em; }
+  @media only screen and (max-width: 996px) {
+    .blog h2 {
+      letter-spacing: 1px; } }
 .blog .entry-title {
   margin: 0; }
   .blog .entry-title a {
@@ -485,9 +517,11 @@ form {
   font-size: .750em; }
   .blog p a {
     text-decoration: none;
-    color: #bfd53d;
+    color: #b8cf32;
     display: inline-block;
     margin-bottom: 2em; }
+    .blog p a:hover {
+      text-decoration: underline; }
   .blog p span.meta-nav {
     display: none; }
 .blog.full-page {
@@ -495,8 +529,16 @@ form {
   .blog.full-page .digg_digg {
     display: none; }
 
+.affiliates {
+  text-align: center; }
+  .affiliates img {
+    width: 80%;
+    margin-bottom: 2em; }
+
 #follow-list {
-  margin-left: 13px; }
+  margin: 0 auto;
+  width: 136px;
+  height: 42px; }
   #follow-list li {
     float: left;
     position: relative;
@@ -523,5 +565,177 @@ form {
   #follow-list li a#follow-fb {
     background-position: -66px 0;
     width: 32px; }
+
+.intro {
+  text-align: left;
+  width: 100%;
+  margin: 14px 0; }
+  .intro h4 {
+    color: #20871E;
+    float: left;
+    width: 50%;
+    padding: 0 0 0 40px; }
+  .intro div {
+    float: right;
+    height: 20px;
+    margin: 0 40px 0 0;
+    text-align: right;
+    width: 100px; }
+    .intro div a {
+      display: block;
+      float: right; }
+    .intro div p {
+      float: right;
+      line-height: 4.7em;
+      text-align: right;
+      width: 100%; }
+
+.asterisk {
+  color: red;
+  display: inline-block;
+  font-family: verdana;
+  font-size: 11px;
+  font-weight: bold;
+  padding: 2px 3px 0 0;
+  vertical-align: middle; }
+
+.form-horizontal .asterisk {
+  margin: 0 -11px 0 0;
+  padding: 2px 10px 0 3px; }
+.form-horizontal .formDivider {
+  background: url("../images/formDivider.png") repeat-x 0 0;
+  height: 3px;
+  margin: 10px 0 16px 120px;
+  width: 553px; }
+.form-horizontal .continue {
+  display: inline-block;
+  float: right;
+  margin-right: 160px;
+  outline: medium none;
+  padding: 0;
+  text-align: right;
+  width: 100%;
+  height: 2em; }
+.form-horizontal .back {
+  float: left; }
+.form-horizontal .control-group {
+  margin-left: 0; }
+  .form-horizontal .control-group .control-label {
+    text-align: left;
+    width: 190px; }
+  .form-horizontal .control-group .controls {
+    margin-left: 209px;
+    *padding-left: 0;
+    *display: inline;
+    *margin-left: 20px; }
+    .form-horizontal .control-group .controls.radioGroup {
+      margin: 0 0 5px 50px;
+      *margin-left: 0px; }
+      .form-horizontal .control-group .controls.radioGroup label {
+        float: left;
+        margin: 0 10px 0 0;
+        padding-top: 5px;
+        text-align: left; }
+        .form-horizontal .control-group .controls.radioGroup label.first {
+          margin-left: 20px; }
+    .form-horizontal .control-group .controls.salutation {
+      width: 64px; }
+      .form-horizontal .control-group .controls.salutation select {
+        width: 100%; }
+  .form-horizontal .control-group .firstMiddle .firstName {
+    float: left;
+    width: 193px; }
+  .form-horizontal .control-group .firstMiddle label {
+    width: 28px;
+    padding-right: 6px; }
+  .form-horizontal .control-group .firstMiddle .middleInitial {
+    float: left;
+    width: 33px; }
+    .form-horizontal .control-group .firstMiddle .middleInitial input {
+      width: 33px; }
+  .form-horizontal .control-group.phone, .form-horizontal .control-group.optionalPhone {
+    margin: 0 0 6px 0; }
+    .form-horizontal .control-group.phone .phoneType, .form-horizontal .control-group.optionalPhone .phoneType {
+      width: 80px; }
+  .form-horizontal .control-group.addPhone, .form-horizontal .control-group.removePhone {
+    margin: 0;
+    padding: 0; }
+    .form-horizontal .control-group.addPhone label, .form-horizontal .control-group.removePhone label {
+      text-align: left;
+      margin: 0;
+      padding: 0; }
+  .form-horizontal .control-group.removePhone {
+    display: none; }
+  .form-horizontal .control-group.salary .controls.salaryDesired span {
+    float: left;
+    padding: 5px 6px 0; }
+  .form-horizontal .control-group.salary .controls.salaryDesired label.desired {
+    margin-left: 0px;
+    width: 55px; }
+  .form-horizontal .control-group.salary .controls.salaryDesired input {
+    margin-left: 0;
+    width: 118px;
+    float: left; }
+  .form-horizontal .control-group.salary .controls .salaryDesired {
+    *float: left; }
+  .form-horizontal .control-group.level input {
+    margin: 0 9px 0 0; }
+    .form-horizontal .control-group.level input.year, .form-horizontal .control-group.level input.gpa {
+      width: 38px;
+      margin-left: 9px; }
+  .form-horizontal .control-group #level-select {
+    display: none;
+    width: 100px;
+    margin: 0 9px 0 17px; }
+  .form-horizontal .control-group #career-select, .form-horizontal .control-group #education-select {
+    width: 292px; }
+.form-horizontal #moreInfoAsk {
+  margin: 0 40px 18px;
+  height: 116px;
+  display: none; }
+  .form-horizontal #moreInfoAsk p {
+    margin: 0; }
+  .form-horizontal #moreInfoAsk button {
+    margin: 20px 0; }
+    .form-horizontal #moreInfoAsk button#continue {
+      float: right;
+      margin-right: 20px; }
+    .form-horizontal #moreInfoAsk button#submit2 {
+      float: right;
+      margin-right: 160px; }
+.form-horizontal #moreInfo {
+  display: none; }
+  .form-horizontal #moreInfo .control-group {
+    margin: 0 40px 18px; }
+  .form-horizontal #moreInfo .controls {
+    margin: 10px 0; }
+  .form-horizontal #moreInfo textarea {
+    width: 100%; }
+  .form-horizontal #moreInfo p {
+    margin: 0;
+    padding: 0; }
+.form-horizontal #finalButtons {
+  display: none; }
+.form-horizontal #visa {
+  width: 292px; }
+.form-horizontal input#gradDegreeEarned.error, .form-horizontal input#undergradDegreeEarned.error {
+  color: #b94a48;
+  border-color: #b94a48; }
+  .form-horizontal input#gradDegreeEarned.error:focus, .form-horizontal input#undergradDegreeEarned.error:focus {
+    border-color: #953b39;
+    -webkit-box-shadow: 0 0 6px #d59392;
+    -moz-box-shadow: 0 0 6px #d59392;
+    box-shadow: 0 0 6px #d59392; }
+.form-horizontal *.datepicker table {
+  width: 100px; }
+.form-horizontal .optionalPhone {
+  display: none; }
+.form-horizontal #emailError {
+  display: none; }
+.form-horizontal .form-actions {
+  padding-right: 160px;
+  text-align: right; }
+.form-horizontal .add-on {
+  cursor: pointer; }
 
 /*# sourceMappingURL=main.css.map */
