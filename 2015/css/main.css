@@ -321,6 +321,8 @@ input[type="submit"] {
   #col-left h2 {
     max-width: 602px;
     text-transform: uppercase; }
+    #col-left h2.job-page {
+      margin-top: 1.2em; }
 
 #col-right {
   float: right;
@@ -481,23 +483,33 @@ form {
   margin: -10px 0 10px;
   color: #B94A48; }
 
-#jobsWidget h3 {
+.jobs-list ul {
+  margin-bottom: 1em;
+  overflow: hidden;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch; }
+.jobs-list li {
+  list-style: none; }
+.jobs-list h3 {
   font-weight: bold;
   font-size: 1em;
   color: #566770; }
-#jobsWidget p {
+.jobs-list p {
   font-weight: normal;
   font-size: 1em;
   color: #434343; }
 
+.jobListingsPage {
+  width: 100%;
+  margin-top: 1em;
+  margin-bottom: 3em; }
+  .jobListingsPage p {
+    line-height: 1.3em;
+    margin: .5em 0 1em;
+    font-size: .85em; }
+
 #job-listings {
-  position: relative;
-  padding-bottom: 3em; }
-  #job-listings ul {
-    margin-bottom: 1em;
-    overflow: hidden;
-    overflow-y: scroll;
-    -webkit-overflow-scrolling: touch; }
+  position: relative; }
   #job-listings h2 {
     margin-top: 1.3em;
     margin-bottom: .3em; }
@@ -513,8 +525,6 @@ form {
         overflow-y: scroll; }
       #job-listings h2 {
         margin-top: .5em; } }
-  #job-listings li {
-    list-style: none; }
   #job-listings p {
     margin-bottom: 1em;
     font-size: .750em; }

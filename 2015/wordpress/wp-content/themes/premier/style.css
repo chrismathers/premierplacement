@@ -1,0 +1,602 @@
+/*
+Theme Name: Premier
+Theme URI: http://wordpress.org/
+Tags: black, blue, white, two-columns, fixed-width, custom-header, custom-background, threaded-comments, sticky-post, translation-ready, microformats, rtl-language-support, editor-style, custom-menu
+Text Domain: premier
+xxx*/
+html {
+  -x-system-font: none;
+  font-family: Arial,Helvetica,sans-serif;
+  font-size: 13px;
+  color: #222;
+  height: 100%;
+  background-color: #E7DCAF; }
+
+body {
+  -moz-background-clip: border;
+  -moz-background-inline-policy: continuous;
+  -moz-background-origin: padding;
+  margin: 0 auto; }
+
+@font-face {
+  /*font-family: 'Eurasia';*/
+  font-family: 'EurasiaWideBold';
+  src: url("http://premierplacement.com/2012/fonts/eurawb__-webfont.eot");
+  src: url("http://premierplacement.com/2012/fonts/eurawb__-webfont.eot?#iefix") format("embedded-opentype"), url("http://premierplacement.com/2012/fonts/eurawb__-webfont.woff") format("woff"), url("http://premierplacement.com/2012/fonts/eurawb__-webfont.ttf") format("truetype"), url("http://www.premierplacement.com/2012/fonts/eurawb__-webfont.eot?#iefix") format("embedded-opentype"), url("http://www.premierplacement.com/2012/fonts/eurawb__-webfont.woff") format("woff"), url("http://www.premierplacement.com/2012/fonts/eurawb__-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0; }
+
+.clearfix {
+  display: inline-block; }
+
+html[xmlns] .clearfix {
+  display: block; }
+
+* html .clearfix {
+  height: 1%; }
+
+#container {
+  position: relative;
+  background-color: #75CA71;
+  width: 960px;
+  max-width: 960px;
+  margin: 0 auto; }
+  #container #leftBk {
+    background: url("../images/new_lft_side.png") repeat-y scroll 0 0 transparent;
+    float: left;
+    left: 0;
+    position: relative;
+    top: 0;
+    width: 100%;
+    max-width: 958px;
+    -moz-box-shadow: 0 12px 17px 11px #888888;
+    -webkit-box-shadow: 0 12px 17px 11px #888888;
+    box-shadow: 0 0 11px 2px #888888; }
+    #container #leftBk #leftStuff {
+      display: none;
+      left: 9px;
+      position: absolute;
+      top: 198px;
+      height: 600px;
+      background-color: #fff;
+      -moz-opacity: 0.30;
+      opacity: 0.30; }
+      #container #leftBk #leftStuff ul {
+        padding: 0; }
+      #container #leftBk #leftStuff li {
+        list-style: none;
+        text-align: left;
+        padding: 0; }
+      #container #leftBk #leftStuff li a {
+        color: #000;
+        display: inline-block;
+        font-size: 15px;
+        font-weight: bold;
+        padding: 0 0 9px;
+        text-decoration: none; }
+  @media screen and (max-width: 768px) {
+    #container #container {
+      width: 100%; } }
+  #container header {
+    height: 101px;
+    left: 117px;
+    position: absolute;
+    top: 42px;
+    width: 785px;
+    /*background: url(images/logo_no_text.png) no-repeat 0 0;*/ }
+    #container header img {
+      min-width: 100%;
+      width: 100%;
+      height: 100%;
+      border: none; }
+    #container header #bannerText {
+      height: 78px;
+      margin: 1px auto;
+      padding: 0 10px;
+      width: 282px;
+      min-width: 238px;
+      background-color: #fff;
+      position: absolute;
+      left: 253px;
+      top: 0;
+      cursor: pointer;
+      background-repeat: no-repeat;
+      background-image: url(data:image/png;base64,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);
+      background-position: 34px 13px; }
+    #container header h2 {
+      font-family: EurasiaWideBold, Arial;
+      font-size: 48px;
+      line-height: 50px;
+      color: #20871E;
+      letter-spacing: 4px;
+      margin: 6px 0 0; }
+    #container header h3 {
+      font-family: EurasiaWideBold, Arial;
+      font-size: 20px;
+      color: #20871E;
+      letter-spacing: 4px;
+      margin: 0; }
+  #container nav {
+    height: 40px;
+    display: inline-block; }
+    #container nav ul {
+      margin: 0 47px 0 0; }
+    #container nav li {
+      float: left;
+      display: inline;
+      list-style: none;
+      line-height: 3em; }
+      #container nav li a {
+        color: #888;
+        padding: 0 9px;
+        text-decoration: none; }
+      #container nav li a:hover {
+        text-decoration: underline; }
+  #container #rightBk {
+    background: url("../images/right_side.png") repeat-y scroll right 0 white;
+    float: right;
+    /*height: 100%;*/
+    width: 820px;
+    text-align: center;
+    -moz-box-shadow: 0px 12px 17px 11px #888888;
+    -webkit-box-shadow: 0px 12px 17px 11px #888888;
+    box-shadow: 0 0px 11px 2px #888888; }
+    #container #rightBk article {
+      float: left;
+      /*height: 100%;*/
+      margin: 112px 0 70px 0;
+      width: 784px;
+      text-align: left; }
+      #container #rightBk article .intro {
+        text-align: left;
+        width: 100%;
+        margin: 14px 0; }
+        #container #rightBk article .intro h4 {
+          color: #20871E;
+          float: left;
+          width: 50%;
+          padding: 0 0 0 40px; }
+        #container #rightBk article .intro div {
+          float: right;
+          height: 20px;
+          margin: 0 40px 0 0;
+          text-align: right;
+          width: 100px; }
+          #container #rightBk article .intro div a {
+            display: block;
+            float: right; }
+          #container #rightBk article .intro div p {
+            float: right;
+            line-height: 4.7em;
+            text-align: right;
+            width: 100%; }
+      #container #rightBk article .asterisk {
+        color: red;
+        display: inline-block;
+        font-family: verdana;
+        font-size: 11px;
+        font-weight: bold;
+        padding: 2px 3px 0 0;
+        vertical-align: middle; }
+      #container #rightBk article .form-horizontal .asterisk {
+        margin: 0 -11px 0 0;
+        padding: 2px 10px 0 3px; }
+      #container #rightBk article .form-horizontal .formDivider {
+        background: url("../images/formDivider.png") repeat-x 0 0;
+        height: 3px;
+        margin: 10px 0 16px 120px;
+        width: 553px; }
+      #container #rightBk article .form-horizontal .continue {
+        display: inline-block;
+        float: right;
+        margin-right: 160px;
+        outline: medium none;
+        padding: 0;
+        text-align: right;
+        width: 100%;
+        height: 2em; }
+      #container #rightBk article .form-horizontal .control-group {
+        margin-left: 50px; }
+        #container #rightBk article .form-horizontal .control-group .control-label {
+          width: 190px; }
+        #container #rightBk article .form-horizontal .control-group .controls {
+          margin-left: 209px;
+          *padding-left: 0;
+          *display: inline;
+          *margin-left: 20px; }
+          #container #rightBk article .form-horizontal .control-group .controls.radioGroup {
+            margin: 0 0 5px 50px;
+            *margin-left: 0px; }
+            #container #rightBk article .form-horizontal .control-group .controls.radioGroup label {
+              float: left;
+              margin: 0 10px 0 0;
+              padding-top: 5px; }
+              #container #rightBk article .form-horizontal .control-group .controls.radioGroup label.first {
+                margin-left: 20px; }
+        #container #rightBk article .form-horizontal .control-group.phone, #container #rightBk article .form-horizontal .control-group.optionalPhone {
+          margin: 0 0 6px 50px; }
+          #container #rightBk article .form-horizontal .control-group.phone .phoneType, #container #rightBk article .form-horizontal .control-group.optionalPhone .phoneType {
+            width: 80px; }
+        #container #rightBk article .form-horizontal .control-group.addPhone, #container #rightBk article .form-horizontal .control-group.removePhone {
+          margin: 0 0 0 50px;
+          padding: 0; }
+          #container #rightBk article .form-horizontal .control-group.addPhone label, #container #rightBk article .form-horizontal .control-group.removePhone label {
+            text-align: right;
+            margin: 0;
+            padding: 0; }
+        #container #rightBk article .form-horizontal .control-group.removePhone {
+          display: none; }
+        #container #rightBk article .form-horizontal .control-group.salary .controls.salaryPresent span, #container #rightBk article .form-horizontal .control-group.salary .controls.salaryDesired span {
+          float: left;
+          padding: 5px 6px 0; }
+        #container #rightBk article .form-horizontal .control-group.salary .controls.salaryPresent label.desired, #container #rightBk article .form-horizontal .control-group.salary .controls.salaryDesired label.desired {
+          margin-left: 0px;
+          width: 55px; }
+        #container #rightBk article .form-horizontal .control-group.salary .controls.salaryPresent input, #container #rightBk article .form-horizontal .control-group.salary .controls.salaryDesired input {
+          margin-left: 0;
+          width: 100px;
+          float: left; }
+        #container #rightBk article .form-horizontal .control-group.salary .controls .salaryPresent, #container #rightBk article .form-horizontal .control-group.salary .controls .salaryDesired {
+          *float: left; }
+        #container #rightBk article .form-horizontal .control-group.level input {
+          margin: 0 9px 0 0; }
+          #container #rightBk article .form-horizontal .control-group.level input.year, #container #rightBk article .form-horizontal .control-group.level input.gpa {
+            width: 38px;
+            margin-left: 9px; }
+        #container #rightBk article .form-horizontal .control-group #level-select {
+          display: none;
+          width: 100px;
+          margin: 0 9px 0 17px; }
+        #container #rightBk article .form-horizontal .control-group #career-select, #container #rightBk article .form-horizontal .control-group #education-select {
+          width: 292px; }
+      #container #rightBk article .form-horizontal #visa {
+        width: 292px; }
+      #container #rightBk article .form-horizontal input#gradDegreeEarned.error, #container #rightBk article .form-horizontal input#undergradDegreeEarned.error {
+        color: #b94a48;
+        border-color: #b94a48; }
+        #container #rightBk article .form-horizontal input#gradDegreeEarned.error:focus, #container #rightBk article .form-horizontal input#undergradDegreeEarned.error:focus {
+          border-color: #953b39;
+          -webkit-box-shadow: 0 0 6px #d59392;
+          -moz-box-shadow: 0 0 6px #d59392;
+          box-shadow: 0 0 6px #d59392; }
+      #container #rightBk article .form-horizontal *.datepicker table {
+        width: 100px; }
+      #container #rightBk article .form-horizontal .optionalPhone {
+        display: none; }
+      #container #rightBk article .form-horizontal #emailError {
+        display: none; }
+      #container #rightBk article .form-horizontal .form-actions {
+        padding-right: 160px;
+        text-align: right; }
+      #container #rightBk article .form-horizontal .add-on {
+        cursor: pointer; }
+      #container #rightBk article #midTop {
+        /*background-color: #75CA71; the green*/
+        height: 42px;
+        width: 100%; }
+      #container #rightBk article aside p {
+        margin: 0 40px 20px; }
+    #container #rightBk .contentDiv {
+      margin: 10px; }
+      #container #rightBk .contentDiv ul.ordered li {
+        list-style: none; }
+      #container #rightBk .contentDiv#resume-guide #contents, #container #rightBk .contentDiv#interview-guide #contents {
+        clear: both;
+        height: auto;
+        text-align: center; }
+        #container #rightBk .contentDiv#resume-guide #contents span, #container #rightBk .contentDiv#resume-guide #contents div, #container #rightBk .contentDiv#interview-guide #contents span, #container #rightBk .contentDiv#interview-guide #contents div {
+          font: bold 15px Verdana;
+          margin-right: 20px;
+          width: 284px;
+          float: left;
+          text-align: right; }
+        #container #rightBk .contentDiv#resume-guide #contents nav, #container #rightBk .contentDiv#interview-guide #contents nav {
+          float: left;
+          height: auto;
+          margin-bottom: 20px; }
+        #container #rightBk .contentDiv#resume-guide #contents nav li, #container #rightBk .contentDiv#interview-guide #contents nav li {
+          list-style: none;
+          display: block;
+          clear: both;
+          line-height: 1.2em; }
+      #container #rightBk .contentDiv#resume-guide td, #container #rightBk .contentDiv#interview-guide td {
+        vertical-align: top;
+        padding-bottom: 9px;
+        line-height: 1.3em; }
+      #container #rightBk .contentDiv#resume-guide td ul, #container #rightBk .contentDiv#interview-guide td ul {
+        margin: 0;
+        padding: 0 0 0 20px;
+        text-indent: -20px; }
+        #container #rightBk .contentDiv#resume-guide td ul#dosdonts, #container #rightBk .contentDiv#interview-guide td ul#dosdonts {
+          margin-left: 5px;
+          text-indent: -15px; }
+      #container #rightBk .contentDiv#resume-guide td ul li, #container #rightBk .contentDiv#interview-guide td ul li {
+        list-style: none;
+        margin-bottom: 6px; }
+      #container #rightBk .contentDiv#resume-guide a.h1, #container #rightBk .contentDiv#interview-guide a.h1 {
+        width: 100%;
+        display: inline-block;
+        font: bold 16px Verdana;
+        color: #777;
+        border-bottom: 1px solid #ccc; }
+      #container #rightBk .contentDiv#resume-guide a.h3, #container #rightBk .contentDiv#interview-guide a.h3 {
+        font: bold 15px Verdana;
+        color: #555; }
+      #container #rightBk .contentDiv#resume-guide td.h2, #container #rightBk .contentDiv#interview-guide td.h2 {
+        vertical-align: top;
+        width: 70px;
+        text-align: right; }
+        #container #rightBk .contentDiv#resume-guide td.h2 p, #container #rightBk .contentDiv#interview-guide td.h2 p {
+          font: bold 14px Verdana;
+          color: #999;
+          padding: 0 9px 0 0;
+          vertical-align: top;
+          display: inline; }
+      #container #rightBk .contentDiv#resume-guide a.top, #container #rightBk .contentDiv#interview-guide a.top {
+        display: block;
+        margin: 9px 0; }
+      #container #rightBk .contentDiv#resume-guide td.pList, #container #rightBk .contentDiv#interview-guide td.pList {
+        line-height: 1em; }
+        #container #rightBk .contentDiv#resume-guide td.pList p, #container #rightBk .contentDiv#interview-guide td.pList p {
+          padding: 0;
+          margin: 0;
+          line-height: 1.3em; }
+      #container #rightBk .contentDiv#interview-guide #contents {
+        clear: both;
+        height: auto;
+        text-align: center; }
+        #container #rightBk .contentDiv#interview-guide #contents span, #container #rightBk .contentDiv#interview-guide #contents div {
+          font: bold 15px Verdana;
+          margin-right: 20px;
+          width: 223px;
+          float: left;
+          text-align: right; }
+        #container #rightBk .contentDiv#interview-guide #contents nav {
+          float: left;
+          height: auto; }
+        #container #rightBk .contentDiv#interview-guide #contents nav li {
+          list-style: none;
+          display: block;
+          clear: both;
+          line-height: 1.2em; }
+  #container footer {
+    width: 784px;
+    padding: 0 0 90px 0;
+    clear: both;
+    text-align: center; }
+    #container footer table {
+      margin: 0 auto;
+      width: 45%; }
+    #container footer .recommend {
+      margin: 0 auto; }
+      #container footer .recommend iframe {
+        width: 340px; }
+    #container footer nav {
+      margin-top: 24px; }
+      #container footer nav ul {
+        margin: 0 auto; }
+
+ul#listticker {
+  margin: 10px 2px;
+  padding: 0; }
+  ul#listticker li {
+    border: 0;
+    margin: 0;
+    padding: 6px 6px 4px;
+    overflow: hidden;
+    list-style: none; }
+    ul#listticker li h3 {
+      font-size: 13px;
+      clear: both;
+      padding: 0;
+      margin: 0; }
+    ul#listticker li p {
+      color: #555;
+      font-size: 11.5px;
+      padding: 0;
+      margin: 4px 0 3px;
+      line-height: 1.2em; }
+    ul#listticker li .learnmore {
+      font-size: 11px; }
+      ul#listticker li .learnmore a {
+        color: #0373E5;
+        text-decoration: none;
+        padding: 0 0 0 9px; }
+      ul#listticker li .learnmore a:hover {
+        text-decoration: underline; }
+
+#slogan {
+  height: 32px;
+  margin: 0 0 0 80px;
+  width: 633px;
+  color: black;
+  border-bottom: 1px solid #A2E6B1; }
+  #slogan h1 {
+    font-size: 21px;
+    font-weight: normal; }
+  #slogan hr {
+    margin: 3px 41px;
+    color: green; }
+
+#content {
+  position: relative;
+  /*height: 100%;*/ }
+  #content #specialty {
+    width: 526px;
+    height: 156px;
+    margin: 0 0 20px 0;
+    float: left;
+    clear: both; }
+    #content #specialty h2 {
+      color: #444;
+      font-size: 17px;
+      text-align: left;
+      margin: 50px 0 0 101px;
+      font-weight: normal; }
+    #content #specialty h3 {
+      color: #0373E5;
+      text-align: left;
+      margin: 10px 0 0 121px;
+      font-size: 15px;
+      font-weight: normal;
+      line-height: 1.4em; }
+  #content img {
+    float: right;
+    width: 100px;
+    margin: 34px 106px 0 0; }
+  #content #buttonBlock {
+    width: 100%;
+    height: 88px;
+    clear: both;
+    text-align: center; }
+    #content #buttonBlock input[type="button"] {
+      margin: 0 13px;
+      width: 207px;
+      padding: 9px 0 12px 0; }
+  #content #bottom {
+    height: 250px; }
+    #content #bottom #jobsWidgetDiv {
+      height: 250px;
+      position: relative;
+      border: 1px solid #ccc;
+      position: absolute;
+      left: 64px;
+      width: 300px;
+      height: 250px;
+      text-align: left; }
+      #content #bottom #jobsWidgetDiv #jobsWidget {
+        background-color: #fff;
+        overflow: hidden;
+        max-height: 236px;
+        height: 100%;
+        border: none; }
+      #content #bottom #jobsWidgetDiv #seealljobs {
+        background-color: #FFFFFF;
+        border-bottom: 1px solid #CCCCCC;
+        border-left: 1px solid #CCCCCC;
+        border-right: 1px solid #CCCCCC;
+        bottom: -17px;
+        font-size: 11px;
+        height: 16px;
+        left: 223px;
+        position: absolute;
+        text-align: center;
+        width: 69px; }
+        #content #bottom #jobsWidgetDiv #seealljobs a {
+          color: #0373E5;
+          text-decoration: none; }
+        #content #bottom #jobsWidgetDiv #seealljobs a:hover {
+          text-decoration: underline; }
+    #content #bottom #submit {
+      border: 1px solid #ccc;
+      position: absolute;
+      right: 60px;
+      width: 300px;
+      min-height: 250px;
+      height: auto;
+      text-align: left; }
+      #content #bottom #submit h3, #content #bottom #submit h4 {
+        margin: 12px;
+        font-size: 13px;
+        font-weight: normal; }
+      #content #bottom #submit h4 {
+        margin: 0 12px;
+        font-weight: bold;
+        color: #20871E; }
+      #content #bottom #submit #formDiv {
+        width: 97%; }
+      #content #bottom #submit form {
+        margin: 7px 12px; }
+        #content #bottom #submit form label {
+          float: left;
+          font-weight: bold;
+          font-size: 11px;
+          padding-top: 4px;
+          width: 64px; }
+        #content #bottom #submit form input {
+          margin: 0 0 12px 16px;
+          width: 181px; }
+        #content #bottom #submit form input.submitButton {
+          width: 78px;
+          float: right;
+          padding: 2px 6px;
+          font-size: 12px; }
+      #content #bottom #submit #emailError {
+        display: none;
+        text-align: right;
+        margin: -10px 0 10px;
+        color: #B94A48; }
+    #content #bottom #ad {
+      border: 1px solid #ccc;
+      position: absolute;
+      right: 60px;
+      display: none; }
+
+.myButton {
+  -moz-box-shadow: inset 0px -1px 3px 0px #555555 inset;
+  -webkit-box-shadow: inset 0px -1px 3px 0px #555555 inset;
+  box-shadow: inset 0px -1px 3px 0px #555555;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #77b9fe), color-stop(1, #388ee5));
+  background: -moz-linear-gradient(center top, #77b9fe 5%, #388ee5 100%);
+  background-color: #388EE5;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  border: 1px solid #dcdcdc;
+  display: inline-block;
+  color: #fff;
+  font-family: arial;
+  font-size: 17px;
+  font-weight: bold;
+  padding: 6px 24px;
+  text-decoration: none;
+  text-shadow: 0 1px 0px #111; }
+
+.myButton:hover {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #388ee5), color-stop(1, #77b9fe));
+  background: -moz-linear-gradient(center top, #388ee5 5%, #77b9fe 100%);
+  /*filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#388EE5', endColorstr='#77B9FE');*/
+  background-color: #77B9FE;
+  cursor: pointer; }
+
+.myButton:active {
+  position: relative;
+  top: 1px; }
+
+.submitButton {
+  -moz-box-shadow: inset 0px -1px 3px 0px #555555 inset;
+  -webkit-box-shadow: inset 0px -1px 3px 0px #555555 inset;
+  box-shadow: inset 0px -1px 3px 0px #555555;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #20871e), color-stop(1, #59cc56));
+  background: -moz-linear-gradient(center top, #20871e 5%, #59cc56 100%);
+  background-color: #59CC56;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  border: 1px solid #dcdcdc;
+  display: inline-block;
+  color: #fff;
+  font-family: arial;
+  font-size: 17px;
+  font-weight: bold;
+  padding: 6px 24px;
+  text-decoration: none; }
+
+.submitButton:hover {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #59cc56), color-stop(1, #20871e));
+  background: -moz-linear-gradient(center top, #59cc56 5%, #20871e 100%);
+  /*filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#59CC56', endColorstr='#20871E');*/
+  background-color: #20871E;
+  cursor: pointer; }
+
+.submitButton:active {
+  position: relative;
+  top: 1px; }
