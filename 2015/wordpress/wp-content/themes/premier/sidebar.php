@@ -34,7 +34,7 @@
                     <label for="zip">Zip:</label>
                     <input id="zip" name="zip" type="text" value=""></input>
 
-                    <input class="submitButton btn-b" type="submit" value="Next Step"/>
+                    <button class="submitButton btn-b" type="submit" value="Next Step">Next Step</button>
                 </form>
             </div>
         </div>
