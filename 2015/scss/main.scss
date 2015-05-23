@@ -430,11 +430,11 @@ input[type="submit"] {
 
 #formDiv {
   width: 100%;
-  margin: 35px 0;
+  margin: 32px 0 47px 0;
 }
 
 form {
-  margin: 7px 0px;
+  margin: 0;
 
   label {
     float: left;
@@ -447,9 +447,10 @@ form {
   input, textarea, select {
     //-webkit-appearance: none;
   }
-  input,
-  select {
+
+  .form-control {
     margin: 0 6px 12px 0;
+    padding: 0;
     width: 60%;
     border-radius: 0;
     height: 24px;
@@ -468,8 +469,9 @@ form {
       padding: 4px 14px;
     }
 
-    input {
+    .form-control {
       margin: 0 0 12px 14px;
+      padding: 0;
       width: 86%;
       border-radius: 0;
     }
@@ -730,7 +732,7 @@ form {
   padding: 2px 3px 0 0;
   vertical-align: middle;
 }
-
+/*
 .form-horizontal {
   .asterisk {
     margin: 0 -11px 0 0;
@@ -944,7 +946,7 @@ form {
     cursor: pointer;
   }
 
-}
+}*/
 
 .form-vertical {
 
@@ -956,8 +958,8 @@ form {
   .formDivider {
     background: url("../images/formDivider.png") repeat-x 0 0;
     height: 3px;
-    margin: 10px 0 16px 120px;
-    width: 553px;
+    margin: 10px 0 16px 0;
+    width: 60%;
   }
 
   .continue {
@@ -974,10 +976,6 @@ form {
     float: left;
   }
 
-  input,
-  select {
-    margin: 0 6px 0 0;
-  }
   textarea {
     margin-left: 0;
   }
@@ -985,11 +983,15 @@ form {
   .form-control {
     border-radius: 1px;
     width: 60%;
+    padding: 0 12px;
+    height: 30px;
   }
 
   .control-group {
     margin-left: 0;
+    margin-bottom: 1em;
     clear: both;
+    overflow: hidden;
 
     .control-label {
       text-align: left;
@@ -1037,6 +1039,8 @@ form {
 
       .control-label.middleInitial {
         width: 33px;
+        padding: 11px 0 0 14px;
+
       }
 
       .controls {
@@ -1044,23 +1048,36 @@ form {
         .form-control {
           float: left;
           &.firstName {
-            width: 325px;
+            width: 311px;
           }
           &.middleInitial {
             width: 33px;
+            padding: 0;
           }
         }
       }
     }
     &.phone, &.optionalPhone {
       margin: 0 0 6px 0;
+      width: 500px;
+      float: left;
+      .controls {
+        .form-control {
+          &.phone {
+            width: 314px;
+            float: left;
+          }
+        }
+      }
       .phoneType {
         width: 80px;
+        float: left;
       }
     }
     &.addPhone, &.removePhone {
       margin: 0;
       padding: 0;
+      width: 100%;
       label {
         text-align: left;
         margin: 0;
@@ -1077,13 +1094,11 @@ form {
     }
 
     &.salary {
-      border: 1px solid yellow;
-      clear: both;
       .controls {
         &.salaryDesired {
           span {
             float: left;
-            padding: 5px 6px 0;
+            padding: 5px 10px 5px 3px;
           }
           label.desired {
             margin-left: 0px;
@@ -1123,7 +1138,7 @@ form {
       margin: 0 9px 0 17px;
     }
     #career-select, #education-select {
-      width: 292px;
+      //width: 292px;
     }
   }
 
@@ -1169,7 +1184,7 @@ form {
   }
 
   #visa {
-    width: 292px;
+    //width: 292px;
   }
 
   input#gradDegreeEarned.error, input#undergradDegreeEarned.error {

@@ -137,7 +137,7 @@ input[type="checkbox"]:focus {
   border-radius: 4px;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  -webkit-transition: border-color ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
+  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
   -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
   transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s; }
 
@@ -557,13 +557,11 @@ select[multiple].form-group-lg .form-control {
 @media (min-width: 768px) {
   .form-horizontal .form-group-sm .control-label {
     padding-top: 6px; } }
-/* responsive-nav.js 1.0.32 by @viljamis */
+/*! responsive-nav.js 1.0.32 by @viljamis */
 .nav-collapse {
   display: none; }
 
-@media only screen
-and (min-width : 0px)
-and (max-width : 600px) {
+@media only screen and (min-width: 0px) and (max-width: 600px) {
   display: none;
   .nav-collapse ul {
     margin: 0;
@@ -608,7 +606,7 @@ and (max-width : 600px) {
     pointer-events: none !important; }
 
   .nav-toggle {
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -641,9 +639,7 @@ and (max-width : 600px) {
       height: 2px;
       margin-top: 3px;
       width: 90%; } }
-@media only screen
-and (min-width : 0px)
-and (max-width : 600px) and screen and (min-width: 684px) {
+@media only screen and (min-width: 0px) and (max-width: 600px) and (min-width: 684px) {
   .js .nav-collapse {
     position: relative; }
 
@@ -706,9 +702,7 @@ input[type="submit"] {
   max-height: 142px;
   min-height: 142px;
   max-width: 500px; }
-  @media only screen
-  and (max-width: 860px)
-  and (min-width: 320px) {
+  @media only screen and (max-width: 860px) and (min-width: 320px) {
     #pp-logo {
       max-width: 100%;
       min-height: 0;
@@ -718,19 +712,15 @@ input[type="submit"] {
   max-width: 1024px;
   width: auto;
   margin: 0 auto; }
-  @media only screen
-  and (max-width: 768px) {
+  @media only screen and (max-width: 768px) {
     #content {
       min-width: 0;
       max-width: 768px; } }
-  @media only screen
-  and (max-width : 320px) {
+  @media only screen and (max-width: 320px) {
     #content {
       width: auto;
       margin: 10px; } }
-  @media only screen
-  and (min-width : 320px)
-  and (max-width : 518px) {
+  @media only screen and (min-width: 320px) and (max-width: 518px) {
     #content {
       width: auto; } }
 
@@ -738,18 +728,13 @@ input[type="submit"] {
   float: left;
   width: 65%;
   margin-left: 14px; }
-  @media only screen
-  and (max-width: 1024px)
-  and (min-width: 860px) {
+  @media only screen and (max-width: 1024px) and (min-width: 860px) {
     #col-left {
       width: 65%; } }
-  @media only screen
-  and (max-width: 860px)
-  and (min-width: 600px) {
+  @media only screen and (max-width: 860px) and (min-width: 600px) {
     #col-left {
       width: 60%; } }
-  @media only screen
-  and (max-width: 600px) {
+  @media only screen and (max-width: 600px) {
     #col-left {
       width: auto;
       margin: 14px;
@@ -758,8 +743,7 @@ input[type="submit"] {
         font-size: .7em; }
       #col-left h2 {
         font-size: 1em; } }
-  @media only screen
-  and (max-width : 320px) {
+  @media only screen and (max-width: 320px) {
     #col-left {
       width: 100%;
       float: none;
@@ -771,12 +755,10 @@ input[type="submit"] {
     letter-spacing: -0.2px;
     margin-bottom: 14px;
     width: 100%; }
-    @media only screen
-    and (max-width: 600px) {
+    @media only screen and (max-width: 600px) {
       #col-left #main-nav {
         display: none; } }
-    @media only screen
-    and (max-width : 320px) {
+    @media only screen and (max-width: 320px) {
       #col-left #main-nav {
         display: none; } }
     #col-left #main-nav ul {
@@ -793,8 +775,7 @@ input[type="submit"] {
       display: inline-block;
       text-align: center;
       vertical-align: middle; }
-      @media only screen
-      and (max-width: 768px) {
+      @media only screen and (max-width: 768px) {
         #col-left #main-nav li {
           width: 68px;
           font-size: 14px; }
@@ -859,20 +840,16 @@ input[type="submit"] {
   float: right;
   width: 30%;
   margin: 0 14px 3em; }
-  @media only screen
-  and (max-width: 1024px)
-  and (min-width: 860px) {
+  @media only screen and (max-width: 1024px) and (min-width: 860px) {
     #col-right {
       min-width: 228px; } }
-  @media only screen
-  and (max-width: 600px) {
+  @media only screen and (max-width: 600px) {
     #col-right {
       width: auto;
       float: none; }
       #col-right #buttonBlock {
         display: none; } }
-  @media only screen
-  and (max-width : 320px) {
+  @media only screen and (max-width: 320px) {
     #col-right {
       width: auto;
       float: none; } }
@@ -897,9 +874,7 @@ input[type="submit"] {
   #buttonBlock .btn-a {
     margin-left: 10px;
     float: right; }
-  @media only screen
-  and (max-width: 866px)
-  and (min-width: 320px) {
+  @media only screen and (max-width: 866px) and (min-width: 320px) {
     #buttonBlock {
       text-align: center; }
       #buttonBlock .btn, #buttonBlock .btn-a, #buttonBlock .btn-b, #buttonBlock .btn-c,
@@ -959,10 +934,10 @@ input[type="submit"] {
 
 #formDiv {
   width: 100%;
-  margin: 35px 0; }
+  margin: 32px 0 47px 0; }
 
 form {
-  margin: 7px 0px; }
+  margin: 0; }
   form label {
     float: left;
     font-weight: bold;
@@ -970,16 +945,14 @@ form {
     width: 85px;
     text-align: right;
     padding: 4px 6px 0 10px; }
-  form input,
-  form select {
+  form .form-control {
     margin: 0 6px 12px 0;
+    padding: 0;
     width: 60%;
     border-radius: 0;
     height: 24px;
     line-height: initial; }
-  @media only screen
-  and (min-width: 320px)
-  and (max-width: 866px) {
+  @media only screen and (min-width: 320px) and (max-width: 866px) {
     form label {
       float: none;
       display: block;
@@ -988,16 +961,15 @@ form {
       width: auto;
       text-align: left;
       padding: 4px 14px; }
-    form input {
+    form .form-control {
       margin: 0 0 12px 14px;
+      padding: 0;
       width: 86%;
       border-radius: 0; } }
-  @media only screen
-  and (max-width: 600px) {
+  @media only screen and (max-width: 600px) {
     form input {
       width: 92%; } }
-  @media only screen
-  and (max-width : 320px) {
+  @media only screen and (max-width: 320px) {
     form input {
       width: 89%; } }
   form textarea {
@@ -1046,8 +1018,7 @@ form {
   #job-listings h2 {
     margin-top: 1.3em;
     margin-bottom: .3em; }
-  @media only screen
-  and (max-width: 600px) {
+  @media only screen and (max-width: 600px) {
     #job-listings {
       height: 242px;
       padding-bottom: 330px;
@@ -1081,8 +1052,7 @@ form {
   letter-spacing: 0; }
   .blog h2 span {
     font-size: .8em; }
-  @media only screen
-    and (max-width: 996px) {
+  @media only screen and (max-width: 996px) {
     .blog h2 {
       letter-spacing: 1px; } }
 .blog .entry-title {
@@ -1177,149 +1147,229 @@ form {
   padding: 2px 3px 0 0;
   vertical-align: middle; }
 
-.form-horizontal .asterisk {
-  margin: 0 -11px 0 0;
-  padding: 2px 10px 0 3px; }
-.form-horizontal .formDivider {
-  background: url("../images/formDivider.png") repeat-x 0 0;
-  height: 3px;
-  margin: 10px 0 16px 120px;
-  width: 553px; }
-.form-horizontal .continue {
-  display: inline-block;
-  float: right;
-  margin-right: 160px;
-  outline: medium none;
-  padding: 0;
-  text-align: right;
-  width: 100%;
-  height: 2em; }
-.form-horizontal .back {
-  float: left; }
-.form-horizontal .control-group {
-  margin-left: 0; }
-  .form-horizontal .control-group .control-label {
-    text-align: left;
-    width: 190px; }
-  .form-horizontal .control-group .controls {
-    margin-left: 209px;
-    *padding-left: 0;
-    *display: inline; }
-    .form-horizontal .control-group .controls.radioGroup {
-      margin: 0 0 5px 0; }
-      .form-horizontal .control-group .controls.radioGroup label {
-        float: left;
-        margin: 0 10px 0 0;
-        padding-top: 5px;
-        text-align: left; }
-    .form-horizontal .control-group .controls.salutation {
-      width: 64px; }
-      .form-horizontal .control-group .controls.salutation select {
-        width: 100%; }
-  .form-horizontal .control-group .firstMiddle .firstName {
-    float: left;
-    width: 193px; }
-  .form-horizontal .control-group .firstMiddle label {
-    width: 28px; }
-  .form-horizontal .control-group .firstMiddle .middleInitial {
-    float: left;
-    width: 33px;
-    padding-left: 0; }
-    .form-horizontal .control-group .firstMiddle .middleInitial input {
-      width: 33px; }
-  .form-horizontal .control-group.phone, .form-horizontal .control-group.optionalPhone {
-    margin: 0 0 6px 0; }
-    .form-horizontal .control-group.phone .phoneType, .form-horizontal .control-group.optionalPhone .phoneType {
-      width: 80px; }
-  .form-horizontal .control-group.addPhone, .form-horizontal .control-group.removePhone {
-    margin: 0;
-    padding: 0; }
-    .form-horizontal .control-group.addPhone label, .form-horizontal .control-group.removePhone label {
-      text-align: left;
-      margin: 0;
-      padding: 0; }
-  .form-horizontal .control-group.removePhone {
-    display: none; }
-  .form-horizontal .control-group.salary .controls.salaryDesired span {
-    float: left;
-    padding: 5px 6px 0; }
-  .form-horizontal .control-group.salary .controls.salaryDesired label.desired {
-    margin-left: 0px;
-    width: 55px; }
-  .form-horizontal .control-group.salary .controls.salaryDesired input {
-    margin-left: 0;
-    width: 118px;
-    float: left; }
-  .form-horizontal .control-group.salary .controls .salaryDesired {
-    *float: left; }
-  .form-horizontal .control-group.level input {
-    margin: 0 9px 0 0; }
-    .form-horizontal .control-group.level input.year, .form-horizontal .control-group.level input.gpa {
-      width: 38px;
-      margin-left: 9px; }
-  .form-horizontal .control-group #level-select {
-    display: none;
-    width: 100px;
-    margin: 0 9px 0 17px; }
-  .form-horizontal .control-group #career-select, .form-horizontal .control-group #education-select {
-    width: 292px; }
-.form-horizontal #moreInfoAsk {
-  margin: 0 40px 18px;
-  height: 116px;
-  display: none; }
-  .form-horizontal #moreInfoAsk p {
-    margin: 0; }
-  .form-horizontal #moreInfoAsk button {
-    margin: 20px 0; }
-    .form-horizontal #moreInfoAsk button#continue {
-      float: right;
-      margin-right: 20px; }
-    .form-horizontal #moreInfoAsk button#submit2 {
-      float: right;
-      margin-right: 160px; }
-.form-horizontal #moreInfo {
-  display: none; }
-  .form-horizontal #moreInfo .control-group {
-    margin: 0 40px 18px; }
-  .form-horizontal #moreInfo .controls {
-    margin: 10px 0; }
-  .form-horizontal #moreInfo textarea {
-    width: 100%; }
-  .form-horizontal #moreInfo p {
-    margin: 0;
-    padding: 0; }
-.form-horizontal #finalButtons {
-  display: none; }
-.form-horizontal #visa {
-  width: 292px; }
-.form-horizontal input#gradDegreeEarned.error, .form-horizontal input#undergradDegreeEarned.error {
-  color: #b94a48;
-  border-color: #b94a48; }
-  .form-horizontal input#gradDegreeEarned.error:focus, .form-horizontal input#undergradDegreeEarned.error:focus {
-    border-color: #953b39;
-    -webkit-box-shadow: 0 0 6px #d59392;
-    -moz-box-shadow: 0 0 6px #d59392;
-    box-shadow: 0 0 6px #d59392; }
-.form-horizontal *.datepicker table {
-  width: 100px; }
-.form-horizontal .optionalPhone {
-  display: none; }
-.form-horizontal #emailError {
-  display: none; }
-.form-horizontal .form-actions {
-  padding-right: 160px;
-  text-align: right; }
-.form-horizontal .add-on {
-  cursor: pointer; }
+/*
+.form-horizontal {
+  .asterisk {
+    margin: 0 -11px 0 0;
+    padding: 2px 10px 0 3px;
+  }
 
+  .formDivider {
+    background: url("../images/formDivider.png") repeat-x 0 0;
+    height: 3px;
+    margin: 10px 0 16px 120px;
+    width: 553px;
+  }
+
+  .continue {
+    display: inline-block;
+    float: right;
+    margin-right: 160px;
+    outline: medium none;
+    padding: 0;
+    text-align: right;
+    width: 100%;
+    height: 2em;
+  }
+  .back {
+    float: left;
+  }
+
+  .control-group {
+    margin-left: 0;
+    .control-label {
+      text-align: left;
+      width: 190px;
+    }
+    .controls {
+      margin-left: 209px;
+      &.radioGroup {
+        margin: 0 0 5px 0;
+        label {
+          float: left;
+          margin: 0 10px 0 0;
+          padding-top: 5px;
+          text-align: left;
+        }
+      }
+      *padding-left: 0;
+      *display: inline;
+
+      &.salutation {
+        width: 64px;
+        select {
+          width: 100%;
+        }
+      }
+    }
+
+    .firstMiddle {
+      .firstName {
+        float: left;
+        width: 193px;
+      }
+      label {
+        width: 28px;
+      }
+
+      .middleInitial {
+        float: left;
+        width: 33px;
+        padding-left: 0;
+        input {
+          width: 33px;
+        }
+      }
+    }
+    &.phone, &.optionalPhone {
+      margin: 0 0 6px 0;
+      .phoneType {
+        width: 80px;
+      }
+    }
+    &.addPhone, &.removePhone {
+      margin: 0;
+      padding: 0;
+      label {
+        text-align: left;
+        margin: 0;
+        padding: 0;
+      }
+    }
+    &.removePhone {
+      display: none;
+    }
+
+    &.salary {
+      .controls {
+        &.salaryDesired {
+          span {
+            float: left;
+            padding: 5px 6px 0;
+          }
+          label.desired {
+            margin-left: 0px;
+            width: 55px;
+          }
+
+          input {
+            margin-left: 0;
+            width: 118px;
+            float: left;
+          }
+        }
+        .salaryDesired {
+          *float: left;
+        }
+      }
+    }
+    &.level {
+
+      input {
+        margin: 0 9px 0 0;
+        &.year, &.gpa {
+          width: 38px;
+          margin-left: 9px;
+        }
+      }
+    }
+
+    #level-select {
+      display: none;
+      width: 100px;
+      margin: 0 9px 0 17px;
+    }
+    #career-select, #education-select {
+      width: 292px;
+    }
+  }
+
+  #moreInfoAsk {
+    margin: 0 40px 18px;
+    height: 116px;
+    display: none;
+    p {
+      margin: 0;
+    }
+    button {
+      margin: 20px 0;
+      &#continue {
+        float: right;
+        margin-right: 20px;
+      }
+      &#submit2 {
+        float: right;
+        margin-right: 160px;
+      }
+    }
+  }
+
+  #moreInfo {
+    display: none;
+    .control-group {
+      margin: 0 40px 18px;
+    }
+    .controls {
+      margin: 10px 0;
+    }
+    textarea {
+      width: 100%;
+    }
+    p {
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  #finalButtons {
+    display: none;
+  }
+
+  #visa {
+    width: 292px;
+  }
+
+  input#gradDegreeEarned.error, input#undergradDegreeEarned.error {
+    color: #b94a48;
+    border-color: #b94a48;
+    &:focus {
+      border-color: #953b39;
+      -webkit-box-shadow: 0 0 6px #d59392;
+      -moz-box-shadow: 0 0 6px #d59392;
+      box-shadow: 0 0 6px #d59392;
+    }
+  }
+
+  *.datepicker table {
+    width: 100px;
+  }
+
+  .optionalPhone {
+    display: none;
+  }
+
+  #emailError {
+    display: none;
+  }
+
+  .form-actions {
+    padding-right: 160px;
+    text-align: right;
+  }
+
+  .add-on {
+    cursor: pointer;
+  }
+
+}*/
 .form-vertical .asterisk {
   margin: 0 -11px 0 0;
   padding: 2px 10px 0 3px; }
 .form-vertical .formDivider {
   background: url("../images/formDivider.png") repeat-x 0 0;
   height: 3px;
-  margin: 10px 0 16px 120px;
-  width: 553px; }
+  margin: 10px 0 16px 0;
+  width: 60%; }
 .form-vertical .continue {
   display: inline-block;
   float: right;
@@ -1331,17 +1381,18 @@ form {
   height: 2em; }
 .form-vertical .back {
   float: left; }
-.form-vertical input,
-.form-vertical select {
-  margin: 0 6px 0 0; }
 .form-vertical textarea {
   margin-left: 0; }
 .form-vertical .form-control {
   border-radius: 1px;
-  width: 60%; }
+  width: 60%;
+  padding: 0 12px;
+  height: 30px; }
 .form-vertical .control-group {
   margin-left: 0;
-  clear: both; }
+  margin-bottom: 1em;
+  clear: both;
+  overflow: hidden; }
   .form-vertical .control-group .control-label {
     text-align: left;
     width: 100%;
@@ -1377,22 +1428,31 @@ form {
   .form-vertical .control-group.firstMiddle .control-label.firstName {
     width: 274px; }
   .form-vertical .control-group.firstMiddle .control-label.middleInitial {
-    width: 33px; }
+    width: 33px;
+    padding: 11px 0 0 14px; }
   .form-vertical .control-group.firstMiddle .controls {
     clear: both; }
     .form-vertical .control-group.firstMiddle .controls .form-control {
       float: left; }
       .form-vertical .control-group.firstMiddle .controls .form-control.firstName {
-        width: 325px; }
+        width: 311px; }
       .form-vertical .control-group.firstMiddle .controls .form-control.middleInitial {
-        width: 33px; }
+        width: 33px;
+        padding: 0; }
   .form-vertical .control-group.phone, .form-vertical .control-group.optionalPhone {
-    margin: 0 0 6px 0; }
+    margin: 0 0 6px 0;
+    width: 500px;
+    float: left; }
+    .form-vertical .control-group.phone .controls .form-control.phone, .form-vertical .control-group.optionalPhone .controls .form-control.phone {
+      width: 314px;
+      float: left; }
     .form-vertical .control-group.phone .phoneType, .form-vertical .control-group.optionalPhone .phoneType {
-      width: 80px; }
+      width: 80px;
+      float: left; }
   .form-vertical .control-group.addPhone, .form-vertical .control-group.removePhone {
     margin: 0;
-    padding: 0; }
+    padding: 0;
+    width: 100%; }
     .form-vertical .control-group.addPhone label, .form-vertical .control-group.removePhone label {
       text-align: left;
       margin: 0;
@@ -1403,21 +1463,18 @@ form {
       cursor: pointer; }
   .form-vertical .control-group.removePhone {
     display: none; }
-  .form-vertical .control-group.salary {
-    border: 1px solid yellow;
-    clear: both; }
-    .form-vertical .control-group.salary .controls.salaryDesired span {
-      float: left;
-      padding: 5px 6px 0; }
-    .form-vertical .control-group.salary .controls.salaryDesired label.desired {
-      margin-left: 0px;
-      width: 100%; }
-    .form-vertical .control-group.salary .controls.salaryDesired input {
-      margin-left: 0;
-      width: 118px;
-      float: left; }
-    .form-vertical .control-group.salary .controls .salaryDesired {
-      *float: left; }
+  .form-vertical .control-group.salary .controls.salaryDesired span {
+    float: left;
+    padding: 5px 10px 5px 3px; }
+  .form-vertical .control-group.salary .controls.salaryDesired label.desired {
+    margin-left: 0px;
+    width: 100%; }
+  .form-vertical .control-group.salary .controls.salaryDesired input {
+    margin-left: 0;
+    width: 118px;
+    float: left; }
+  .form-vertical .control-group.salary .controls .salaryDesired {
+    *float: left; }
   .form-vertical .control-group .still-employed {
     width: auto; }
   .form-vertical .control-group.level input {
@@ -1429,8 +1486,6 @@ form {
     display: none;
     width: 100px;
     margin: 0 9px 0 17px; }
-  .form-vertical .control-group #career-select, .form-vertical .control-group #education-select {
-    width: 292px; }
 .form-vertical #moreInfoAsk {
   margin: 0 40px 18px;
   height: 116px;
@@ -1458,8 +1513,6 @@ form {
     padding: 0; }
 .form-vertical #finalButtons {
   display: none; }
-.form-vertical #visa {
-  width: 292px; }
 .form-vertical input#gradDegreeEarned.error, .form-vertical input#undergradDegreeEarned.error {
   color: #b94a48;
   border-color: #b94a48; }
@@ -1479,3 +1532,5 @@ form {
   text-align: right; }
 .form-vertical .add-on {
   cursor: pointer; }
+
+/*# sourceMappingURL=main.css.map */

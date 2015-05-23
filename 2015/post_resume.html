@@ -314,7 +314,7 @@
                     <label class="control-label">Salutation</label>
 
                     <div class="controls salutation">
-                        <select name="Salutation">
+                        <select name="Salutation" class="form-control">
                             <option value="blank"></option>
                             <option value="Mr.">Mr.</option>
                             <option value="Ms.">Ms.</option>
@@ -383,7 +383,7 @@
 
                     <div class="controls">
                         <input type="text" class="form-control phone" id="primaryPhone" name="Primary Phone">
-                        <select class="phoneType" id="primaryPhoneType" name="Primary Phone Type">
+                        <select class="form-control phoneType" id="primaryPhoneType" name="Primary Phone Type">
                             <option value="mobile">Mobile</option>
                             <option value="home">Home</option>
                             <option value="work">Work</option>
@@ -398,7 +398,7 @@
                     <div class="controls">
                         <input type="text" class="form-control phone" id="secondaryPhone"
                                name="Secondary Phone">
-                        <select class="phoneType" id="secondaryPhoneType" name="Secondary Phone Type">
+                        <select class="form-control phoneType" id="secondaryPhoneType" name="Secondary Phone Type">
                             <option value="cell">Mobile</option>
                             <option value="home" selected="selected">Home</option>
                             <option value="work">Work</option>
@@ -413,7 +413,7 @@
                     <div class="controls">
                         <input type="text" class="form-control phone" id="additionalPhone"
                                name="Additional Phone">
-                        <select class="phoneType" id="additionalPhoneType" name="Additional Phone Type">
+                        <select class="form-control phoneType" id="additionalPhoneType" name="Additional Phone Type">
                             <option value="cell">Mobile</option>
                             <option value="home">Home</option>
                             <option value="work" selected="selected">Work</option>
@@ -428,7 +428,7 @@
                     <div class="controls">
                         <input type="text" class="form-control phone" id="additionalPhone1"
                                name="Additional Phone1">
-                        <select class="phoneType" id="additionalPhoneType1" name="Additional Phone Type1">
+                        <select class="form-control phoneType" id="additionalPhoneType1" name="Additional Phone Type1">
                             <option value="cell">Mobile</option>
                             <option value="home">Home</option>
                             <option value="work">Work</option>
@@ -454,34 +454,28 @@
 
                 <div class="control-group">
                     <label class="control-label">Work Authorization</label>
-
-                    <div class="controls">
-                        <select id="visa" name="Visa">
-                            <option value="">--select--</option>
-                            <option value="any employer">I am authorized to work in this country for any
-                                employer
-                            </option>
-                            <option value="current employer only">I am authorized to work in this country for my
-                                current employer only
-                            </option>
-                            <option value="require sponsorship">I require sponsorship to work in this country
-                            </option>
-                            <option value="not authorised">I am not authorized to work in this country</option>
-                        </select>
-                    </div>
+                    <select class="form-control" id="visa" name="Visa">
+                        <option value="">--select--</option>
+                        <option value="any employer">I am authorized to work in this country for any
+                            employer
+                        </option>
+                        <option value="current employer only">I am authorized to work in this country for my
+                            current employer only
+                        </option>
+                        <option value="require sponsorship">I require sponsorship to work in this country
+                        </option>
+                        <option value="not authorised">I am not authorized to work in this country</option>
+                    </select>
                 </div>
 
                 <div class="control-group">
                     <label class="control-label">Level of Education<span class="asterisk">*</span></label>
-
-                    <div class="controls">
-                        <select id="education-select" name="Education">
-                            <option value="">--select--</option>
-                            <option value="highschool">High School Degree</option>
-                            <option value="undergrad">Undergraduate Degree</option>
-                            <option value="grad">Post-graduate Degree</option>
-                        </select>
-                    </div>
+                    <select class="form-control" id="education-select" name="Education">
+                        <option value="">--select--</option>
+                        <option value="highschool">High School Degree</option>
+                        <option value="undergrad">Undergraduate Degree</option>
+                        <option value="grad">Post-graduate Degree</option>
+                    </select>
                 </div>
                 <div class="control-group level" id="highschool" name="Highschool" style="display: none;">
                     <label class="control-label">High School Degree</label>
@@ -514,7 +508,7 @@
                     <label class="control-label">Current Career Level</label>
 
                     <div class="controls">
-                        <select id="career-select" name="Current Career Experience">
+                        <select class="form-control" id="career-select" name="Current Career Experience">
                             <option value="0">--select--</option>
                             <option value="0-3">0-3 years experience</option>
                             <option value="4-10">4-10 years experience</option>
@@ -594,18 +588,14 @@
                 <div class="control-group">
                     <label class="control-label horizontal">Still employed?</label>
 
-                    <div class="controls radioGroup radio">
-                        <div class="radio">
-                            <label>
-                                <input id="employed" type="radio" value="yes" name="Employed?">
-                                Yes
-                            </label>
-                        </div>
-                        <label>
-                            <input id="employed" type="radio" value="no" name="Employed">
-                            No
-                        </label>
-                    </div>
+                    <label class="radio-inline">
+                        <input id="employed" type="radio" value="yes" name="Employed?">
+                        Yes
+                    </label>
+                    <label class="radio-inline">
+                        <input id="employed" type="radio" value="no" name="Employed">
+                        No
+                    </label>
                 </div>
 
                 <div class="control-group">
@@ -715,18 +705,18 @@
             <div id="formDiv">
                 <form id="miniInput" action="post_resume.html" method="post">
                     <label for="firstName">First Name:</label>
-                    <input id="firstName" name="firstName" type="text" value=""></input>
+                    <input class="form-control" id="firstName" name="firstName" type="text" value=""></input>
 
                     <label for="lastName">Last Name:</label>
-                    <input id="lastName" name="lastName" type="text" value=""></input>
+                    <input class="form-control" id="lastName" name="lastName" type="text" value=""></input>
 
                     <label for="email">Email:</label>
-                    <input id="email" name="email" type="text" value=""></input>
+                    <input class="form-control" id="email" name="email" type="text" value=""></input>
 
                     <div id="emailError" class="help-inline">Please provide a valid email address</div>
 
                     <label for="zip">Zip:</label>
-                    <input id="zip" name="zip" type="text" value=""></input>
+                    <input class="form-control" id="zip" name="zip" type="text" value=""></input>
 
                     <button class="submitButton btn-b" type="submit" value="Next Step">Next Step</button>
                 </form>
