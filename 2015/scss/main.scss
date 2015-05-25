@@ -46,9 +46,12 @@ html {
   font-family: "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif;
   font-size: 100%;
   color: $body-color;
-
   overflow: hidden;
   height: 100%;
+}
+
+html * {
+  box-sizing: border-box;
 }
 
 body {
@@ -444,9 +447,6 @@ form {
     text-align: right;
     padding: 4px 6px 0 10px;
   }
-  input, textarea, select {
-    //-webkit-appearance: none;
-  }
 
   .form-control {
     margin: 0 6px 12px 0;
@@ -479,15 +479,17 @@ form {
 
   @media only screen
   and (max-width: 600px) {
-    input {
+    .form-control {
       width: 92%;
+      border: 1px solid red;
     }
   }
 
   @media only screen
   and (max-width : 320px) {
-    input {
+    .form-control {
       width: 89%;
+      // do we get to this one?
     }
   }
 
@@ -1003,26 +1005,6 @@ form {
       }
     }
     .controls {
-      margin-left: 0;
-      /*&.radioGroup {
-        margin: 0 0 5px $marginLeft;
-        *margin-left: 0px;
-        input[type="radio"] {
-          height: 10px;
-          width: 10px;
-          border-radius: 10px;
-        }
-        label {
-          float: left;
-          margin: 0 10px 0 0;
-          padding-top: 5px;
-          text-align: left;
-          width: auto;
-        }
-      }
-      *padding-left: 0;
-      *display: inline;
-      *margin-left: 20px;*/
       &.salutation {
         width: 64px;
         select {
@@ -1054,6 +1036,9 @@ form {
             width: 33px;
             padding: 0;
           }
+        }
+        .middleInitial {
+          padding: 8px 0 0 10px;
         }
       }
     }
@@ -1093,12 +1078,21 @@ form {
       display: none;
     }
 
+    &.additional {
+      .form-control {
+        margin-bottom: 0;
+      }
+      span {
+        font-size: .75em;
+      }
+    }
+
     &.salary {
       .controls {
         &.salaryDesired {
           span {
             float: left;
-            padding: 5px 10px 5px 3px;
+            padding: 5px 7px 5px 3px;
           }
           label.desired {
             margin-left: 0px;
@@ -1117,8 +1111,18 @@ form {
       }
     }
 
-    .still-employed {
-      width: auto;
+    &.termination {
+      .form-control {
+        width: 15%;
+      }
+    }
+
+    &.radio-inline {
+      padding-left: 0;
+      width: 100%;
+      input[type="radio"] {
+        margin-top: 0;
+      }
     }
 
     &.level {

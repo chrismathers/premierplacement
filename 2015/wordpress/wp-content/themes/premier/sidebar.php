@@ -21,18 +21,18 @@
             <div id="formDiv">
                 <form id="miniInput" action="post_resume.html" method="post">
                     <label for="firstName">First Name:</label>
-                    <input id="firstName" name="firstName" type="text" value=""></input>
+                    <input class="form-control" id="firstName" name="firstName" type="text" value=""></input>
 
                     <label for="lastName">Last Name:</label>
-                    <input id="lastName" name="lastName" type="text" value=""></input>
+                    <input class="form-control" id="lastName" name="lastName" type="text" value=""></input>
 
                     <label for="email">Email:</label>
-                    <input id="email" name="email" type="text" value=""></input>
+                    <input class="form-control" id="email" name="email" type="text" value=""></input>
 
                     <div id="emailError" class="help-inline">Please provide a valid email address</div>
 
                     <label for="zip">Zip:</label>
-                    <input id="zip" name="zip" type="text" value=""></input>
+                    <input class="form-control" id="zip" name="zip" type="text" value=""></input>
 
                     <button class="submitButton btn-b" type="submit" value="Next Step">Next Step</button>
                 </form>

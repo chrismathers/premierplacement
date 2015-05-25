@@ -18,7 +18,7 @@
  * ========================================================= */
  
 !function( $ ) {
-	
+
 	// Picker object
 	
 	var Datepicker = function(element, options){

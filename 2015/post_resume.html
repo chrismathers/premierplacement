@@ -9,6 +9,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <!--<link rel="STYLESHEET" type="text/css" href="css/bootstrap.min.css">-->
+    <link rel="stylesheet" media="screen" type="text/css" href="css/datepicker.css" />
     <link rel="stylesheet" type="text/css" media="all" href="css/main.css"/>
     <!--[if IE]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -562,14 +563,12 @@
                         <input type="text" class="form-control digits" id="present" name="Present Salary">
                     </div>
                 </div>
-                <div class="control-group">
+                <div class="control-group additional">
                     <label class="control-label" for="additionalComp">Additional Compensation</label>
 
-                    <div class="controls">
-                        <input type="text" class="form-control digits" id="additionalComp"
-                               name="Additional Compensation">
-                        <br>(Bonus/Commissions/Profit Sharing)
-                    </div>
+                    <input type="text" class="form-control" id="additionalComp"
+                           name="Additional Compensation">
+                    <span>(Bonus/Commissions/Profit Sharing)</span>
                 </div>
 
                 <div class="control-group salary">
@@ -585,20 +584,20 @@
                 </div>
 
 
-                <div class="control-group">
+                <div class="control-group radio-inline">
                     <label class="control-label horizontal">Still employed?</label>
 
-                    <label class="radio-inline">
-                        <input id="employed" type="radio" value="yes" name="Employed?">
+                    <label>
+                        <input id="employed" type="radio" value="yes" name="Employed">
                         Yes
                     </label>
-                    <label class="radio-inline">
+                    <label>
                         <input id="employed" type="radio" value="no" name="Employed">
                         No
                     </label>
                 </div>
 
-                <div class="control-group">
+                <div class="control-group termination">
                     <label class="control-label desired horizontal" for="termination">Termination Date</label>
 
                     <div class="controls">
@@ -628,33 +627,29 @@
 
                 <div class="formDivider"></div>
 
-                <div class="control-group">
-                    <label class="control-label">Do you own or rent?</label>
+                <div class="control-group radio-inline">
+                    <label class="control-label horizontal">Do you own or rent?</label>
 
-                    <div class="controls radioGroup">
-                        <label class="radio first">
-                            <input id="rent" type="radio" value="own" name="Rent">
-                            Own
-                        </label>
-                        <label class="radio">
-                            <input id="rent" type="radio" value="rent" name="Rent">
-                            Rent
-                        </label>
-                    </div>
+                    <label>
+                        <input id="rent" type="radio" value="own" name="Rent">
+                        Own
+                    </label>
+                    <label>
+                        <input id="rent" type="radio" value="rent" name="Rent">
+                        Rent
+                    </label>
                 </div>
-                <div class="control-group">
-                    <label class="control-label" for="relocate">Will you relocate?</label>
+                <div class="control-group radio-inline">
+                    <label class="control-label horizontal" for="relocate">Will you relocate?</label>
 
-                    <div class="controls radioGroup">
-                        <label class="radio first">
-                            <input id="relocate" type="radio" value="yes" name="Relocate">
-                            Yes
-                        </label>
-                        <label class="radio">
-                            <input id="relocate" type="radio" value="no" name="Relocate">
-                            No
-                        </label>
-                    </div>
+                    <label>
+                        <input id="relocate" type="radio" value="yes" name="Relocate">
+                        Yes
+                    </label>
+                    <label>
+                        <input id="relocate" type="radio" value="no" name="Relocate">
+                        No
+                    </label>
                 </div>
 
                 <div class="control-group">
@@ -665,19 +660,16 @@
                     </div>
                 </div>
 
-                <div class="control-group">
-                    <label class="control-label" for="factor">Spouses employment a factor?</label>
-
-                    <div class="controls radioGroup">
-                        <label class="radio first">
-                            <input id="factor" type="radio" value="yes" name="Factor">
-                            Yes
-                        </label>
-                        <label class="radio">
-                            <input id="factor" type="radio" value="no" name="Factor">
-                            No
-                        </label>
-                    </div>
+                <div class="control-group radio-inline">
+                    <label class="control-label horizontal" for="factor">Spouses employment a factor?</label>
+                    <label>
+                        <input id="factor" type="radio" value="yes" name="Factor">
+                        Yes
+                    </label>
+                    <label>
+                        <input id="factor" type="radio" value="no" name="Factor">
+                        No
+                    </label>
                 </div>
 
                 <div class="form-actions">
