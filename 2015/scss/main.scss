@@ -378,6 +378,7 @@ input[type="submit"] {
 .btn {
   background: $btn-color url('../images/btn-bg.png') repeat-x 0 100%;
   border: none;
+  border-radius: 0;
   display: inline-block;
   height: 35px;
   width: auto;
@@ -397,6 +398,7 @@ input[type="submit"] {
     text-decoration: none;
   }
   &:active {
+    background-image: url('../images/btn-bg.png');
     background-color: lighten( $btn-color, 30% );
     background-position: 0 100%;
     outline: none;
@@ -951,6 +953,7 @@ form {
 }*/
 
 .form-vertical {
+  margin: 0 0 0 50px;
 
   .asterisk {
     margin: 0 -11px 0 0;
@@ -961,7 +964,7 @@ form {
     background: url("../images/formDivider.png") repeat-x 0 0;
     height: 3px;
     margin: 10px 0 16px 0;
-    width: 60%;
+    width: 65%;
   }
 
   .continue {
@@ -983,8 +986,9 @@ form {
   }
 
   .form-control {
+    font-size: 12px;
     border-radius: 1px;
-    width: 60%;
+    width: 65%;
     padding: 0 12px;
     height: 30px;
   }
@@ -998,7 +1002,7 @@ form {
     .control-label {
       text-align: left;
       width: 100%;
-      padding-left: 7px;
+      padding-left: 4px;
       &.horizontal {
         width: auto;
         margin-right: 9px;
@@ -1014,23 +1018,12 @@ form {
     }
 
     &.firstMiddle {
-
-      .control-label.firstName {
-        width: 274px;
-      }
-
-      .control-label.middleInitial {
-        width: 33px;
-        padding: 11px 0 0 14px;
-
-      }
-
       .controls {
         clear: both;
         .form-control {
           float: left;
           &.firstName {
-            width: 311px;
+            width: 325px;
           }
           &.middleInitial {
             width: 33px;
@@ -1038,16 +1031,19 @@ form {
           }
         }
         .middleInitial {
-          padding: 8px 0 0 10px;
+          width: 33px;
+          padding: 6px 0 0 10px;
         }
       }
     }
     &.phone, &.optionalPhone {
-      margin: 0 0 6px 0;
+      margin: 0;
       width: 500px;
       float: left;
       .controls {
+        margin-bottom: 0;
         .form-control {
+          margin-bottom: 0;
           &.phone {
             width: 314px;
             float: left;
@@ -1055,15 +1051,19 @@ form {
         }
       }
       .phoneType {
-        width: 80px;
+        width: 77px;
         float: left;
+        padding: 0 6px;
       }
+    }
+    &.optionalPhone {
+      margin-top: 6px;
     }
     &.addPhone, &.removePhone {
       margin: 0;
       padding: 0;
       width: 100%;
-      label {
+      .control-label {
         text-align: left;
         margin: 0;
         padding: 0;
@@ -1114,14 +1114,32 @@ form {
     &.termination {
       .form-control {
         width: 15%;
+        float: left
+      }
+      span,
+      label {
+        float: left;
+        margin-top: 4px;
+      }
+      span {
+        margin-top: 3px;
       }
     }
 
     &.radio-inline {
       padding-left: 0;
       width: 100%;
+      .control-label {
+        padding-left: 4px;
+      }
+      label {
+        width: auto;
+        text-align: left;
+        padding-left: 16px;
+      }
       input[type="radio"] {
-        margin-top: 0;
+        margin-left: -17px;
+        margin-top: 3px;
       }
     }
 
@@ -1215,12 +1233,78 @@ form {
   }
 
   .form-actions {
-    padding-right: 160px;
     text-align: right;
+    width: 65%;
+    background: transparent;
   }
 
   .add-on {
     cursor: pointer;
   }
 
+}
+
+
+.input-append {
+  margin-bottom: 5px;
+}
+.input-append input,
+.input-append select,
+.input-append .uneditable-input {
+  *margin-left: 0;
+  -webkit-border-radius: 0 3px 3px 0;
+  -moz-border-radius: 0 3px 3px 0;
+  border-radius: 0 3px 3px 0;
+}
+.input-append input:focus,
+.input-append select:focus,
+.input-append .uneditable-input:focus {
+  position: relative;
+  z-index: 2;
+}
+.input-append .uneditable-input {
+  border-left-color: #ccc;
+}
+.input-append .add-on {
+  display: inline-block;
+  width: auto;
+  min-width: 16px;
+  height: 18px;
+  padding: 4px 5px;
+  font-weight: normal;
+  line-height: 18px;
+  text-align: center;
+  text-shadow: 0 1px 0 #ffffff;
+  vertical-align: middle;
+  border: none;
+}
+.input-append .add-on,
+.input-append .btn {
+  -webkit-border-radius: 3px 0 0 3px;
+  -moz-border-radius: 3px 0 0 3px;
+  border-radius: 3px 0 0 3px;
+}
+.input-append .active {
+  background-color: #a9dba9;
+  border-color: #46a546;
+}
+.input-prepend .btn {
+  margin-right: -1px;
+}
+.input-append input,
+.input-append select .uneditable-input {
+  -webkit-border-radius: 3px 0 0 3px;
+  -moz-border-radius: 3px 0 0 3px;
+  border-radius: 3px 0 0 3px;
+}
+.input-append .uneditable-input {
+  border-left-color: #eee;
+  border-right-color: #ccc;
+}
+.input-append .add-on,
+.input-append .btn {
+  margin-left: -1px;
+  -webkit-border-radius: 0 3px 3px 0;
+  -moz-border-radius: 0 3px 3px 0;
+  border-radius: 0 3px 3px 0;
 }
