@@ -1369,15 +1369,14 @@ form {
 
 }*/
 .form-vertical {
-  margin: 0 0 0 50px; }
+  margin: 0 auto;
+  width: 57%;
+  padding-bottom: 24px; }
   .form-vertical .asterisk {
     margin: 0 -11px 0 0;
     padding: 2px 10px 0 3px; }
   .form-vertical .formDivider {
-    background: url("../images/formDivider.png") repeat-x 0 0;
-    height: 3px;
-    margin: 10px 0 16px 0;
-    width: 65%; }
+    height: 30px; }
   .form-vertical .continue {
     display: inline-block;
     float: right;
@@ -1394,14 +1393,19 @@ form {
   .form-vertical .form-control {
     font-size: 12px;
     border-radius: 1px;
-    width: 65%;
+    width: 98%;
     padding: 0 12px;
-    height: 30px; }
+    margin-bottom: 0;
+    height: 26px; }
   .form-vertical .control-group {
     margin-left: 0;
-    margin-bottom: 1em;
+    margin-bottom: 6px;
     clear: both;
     overflow: hidden; }
+    .form-vertical .control-group textarea {
+      height: 66px; }
+    .form-vertical .control-group select {
+      padding: 0 0 0 6px; }
     .form-vertical .control-group .control-label {
       text-align: left;
       width: 100%;
@@ -1418,28 +1422,30 @@ form {
       .form-vertical .control-group.firstMiddle .controls .form-control {
         float: left; }
         .form-vertical .control-group.firstMiddle .controls .form-control.firstName {
-          width: 325px; }
+          width: 78%; }
         .form-vertical .control-group.firstMiddle .controls .form-control.middleInitial {
           width: 33px;
+          text-align: center;
           padding: 0; }
       .form-vertical .control-group.firstMiddle .controls .middleInitial {
         width: 33px;
-        padding: 6px 0 0 10px; }
+        padding: 4px 0 0 10px; }
     .form-vertical .control-group.phone, .form-vertical .control-group.optionalPhone {
       margin: 0;
-      width: 500px;
+      width: 100%;
       float: left; }
       .form-vertical .control-group.phone .controls, .form-vertical .control-group.optionalPhone .controls {
         margin-bottom: 0; }
         .form-vertical .control-group.phone .controls .form-control, .form-vertical .control-group.optionalPhone .controls .form-control {
           margin-bottom: 0; }
           .form-vertical .control-group.phone .controls .form-control.phone, .form-vertical .control-group.optionalPhone .controls .form-control.phone {
-            width: 314px;
+            width: 74%;
             float: left; }
       .form-vertical .control-group.phone .phoneType, .form-vertical .control-group.optionalPhone .phoneType {
         width: 77px;
         float: left;
-        padding: 0 6px; }
+        padding: 0 0 0 6px;
+        margin-left: 7px; }
     .form-vertical .control-group.optionalPhone {
       margin-top: 6px; }
     .form-vertical .control-group.addPhone, .form-vertical .control-group.removePhone {
@@ -1473,16 +1479,16 @@ form {
     .form-vertical .control-group.salary .controls .salaryDesired {
       *float: left; }
     .form-vertical .control-group.termination .form-control {
-      width: 15%;
+      width: 24%;
       float: left; }
     .form-vertical .control-group.termination span,
     .form-vertical .control-group.termination label {
-      float: left;
-      margin-top: 4px; }
+      float: left; }
     .form-vertical .control-group.termination span {
-      margin-top: 3px; }
+      margin-top: 2px; }
     .form-vertical .control-group.radio-inline {
       padding-left: 0;
+      height: 30px;
       width: 100%; }
       .form-vertical .control-group.radio-inline .control-label {
         padding-left: 4px; }
@@ -1545,8 +1551,11 @@ form {
     display: none; }
   .form-vertical .form-actions {
     text-align: right;
-    width: 65%;
-    background: transparent; }
+    width: 100%;
+    background: transparent;
+    padding: 0; }
+    .form-vertical .form-actions .btn-b {
+      padding: 0 13px 4px; }
   .form-vertical .add-on {
     cursor: pointer; }
 
