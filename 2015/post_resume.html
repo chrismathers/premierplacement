@@ -469,31 +469,40 @@
                         <option value="grad">Post-graduate Degree</option>
                     </select>
                 </div>
+
+
                 <div class="control-group level" id="highschool" name="Highschool" style="display: none;">
                     <label class="control-label">High School Degree</label>
-
                     <div class="controls">
-                        Year<input class="form-control year" type="text" id="highSchoolYear" name="Highschool Year">
+                        <label class="control-label short-label">Year</label>
+                        <input class="form-control year" type="text" id="highSchoolYear" name="Highschool Year">
                     </div>
                 </div>
+
+
                 <div class="control-group level" id="undergrad" style="display: none;">
                     <label class="control-label">Undergraduate Degree Earned<span
-                            class="asterisk">*</span></label>
-
-                    <div class="controls">
-                        <input class="form-control" type="text" id="undergradDegreeEarned" name="Undergraduate Degree Earned">
-                        Year<input class="form-control year" type="text" name="Undergrad Year">
-                        GPA<input class="form-control gpa" type="text" name="Undergrad GPA">
+                            class="asterisk">*</span>
+                    </label>
+                    <input class="form-control" type="text" id="undergradDegreeEarned" name="Undergraduate Degree Earned">
+                    <div class="controls flex">
+                        <label class="control-label short-label">Year</label>
+                        <input class="form-control year" type="text" name="Undergrad Year">
+                        <label class="control-label short-label">GPA</label>
+                        <input class="form-control gpa" type="text" name="Undergrad GPA">
                     </div>
                 </div>
                 <div class="control-group level" id="grad" style="display: none;">
                     <label class="control-label">Graduate Degree Earned<span class="asterisk">*</span></label>
+                    <input class="form-control" type="text" id="gradDegreeEarned" name="Graduate Degree Earned">
 
-                    <div class="controls">
-                        <input class="form-control" type="text" id="gradDegreeEarned" name="Graduate Degree Earned">
-                        Year<input class="form-control year" type="text" name="Grad Year">
-                        GPA<input class="form-control gpa" type="text" name="Grad GPA">
+                    <div class="controls flex">
+                        <label class="control-label short-label">Year</label>
+                        <input class="form-control year" type="text" name="Grad Year">
+                        <label class="control-label short-label">GPA</label>
+                        <input class="form-control gpa" type="text" name="Grad GPA">
                     </div>
+
                 </div>
 
                 <div class="control-group">
