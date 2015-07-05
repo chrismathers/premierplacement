@@ -137,7 +137,7 @@ input[type="checkbox"]:focus {
   border-radius: 4px;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+  -webkit-transition: border-color ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
   -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
   transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s; }
 
@@ -557,11 +557,13 @@ select[multiple].form-group-lg .form-control {
 @media (min-width: 768px) {
   .form-horizontal .form-group-sm .control-label {
     padding-top: 6px; } }
-/*! responsive-nav.js 1.0.32 by @viljamis */
+/* responsive-nav.js 1.0.32 by @viljamis */
 .nav-collapse {
   display: none; }
 
-@media only screen and (min-width: 0px) and (max-width: 600px) {
+@media only screen
+and (min-width : 0px)
+and (max-width : 600px) {
   display: none;
   .nav-collapse ul {
     margin: 0;
@@ -606,7 +608,7 @@ select[multiple].form-group-lg .form-control {
     pointer-events: none !important; }
 
   .nav-toggle {
-    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -639,7 +641,9 @@ select[multiple].form-group-lg .form-control {
       height: 2px;
       margin-top: 3px;
       width: 90%; } }
-@media only screen and (min-width: 0px) and (max-width: 600px) and (min-width: 684px) {
+@media only screen
+and (min-width : 0px)
+and (max-width : 600px) and screen and (min-width: 684px) {
   .js .nav-collapse {
     position: relative; }
 
@@ -705,7 +709,9 @@ input[type="submit"] {
   max-height: 142px;
   min-height: 142px;
   max-width: 500px; }
-  @media only screen and (max-width: 860px) and (min-width: 320px) {
+  @media only screen
+  and (max-width: 860px)
+  and (min-width: 320px) {
     #pp-logo {
       max-width: 100%;
       min-height: 0;
@@ -715,15 +721,19 @@ input[type="submit"] {
   max-width: 1024px;
   width: auto;
   margin: 0 auto; }
-  @media only screen and (max-width: 768px) {
+  @media only screen
+  and (max-width: 768px) {
     #content {
       min-width: 0;
       max-width: 768px; } }
-  @media only screen and (max-width: 320px) {
+  @media only screen
+  and (max-width : 320px) {
     #content {
       width: auto;
       margin: 10px; } }
-  @media only screen and (min-width: 320px) and (max-width: 518px) {
+  @media only screen
+  and (min-width : 320px)
+  and (max-width : 518px) {
     #content {
       width: auto; } }
 
@@ -731,13 +741,18 @@ input[type="submit"] {
   float: left;
   width: 65%;
   margin-left: 14px; }
-  @media only screen and (max-width: 1024px) and (min-width: 860px) {
+  @media only screen
+  and (max-width: 1024px)
+  and (min-width: 860px) {
     #col-left {
       width: 65%; } }
-  @media only screen and (max-width: 860px) and (min-width: 600px) {
+  @media only screen
+  and (max-width: 860px)
+  and (min-width: 600px) {
     #col-left {
       width: 60%; } }
-  @media only screen and (max-width: 600px) {
+  @media only screen
+  and (max-width: 600px) {
     #col-left {
       width: auto;
       margin: 14px;
@@ -746,7 +761,8 @@ input[type="submit"] {
         font-size: .7em; }
       #col-left h2 {
         font-size: 1em; } }
-  @media only screen and (max-width: 320px) {
+  @media only screen
+  and (max-width : 320px) {
     #col-left {
       width: 100%;
       float: none;
@@ -758,10 +774,12 @@ input[type="submit"] {
     letter-spacing: -0.2px;
     margin-bottom: 14px;
     width: 100%; }
-    @media only screen and (max-width: 600px) {
+    @media only screen
+    and (max-width: 600px) {
       #col-left #main-nav {
         display: none; } }
-    @media only screen and (max-width: 320px) {
+    @media only screen
+    and (max-width : 320px) {
       #col-left #main-nav {
         display: none; } }
     #col-left #main-nav ul {
@@ -770,6 +788,14 @@ input[type="submit"] {
       width: 100%;
       flex-flow: row nowrap;
       justify-content: space-between;
+      display: -webkit-box;
+      /* OLD - iOS 6-, Safari 3.1-6 */
+      display: -moz-box;
+      /* OLD - Firefox 19- (buggy but mostly works) */
+      display: -ms-flexbox;
+      /* TWEENER - IE 10 */
+      display: -webkit-flex;
+      /* NEW - Chrome */
       display: flex;
       align-items: center; }
     #col-left #main-nav li {
@@ -778,7 +804,8 @@ input[type="submit"] {
       display: inline-block;
       text-align: center;
       vertical-align: middle; }
-      @media only screen and (max-width: 768px) {
+      @media only screen
+      and (max-width: 768px) {
         #col-left #main-nav li {
           width: 68px;
           font-size: 14px; }
@@ -843,16 +870,20 @@ input[type="submit"] {
   float: right;
   width: 30%;
   margin: 0 14px 3em; }
-  @media only screen and (max-width: 1024px) and (min-width: 860px) {
+  @media only screen
+  and (max-width: 1024px)
+  and (min-width: 860px) {
     #col-right {
       min-width: 228px; } }
-  @media only screen and (max-width: 600px) {
+  @media only screen
+  and (max-width: 600px) {
     #col-right {
       width: auto;
       float: none; }
       #col-right #buttonBlock {
         display: none; } }
-  @media only screen and (max-width: 320px) {
+  @media only screen
+  and (max-width : 320px) {
     #col-right {
       width: auto;
       float: none; } }
@@ -877,7 +908,9 @@ input[type="submit"] {
   #buttonBlock .btn-a {
     margin-left: 10px;
     float: right; }
-  @media only screen and (max-width: 866px) and (min-width: 320px) {
+  @media only screen
+  and (max-width: 866px)
+  and (min-width: 320px) {
     #buttonBlock {
       text-align: center; }
       #buttonBlock .btn, #buttonBlock .btn-a, #buttonBlock .btn-b, #buttonBlock .btn-c,
@@ -936,54 +969,65 @@ input[type="submit"] {
     top: -16px;
     left: 11px;
     padding: 0 6px; }
+  #submit.post_resume {
+    display: none; }
 
 #formDiv {
   width: 100%;
   margin: 32px 0 47px 0; }
+  @media only screen and (max-width: 866px) and (min-width: 320px) {
+    #formDiv {
+      margin-top: 16px; } }
 
-form {
+#miniInput {
   margin: 0; }
-  form label {
+  #miniInput label {
     float: left;
     font-weight: bold;
     font-size: 11px;
     width: 85px;
     text-align: right;
     padding: 4px 6px 0 10px; }
-  form .form-control {
+  #miniInput .form-control {
     margin: 0 6px 12px 0;
     padding: 0;
     width: 60%;
     border-radius: 0;
     height: 24px;
     line-height: initial; }
-  @media only screen and (min-width: 320px) and (max-width: 866px) {
-    form label {
+  @media only screen
+  and (min-width: 320px)
+  and (max-width: 866px) {
+    #miniInput label {
       float: none;
       display: block;
       font-weight: bold;
       font-size: 11px;
       width: auto;
       text-align: left;
-      padding: 4px 14px; }
-    form .form-control {
-      margin: 0 0 12px 14px;
+      padding: 4px 14px;
+      margin: 0; }
+    #miniInput .form-control {
+      margin: 0 0 5px 14px;
       padding: 0;
       width: 86%;
       border-radius: 0; } }
-  @media only screen and (max-width: 600px) {
-    form .form-control {
-      width: 92%;
-      border: 1px solid red; } }
-  @media only screen and (max-width: 320px) {
-    form .form-control {
+  @media only screen
+  and (max-width: 600px) {
+    #miniInput .form-control {
+      width: 92%; } }
+  @media only screen
+  and (max-width : 320px) {
+    #miniInput .form-control {
       width: 89%; } }
-  form textarea {
+  #miniInput textarea {
     border-radius: 0;
     margin-left: 10px; }
-  form .submitButton {
+  #miniInput .submitButton {
     width: 100px;
-    float: right;
+    position: absolute;
+    bottom: 0;
+    right: 0;
     margin: 1px -1px 0 0;
     padding-bottom: 5px;
     line-height: 1px; }
@@ -1024,7 +1068,8 @@ form {
   #job-listings h2 {
     margin-top: 1.3em;
     margin-bottom: .3em; }
-  @media only screen and (max-width: 600px) {
+  @media only screen
+  and (max-width: 600px) {
     #job-listings {
       height: 242px;
       padding-bottom: 330px;
@@ -1058,7 +1103,8 @@ form {
   letter-spacing: 0; }
   .blog h2 span {
     font-size: .8em; }
-  @media only screen and (max-width: 996px) {
+  @media only screen
+    and (max-width: 996px) {
     .blog h2 {
       letter-spacing: 1px; } }
 .blog .entry-title {
@@ -1153,225 +1199,21 @@ form {
   padding: 2px 3px 0 0;
   vertical-align: middle; }
 
-/*
-.form-horizontal {
-  .asterisk {
-    margin: 0 -11px 0 0;
-    padding: 2px 10px 0 3px;
-  }
-
-  .formDivider {
-    background: url("../images/formDivider.png") repeat-x 0 0;
-    height: 3px;
-    margin: 10px 0 16px 120px;
-    width: 553px;
-  }
-
-  .continue {
-    display: inline-block;
-    float: right;
-    margin-right: 160px;
-    outline: medium none;
-    padding: 0;
-    text-align: right;
-    width: 100%;
-    height: 2em;
-  }
-  .back {
-    float: left;
-  }
-
-  .control-group {
-    margin-left: 0;
-    .control-label {
-      text-align: left;
-      width: 190px;
-    }
-    .controls {
-      margin-left: 209px;
-      &.radioGroup {
-        margin: 0 0 5px 0;
-        label {
-          float: left;
-          margin: 0 10px 0 0;
-          padding-top: 5px;
-          text-align: left;
-        }
-      }
-      *padding-left: 0;
-      *display: inline;
-
-      &.salutation {
-        width: 64px;
-        select {
-          width: 100%;
-        }
-      }
-    }
-
-    .firstMiddle {
-      .firstName {
-        float: left;
-        width: 193px;
-      }
-      label {
-        width: 28px;
-      }
-
-      .middleInitial {
-        float: left;
-        width: 33px;
-        padding-left: 0;
-        input {
-          width: 33px;
-        }
-      }
-    }
-    &.phone, &.optionalPhone {
-      margin: 0 0 6px 0;
-      .phoneType {
-        width: 80px;
-      }
-    }
-    &.addPhone, &.removePhone {
-      margin: 0;
-      padding: 0;
-      label {
-        text-align: left;
-        margin: 0;
-        padding: 0;
-      }
-    }
-    &.removePhone {
-      display: none;
-    }
-
-    &.salary {
-      .controls {
-        &.salaryDesired {
-          span {
-            float: left;
-            padding: 5px 6px 0;
-          }
-          label.desired {
-            margin-left: 0px;
-            width: 55px;
-          }
-
-          input {
-            margin-left: 0;
-            width: 118px;
-            float: left;
-          }
-        }
-        .salaryDesired {
-          *float: left;
-        }
-      }
-    }
-    &.level {
-
-      input {
-        margin: 0 9px 0 0;
-        &.year, &.gpa {
-          width: 38px;
-          margin-left: 9px;
-        }
-      }
-    }
-
-    #level-select {
-      display: none;
-      width: 100px;
-      margin: 0 9px 0 17px;
-    }
-    #career-select, #education-select {
-      width: 292px;
-    }
-  }
-
-  #moreInfoAsk {
-    margin: 0 40px 18px;
-    height: 116px;
-    display: none;
-    p {
-      margin: 0;
-    }
-    button {
-      margin: 20px 0;
-      &#continue {
-        float: right;
-        margin-right: 20px;
-      }
-      &#submit2 {
-        float: right;
-        margin-right: 160px;
-      }
-    }
-  }
-
-  #moreInfo {
-    display: none;
-    .control-group {
-      margin: 0 40px 18px;
-    }
-    .controls {
-      margin: 10px 0;
-    }
-    textarea {
-      width: 100%;
-    }
-    p {
-      margin: 0;
-      padding: 0;
-    }
-  }
-
-  #finalButtons {
-    display: none;
-  }
-
-  #visa {
-    width: 292px;
-  }
-
-  input#gradDegreeEarned.error, input#undergradDegreeEarned.error {
-    color: #b94a48;
-    border-color: #b94a48;
-    &:focus {
-      border-color: #953b39;
-      -webkit-box-shadow: 0 0 6px #d59392;
-      -moz-box-shadow: 0 0 6px #d59392;
-      box-shadow: 0 0 6px #d59392;
-    }
-  }
-
-  *.datepicker table {
-    width: 100px;
-  }
-
-  .optionalPhone {
-    display: none;
-  }
-
-  #emailError {
-    display: none;
-  }
-
-  .form-actions {
-    padding-right: 160px;
-    text-align: right;
-  }
-
-  .add-on {
-    cursor: pointer;
-  }
-
-}*/
 .form-vertical {
   margin: 0 auto;
   width: 57%;
   padding-bottom: 24px; }
+  @media only screen
+  and (min-width: 320px)
+  and (max-width: 866px) {
+    .form-vertical {
+      width: 80%; } }
+  @media only screen
+  and (max-width : 320px) {
+    .form-vertical {
+      width: 100%; }
+      .form-vertical .form-control {
+        width: 100%; } }
   .form-vertical .asterisk {
     margin: 0 -11px 0 0;
     padding: 2px 10px 0 3px; }
@@ -1393,9 +1235,9 @@ form {
   .form-vertical .form-control {
     font-size: 12px;
     border-radius: 1px;
-    width: 98%;
+    width: 100%;
     padding: 0 12px;
-    margin-bottom: 0;
+    margin: 0 6px 0 0;
     height: 26px; }
   .form-vertical .control-group {
     margin-left: 0;
@@ -1405,11 +1247,13 @@ form {
     .form-vertical .control-group textarea {
       height: 66px; }
     .form-vertical .control-group select {
-      padding: 0 0 0 6px; }
+      padding: 0 0 0 6px;
+      -webkit-border-radius: 0px; }
     .form-vertical .control-group .control-label {
       text-align: left;
-      width: 100%;
-      padding-left: 4px; }
+      width: auto;
+      padding: 4px 6px 0 4px;
+      font-size: 11px; }
       .form-vertical .control-group .control-label.horizontal {
         width: auto;
         margin-right: 9px; }
@@ -1418,31 +1262,53 @@ form {
       .form-vertical .control-group .controls.salutation select {
         width: 100%; }
     .form-vertical .control-group.firstMiddle .controls {
+      display: -webkit-box;
+      /* OLD - iOS 6-, Safari 3.1-6 */
+      display: -moz-box;
+      /* OLD - Firefox 19- (buggy but mostly works) */
+      display: -ms-flexbox;
+      /* TWEENER - IE 10 */
+      display: -webkit-flex;
+      /* NEW - Chrome */
+      display: flex;
       clear: both; }
       .form-vertical .control-group.firstMiddle .controls .form-control {
         float: left; }
-        .form-vertical .control-group.firstMiddle .controls .form-control.firstName {
-          width: 78%; }
         .form-vertical .control-group.firstMiddle .controls .form-control.middleInitial {
           width: 33px;
           text-align: center;
-          padding: 0; }
+          padding: 0;
+          margin-right: 0; }
       .form-vertical .control-group.firstMiddle .controls .middleInitial {
-        width: 33px;
+        width: 40px;
         padding: 4px 0 0 10px; }
     .form-vertical .control-group.phone, .form-vertical .control-group.optionalPhone {
       margin: 0;
       width: 100%;
       float: left; }
       .form-vertical .control-group.phone .controls, .form-vertical .control-group.optionalPhone .controls {
-        margin-bottom: 0; }
+        margin-bottom: 0;
+        display: -webkit-box;
+        /* OLD - iOS 6-, Safari 3.1-6 */
+        display: -moz-box;
+        /* OLD - Firefox 19- (buggy but mostly works) */
+        display: -ms-flexbox;
+        /* TWEENER - IE 10 */
+        display: -webkit-flex;
+        /* NEW - Chrome */
+        display: flex; }
         .form-vertical .control-group.phone .controls .form-control, .form-vertical .control-group.optionalPhone .controls .form-control {
           margin-bottom: 0; }
           .form-vertical .control-group.phone .controls .form-control.phone, .form-vertical .control-group.optionalPhone .controls .form-control.phone {
-            width: 74%;
+            width: 100%;
             float: left; }
+            @media only screen
+            and (max-width: 860px)
+            and (min-width: 320px) {
+              .form-vertical .control-group.phone .controls .form-control.phone, .form-vertical .control-group.optionalPhone .controls .form-control.phone {
+                width: 100%; } }
       .form-vertical .control-group.phone .phoneType, .form-vertical .control-group.optionalPhone .phoneType {
-        width: 77px;
+        width: 108px;
         float: left;
         padding: 0 0 0 6px;
         margin-left: 7px; }
@@ -1466,6 +1332,8 @@ form {
       margin-bottom: 0; }
     .form-vertical .control-group.additional span {
       font-size: .75em; }
+    .form-vertical .control-group.salary .control-label {
+      width: 100%; }
     .form-vertical .control-group.salary .controls.salaryDesired span {
       float: left;
       padding: 5px 7px 5px 3px; }
@@ -1479,7 +1347,7 @@ form {
     .form-vertical .control-group.salary .controls .salaryDesired {
       *float: left; }
     .form-vertical .control-group.termination .form-control {
-      width: 24%;
+      width: 27%;
       float: left; }
     .form-vertical .control-group.termination span,
     .form-vertical .control-group.termination label {
@@ -1495,15 +1363,33 @@ form {
       .form-vertical .control-group.radio-inline label {
         width: auto;
         text-align: left;
-        padding-left: 16px; }
+        font-size: 11px;
+        padding-left: 16px;
+        margin-right: 9px; }
       .form-vertical .control-group.radio-inline input[type="radio"] {
         margin-left: -17px;
         margin-top: 3px; }
+    .form-vertical .control-group.level .control-label.short-label {
+      width: 12%; }
+    .form-vertical .control-group.level .control-label.gpa {
+      margin-left: 32px; }
+    .form-vertical .control-group.level .controls.flex {
+      display: -webkit-box;
+      /* OLD - iOS 6-, Safari 3.1-6 */
+      display: -moz-box;
+      /* OLD - Firefox 19- (buggy but mostly works) */
+      display: -ms-flexbox;
+      /* TWEENER - IE 10 */
+      display: -webkit-flex;
+      /* NEW - Chrome */
+      display: flex;
+      margin-top: 7px; }
     .form-vertical .control-group.level input {
       margin: 0 9px 0 0; }
       .form-vertical .control-group.level input.year, .form-vertical .control-group.level input.gpa {
-        width: 38px;
-        margin-left: 9px; }
+        width: 38px; }
+      .form-vertical .control-group.level input.year {
+        margin-right: 30px; }
     .form-vertical .control-group #level-select {
       display: none;
       width: 100px;
@@ -1545,6 +1431,8 @@ form {
       box-shadow: 0 0 6px #d59392; }
   .form-vertical *.datepicker table {
     width: 100px; }
+  .form-vertical .datepicker.dropdown-menu {
+    left: 95px !important; }
   .form-vertical .optionalPhone {
     display: none; }
   .form-vertical #emailError {
@@ -1627,5 +1515,3 @@ form {
   -webkit-border-radius: 0 3px 3px 0;
   -moz-border-radius: 0 3px 3px 0;
   border-radius: 0 3px 3px 0; }
-
-/*# sourceMappingURL=main.css.map */
