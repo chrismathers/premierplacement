@@ -1,186 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
 <HEAD>
-<TITLE>Premier Placement, Inc. - Registration Form</TITLE>
-<META NAME="keywords" CONTENT="job, jobs, job postings, job bank, job listings, job database, job search, vacancy, job vacancies, consulting, contract, Engineering, Manufacturing, Materials Management, Finance, MIS, HR, human resources, placement, temporary, permanent, career search, career, employment agency, employment, recruiting, recruitment, opportunity, opportunities, recruiter, headhunter, head hunter, work, staffing, help wanted, personnel, human resources, outsourcing, employer, employers, Allentown, Pennsylvania, Philadelphia, Eastern Pennsylvania, Western New Jersey">
-<META NAME="description" CONTENT="Premier Placement, Inc. provides search and recruiting services.  Specializing in the placement of Engineering, Manufacturing, Materials Management, and Finance candidates, as well as Sales, MIS, and HR personnel, we concentrate primarily in Eastern Pennsylvania and Western New Jersey">
-<link rel="STYLESHEET" type="text/css" href="css/bootstrap.min.css">
-<link rel="stylesheet" media="screen" type="text/css" href="css/datepicker.css" />
-<link rel="STYLESHEET" type="text/css" href="css/style.css">
+    <TITLE>Premier Placement, Inc. - Registration Form</TITLE>
+    <META NAME="keywords"
+          CONTENT="job, jobs, job postings, job bank, job listings, job database, job search, vacancy, job vacancies, consulting, contract, Engineering, Manufacturing, Materials Management, Finance, MIS, HR, human resources, placement, temporary, permanent, career search, career, employment agency, employment, recruiting, recruitment, opportunity, opportunities, recruiter, headhunter, head hunter, work, staffing, help wanted, personnel, human resources, outsourcing, employer, employers, Allentown, Pennsylvania, Philadelphia, Eastern Pennsylvania, Western New Jersey">
+    <META NAME="description"
+          CONTENT="Premier Placement, Inc. provides search and recruiting services.  Specializing in the placement of Engineering, Manufacturing, Materials Management, and Finance candidates, as well as Sales, MIS, and HR personnel, we concentrate primarily in Eastern Pennsylvania and Western New Jersey">
+    <link rel="STYLESHEET" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" media="screen" type="text/css" href="css/datepicker.css"/>
+    <link rel="STYLESHEET" type="text/css" href="css/style.css">
 
-<!--[if lte IE 8]> <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> <![endif]--> 
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>		
+    <!--[if lte IE 8]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
 
-<script type="text/javascript" src="scripts/bootstrap-datepicker.js"></script>
-<script type="text/javascript" src="scripts/jquery.cookie.js"></script>
-<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+    <script type="text/javascript" src="scripts/bootstrap-datepicker.js"></script>
+    <script type="text/javascript" src="scripts/jquery.cookie.js"></script>
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
 
-<script>
-$(document).ready(function() {
-  	readCookie('premier');
-});
+    <script>
+        $(document).ready(function () {
+            readCookie('premier');
+        });
 
-function readCookie(name) {
-    var nameEQ = name + "=";
-    var ca = document.cookie.split(';');
-    var firstName, lastName, realname, email;
-    for (var i = 0; i < ca.length; i++) {
-        var c = ca[i];
-        while (c.charAt(0) == ' ') c = c.substring(1, c.length);
-        keyVal = c.substring(nameEQ.length, c.length).split("&");
-        for (var x=0; x<keyVal.length; x++) {
-			val = keyVal[x].split("=");
-			if(val[0] == "firstName" ) {
-				firstName = val[1];
-			}
-			if(val[0] == "lastName" ) {
-				lastName = val[1];
-			}
-			if(val[0] == "email" ) {
-				email = val[1];
-			}
-		}
-		$("#name").html(firstName);
-		//$("#realname").val(firstName + " " + lastName);
-    }
-    return null;
-}
+        function readCookie(name) {
+            var nameEQ = name + "=";
+            var ca = document.cookie.split(';');
+            var firstName, lastName, realname, email;
+            for (var i = 0; i < ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+                keyVal = c.substring(nameEQ.length, c.length).split("&");
+                for (var x = 0; x < keyVal.length; x++) {
+                    val = keyVal[x].split("=");
+                    if (val[0] == "firstName") {
+                        firstName = val[1];
+                    }
+                    if (val[0] == "lastName") {
+                        lastName = val[1];
+                    }
+                    if (val[0] == "email") {
+                        email = val[1];
+                    }
+                }
+                $("#name").html(firstName);
+                //$("#realname").val(firstName + " " + lastName);
+            }
+            return null;
+        }
 
-</script>
+    </script>
 </HEAD>
 
 <body>
-	<div id="container">
-		<div id="leftBk">
-	        <header>
-				<img src="images/logo_no_text.png" />
-	        	<div id="bannerText">
-	                <h2 style="display:none">PREMIER</h2>
-		            <h3 style="display:none">PLACEMENT, INC.</h3>
-		            
-	            </div>
-	        </header>
+<div id="container">
+    <div id="leftBk">
+        <header>
+            <img src="images/logo_no_text.png"/>
 
-			<div id="rightBk">
-				<nav>
-					<ul>
-                                                <li><a href="/">Home</a></li>
-                                                <li><a href="/about-us">About Us</a></li>
-                                                <li><a href="/resume-guide">Resume Guide</a></li>
-                                                <li><a href="/contact-us">Contact Us</a></li>
-                                                <li><a href="/interview-guide">Interview Guide</a></li>
-					</ul>
-				</nav>
-				<article>
-					<div class="intro clearfix">
-						<h4>Step 3 - Resume Submission</h4>
-					</div>
+            <div id="bannerText">
+                <h2 style="display:none">PREMIER</h2>
 
-					<aside>
+                <h3 style="display:none">PLACEMENT, INC.</h3>
 
-						<p>Thank you <b><span id="name">$firstName $lastName</span></b> for registering with Premier Placement, Inc. Now that you have provided your contact information, please attach a copy of your resume.</p>
-						<p>Your information will be kept completely private and transmitted over a secure server. Feel free to review our <a href="privacy/">Privacy Policy</a>.</p>
+            </div>
+        </header>
 
-						<form class="form-horizontal" method="POST" name="resume_upload" enctype="multipart/form-data" >
-						<fieldset>
-							<input type="hidden" name="this_form" value="$this_form_url" />
-              				<input type="hidden" name="good_url" value="/thankyou-page">
-							<input type="hidden" name="recipients" value="myaddress">
-							<input type="hidden" name="derive_fields" value="realname = firstName + lastName" />
-							<input type="hidden" name="subject" value="Resume Submission" />
-							<input type="hidden" name="mail_options" value="NoEmpty" />
+        <div id="rightBk">
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about-us">About Us</a></li>
+                    <li><a href="/resume-guide">Resume Guide</a></li>
+                    <li><a href="/contact-us">Contact Us</a></li>
+                    <li><a href="/interview-guide">Interview Guide</a></li>
+                </ul>
+            </nav>
+            <article>
+                <div class="intro clearfix">
+                    <h4>Step 3 - Resume Submission</h4>
+                </div>
 
-							<div class="control-group">
-								<label class="control-label" for="first_file">Resume:</label>
-								<div class="controls">
-								  <input type="file" class="input-xlarge" id="first_file" name="first_file">
-								</div>
-							</div>
+                <aside>
 
-							<div id="submit1Buttons" class="form-actions" style="margin-top: 3em;">
-							    <button type="submit" class="btn back" name="multi_go_back" value="&lt; Back">Back</button>
-							    <button type="button" class="btn btn-primary" id="submit1">Submit Resume</button>
-							</div>
+                    <p>Thank you <b><span id="name">$firstName $lastName</span></b> for registering with Premier
+                        Placement, Inc. Now that you have provided your contact information, please attach a copy of
+                        your resume.</p>
 
-							<div id="moreInfoAsk">
-								<p>Now that we have all of your vital information, you may either finish the submission process by clicking Submit Resume, or provide us with even more details about your current job search and ideal position.</p>
-								<button type="button" class="btn btn-success" id="submit2">Submit Resume</button>
-								<button type="button" class="btn btn-primary" id="continue">Continue</button>
-								<div class="clearfix"></div>
-							</div>
+                    <p>Your information will be kept completely private and transmitted over a secure server. Feel free
+                        to review our <a href="privacy/">Privacy Policy</a>.</p>
 
-							<div id="moreInfo">
-								<div class="intro clearfix">
-									<h4>Step 4 - Additional Information</h4>
-								</div>
-								
-								<div class="control-group">
-									<p>Describe in detail what you would be doing in your ideal next position. What technology would you work with? Who would you report to? Who would report to you? What types of projects would you be working on? The more detail you provide the better for us to understand your career aspirations.</p>
-									<div class="controls">
-									  <textarea rows="5" id="nextPosition" name="Next Position" class="input-xlarge"></textarea>
-									</div>
-								</div>
-							
-								<div class="control-group">
-									<p>Describe your search activity over the past 3 to 6 months. Are you selectively searching or actively looking at this moment? Please include any information about interviews and/or offers you have had as well as the types of position(s) you are seeking.</p>
-									<div class="controls">
-									  <textarea rows="5" id="searchActivity" name="Search Activity" class="input-xlarge"></textarea>
-									</div>
-								</div>
+                    <form class="form-horizontal" method="POST" name="resume_upload" enctype="multipart/form-data">
+                        <fieldset>
+                            <input type="hidden" name="this_form" value="$this_form_url"/>
+                            <input type="hidden" name="good_url" value="/thankyou-page">
+                            <input type="hidden" name="recipients" value="myaddress">
+                            <input type="hidden" name="derive_fields" value="realname = firstName + lastName"/>
+                            <input type="hidden" name="subject" value="Resume Submission"/>
+                            <input type="hidden" name="mail_options" value="NoEmpty"/>
 
-								<div class="control-group">
-									<p>For your present position, please describe three major responsibilities and accomplishments &en; why should my employer hire you? This will prepare you for interviewing as well as help me in my client presentations.</p>
-									<div class="controls">
-									  <textarea rows="5" id="currentResponsibilities" name="Current Responsibilities" class="input-xlarge"></textarea>
-									</div>
-								</div>
+                            <div class="control-group">
+                                <label class="control-label" for="first_file">Resume:</label>
 
-							</div>
+                                <div class="controls">
+                                    <input type="file" class="input-xlarge" id="first_file" name="first_file">
+                                </div>
+                            </div>
 
-							<div id="finalButtons" class="form-actions" style="margin-top: 3em;">
-							    <button type="submit" class="btn back" name="multi_go_back" value="&lt; Back">Back</button>
-							    <button type="button" class="btn btn-primary" id="submit3">Submit Resume</button>
-							</div>
+                            <div id="submit1Buttons" class="form-actions" style="margin-top: 3em;">
+                                <button type="submit" class="btn back" name="multi_go_back" value="&lt; Back">Back
+                                </button>
+                                <button type="button" class="btn btn-primary" id="submit1">Submit Resume</button>
+                            </div>
+
+                            <div id="moreInfoAsk">
+                                <p>Now that we have all of your vital information, you may either finish the submission
+                                    process by clicking Submit Resume, or provide us with even more details about your
+                                    current job search and ideal position.</p>
+                                <button type="button" class="btn btn-success" id="submit2">Submit Resume</button>
+                                <button type="button" class="btn btn-primary" id="continue">Continue</button>
+                                <div class="clearfix"></div>
+                            </div>
+
+                            <div id="moreInfo">
+                                <div class="intro clearfix">
+                                    <h4>Step 4 - Additional Information</h4>
+                                </div>
+
+                                <div class="control-group">
+                                    <p>Describe in detail what you would be doing in your ideal next position. What
+                                        technology would you work with? Who would you report to? Who would report to
+                                        you? What types of projects would you be working on? The more detail you provide
+                                        the better for us to understand your career aspirations.</p>
+
+                                    <div class="controls">
+                                        <textarea rows="5" id="nextPosition" name="Next Position"
+                                                  class="input-xlarge"></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="control-group">
+                                    <p>Describe your search activity over the past 3 to 6 months. Are you selectively
+                                        searching or actively looking at this moment? Please include any information
+                                        about interviews and/or offers you have had as well as the types of position(s)
+                                        you are seeking.</p>
+
+                                    <div class="controls">
+                                        <textarea rows="5" id="searchActivity" name="Search Activity"
+                                                  class="input-xlarge"></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="control-group">
+                                    <p>For your present position, please describe three major responsibilities and
+                                        accomplishments &en; why should my employer hire you? This will prepare you for
+                                        interviewing as well as help me in my client presentations.</p>
+
+                                    <div class="controls">
+                                        <textarea rows="5" id="currentResponsibilities" name="Current Responsibilities"
+                                                  class="input-xlarge"></textarea>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div id="finalButtons" class="form-actions" style="margin-top: 3em;">
+                                <button type="submit" class="btn back" name="multi_go_back" value="&lt; Back">Back
+                                </button>
+                                <button type="button" class="btn btn-primary" id="submit3">Submit Resume</button>
+                            </div>
 
 
-				        </fieldset>
-						</form>
-					</aside>
-				</article>
+                        </fieldset>
+                    </form>
+                </aside>
+            </article>
 
-				<footer>
-					<nav>
-						<ul>
-                                                <li><a href="/">Home</a></li>
-                                                <li><a href="/about-us">About Us</a></li>
-                                                <li><a href="/resume-guide">Resume Guide</a></li>
-                                                <li><a href="/contact-us">Contact Us</a></li>
-                                                <li><a href="/interview-guide">Interview Guide</a></li>
-						</ul>
-					</nav>
-				</footer>
+            <footer>
+                <nav>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/about-us">About Us</a></li>
+                        <li><a href="/resume-guide">Resume Guide</a></li>
+                        <li><a href="/contact-us">Contact Us</a></li>
+                        <li><a href="/interview-guide">Interview Guide</a></li>
+                    </ul>
+                </nav>
+            </footer>
 
-			</div>
-		</div>
-	</div>
-	<script>
-	jQuery(document).ready(function($) {
-		$("#submit1").click(function () {
-			$("#submit1Buttons").toggle();
-			$("#moreInfoAsk").slideDown('1200');
-	    });
-	    $("#continue").click(function () {
-			$("#moreInfoAsk").slideUp('1200');
-			$("#moreInfo").slideDown('1200');
-			$("#finalButtons").toggle();
-	    });
-	    $("#submit2, #submit3").click(function () {
-	    	document.resume_upload.action = "resumemailer_061612.php";
-	    	document.resume_upload.submit();
-	    });
-	});
+        </div>
+    </div>
+</div>
+<script>
+    jQuery(document).ready(function ($) {
+        $("#submit1").click(function () {
+            $("#submit1Buttons").toggle();
+            $("#moreInfoAsk").slideDown('1200');
+        });
+        $("#continue").click(function () {
+            $("#moreInfoAsk").slideUp('1200');
+            $("#moreInfo").slideDown('1200');
+            $("#finalButtons").toggle();
+        });
+        $("#submit2, #submit3").click(function () {
+            document.resume_upload.action = "resumemailer_061612.php";
+            document.resume_upload.submit();
+        });
+    });
 
-	</script>
+</script>
 </body>
 </HTML>
 

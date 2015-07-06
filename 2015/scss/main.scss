@@ -718,7 +718,7 @@ input[type="submit"] {
   h4 {
     float: left;
     width: 50%;
-    padding: 0 0 0 40px;
+    padding: 0;
   }
   div {
     float: right;
@@ -768,6 +768,9 @@ input[type="submit"] {
     }
   }
 
+  &.resume {
+    width: 100%;
+  }
 
   .asterisk {
     margin: 0 -11px 0 0;
@@ -1038,29 +1041,18 @@ input[type="submit"] {
   }
 
   #moreInfoAsk {
-    margin: 0 40px 18px;
+    margin: 60px 0 18px;
     height: 116px;
-    display: none;
+    //display: none;
     p {
       margin: 0;
-    }
-    button {
-      margin: 20px 0;
-      &#continue {
-        float: right;
-        margin-right: 20px;
-      }
-      &#submit2 {
-        float: right;
-        margin-right: 160px;
-      }
     }
   }
 
   #moreInfo {
-    display: none;
+    //display: none;
     .control-group {
-      margin: 0 40px 18px;
+      margin: 0 0 18px;
     }
     .controls {
       margin: 10px 0;
@@ -1075,7 +1067,7 @@ input[type="submit"] {
   }
 
   #finalButtons {
-    display: none;
+    //display: none;
   }
 
   #visa {
@@ -1114,8 +1106,12 @@ input[type="submit"] {
     width: 100%;
     background: transparent;
     padding: 0;
+    .btn-a {
+      float: left;
+    }
     .btn-b {
       padding: 0 13px 4px;
+      float: right;
     }
   }
 
