@@ -1354,7 +1354,7 @@ input[type="submit"] {
     .form-vertical .control-group.level input {
       margin: 0 9px 0 0; }
       .form-vertical .control-group.level input.year, .form-vertical .control-group.level input.gpa {
-        width: 38px; }
+        width: 56px; }
       .form-vertical .control-group.level input.year {
         margin-right: 30px; }
     .form-vertical .control-group #level-select {
