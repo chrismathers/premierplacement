@@ -39,6 +39,7 @@ and (max-width : 518px) {
 }
 */
 
+@import 'bootstrap';
 @import 'bootstrap-form';
 @import 'nav-toggle';
 
@@ -386,7 +387,7 @@ input[type="submit"] {
   width: auto;
   text-align: center;
   font-size: 0.813em;
-  line-height: 2.8em;
+  line-height: 2.5em;
   color: white;
   text-decoration: none;
   text-transform: uppercase;
@@ -756,8 +757,7 @@ input[type="submit"] {
 
   @media only screen
   and (min-width: 320px)
-  and (max-width: 866px) {
-    width: 80%;
+  and (max-width: 866px) {    width: 80%;
   }
 
   @media only screen
