@@ -421,6 +421,7 @@ input[type="submit"] {
   background-color: $btn-c-color;
 }
 
+
 #submit {
   width: 100%;
   clear: both;
@@ -1038,19 +1039,24 @@ input[type="submit"] {
     #career-select, #education-select {
       //width: 292px;
     }
+
+    &.first_file {
+      margin-top: 1em;
+      display: flex;
+    }
   }
 
   #moreInfoAsk {
     margin: 60px 0 18px;
     height: 116px;
-    //display: none;
+    display: none;
     p {
       margin: 0;
     }
   }
 
   #moreInfo {
-    //display: none;
+    display: none;
     .control-group {
       margin: 0 0 18px;
     }
@@ -1067,7 +1073,7 @@ input[type="submit"] {
   }
 
   #finalButtons {
-    //display: none;
+    display: none;
   }
 
   #visa {
@@ -1113,12 +1119,23 @@ input[type="submit"] {
       padding: 0 13px 4px;
       float: right;
     }
+
+    &.border-top {
+      margin-top: 2em;
+      border-top: 1px solid #ddd;
+    }
   }
 
   .add-on {
     cursor: pointer;
   }
 
+}
+
+.resume-file {
+  p {
+    margin-bottom: 1.3em;
+  }
 }
 
 
