@@ -2,14 +2,11 @@
 /**
  * The Template for displaying all single posts.
  *
- * @package WordPress
- * @subpackage Twenty_Ten
- * @since Twenty Ten 1.0
+ * @package Premier
  */
 
 get_header(); ?>
-		<div class="contentDiv" role="main">
-			<?php get_sidebar(); ?>
+
 			<?php
 			/* Run the loop to output the post.
 			 * If you want to overload this in a child theme then include a file
@@ -17,6 +14,7 @@ get_header(); ?>
 			 */
 			get_template_part( 'loop', 'single' );
 			?>
-			</div>
+	</div>
 
+	<?php get_sidebar(); ?>
 <?php get_footer(); ?>
