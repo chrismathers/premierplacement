@@ -1,4 +1,5 @@
 
+			TEMPLATE BEING USED: <?php c2c_reveal_template(); ?>
 </div>
 
 
