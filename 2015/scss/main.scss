@@ -410,6 +410,9 @@ input[type="submit"] {
     background-position: 0 100%;
     outline: none;
   }
+  &:visited {
+    color: white;
+  }
 }
 
 .btn-a {

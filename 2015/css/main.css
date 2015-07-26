@@ -1908,6 +1908,8 @@ input[type="submit"] {
     background-color: #d83daa;
     background-position: 0 100%;
     outline: none; }
+  .btn:visited, .btn-a:visited, .btn-b:visited, .btn-c:visited {
+    color: white; }
 
 .btn-a {
   background-color: #3d1d7f; }
