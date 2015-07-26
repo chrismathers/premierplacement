@@ -1,11 +1,5 @@
 <?php
-
-
 get_header(); ?>
-
-		<div class="contentDiv home">
-
-<?php get_sidebar(); ?>
  			<?php
 			/* Run the loop to output the posts.
 			 * If you want to overload this in a child theme then include a file
@@ -55,5 +49,5 @@ get_header(); ?>
 
 			</div>
 
+	<?php get_sidebar(); ?>
 <?php get_footer(); ?>
-
