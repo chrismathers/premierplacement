@@ -1,7 +1,7 @@
 <?php
 /**
-Template Name: Blog Template
-
+ * Template Name: Blog Template
+ * @package Premier
  */
 
 get_header(); ?>
