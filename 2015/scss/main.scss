@@ -439,7 +439,6 @@ input[type="submit"] {
 }
 
 .contactUsButton {
-  @extend .mybutton;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #6cb82b), color-stop(1, #337f00));
   background: -moz-linear-gradient(center top, #6cb82b 5%, #337f00 100%);
   background-color: #6cb82b;
@@ -451,7 +450,7 @@ input[type="submit"] {
   line-height: 1.4em;
   text-decoration: none;
   margin-top: 16px;
-  padding: 1px 8px;
+  padding: 2px 8px;
   border-radius: 9px;
   -moz-box-shadow: 0px 2px 0px 0px #555555;
   -webkit-box-shadow: 0px 2px 0px 0px #555555;
@@ -659,9 +658,22 @@ input[type="submit"] {
 }
 
 
+.entry-title {
+  font-size: 1em;
+  margin-bottom: .8em;
+  a {
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+
+  }
+}
+
 .blog {
 
   h2 {
+    font-size: 1em;
     margin: 0 0 9px 0;
     letter-spacing: 0;
     span {
@@ -1256,11 +1268,12 @@ input[type="submit"] {
 
 #nav-above.navigation {
   width: 100%;
-  float: left;
   height: 26px;
+  clear: both;
 }
 #nav-below.navigation {
   margin: 10px 0;
+  height: 1em;
 }
 
 .nav-next,
@@ -1294,22 +1307,22 @@ input[type="submit"] {
       text-decoration: none;
     }
   }
+}
 
-  .nav-previous a {
-    padding-left: 12px;
-    &:before {
-      display: inline-block;
-      width: 0;
-      height: 0;
-      border-top: 5px solid transparent;
-      border-bottom: 5px solid transparent;
-      border-right: 5px solid #111;
-      position: absolute;
-      top: 16%;
-      left: 0;
-      content: '';
-      text-decoration: none;
-    }
+.nav-previous a {
+  padding-left: 12px;
+  &:before {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-right: 5px solid #111;
+    position: absolute;
+    top: 16%;
+    left: 0;
+    content: '';
+    text-decoration: none;
   }
 }
 
@@ -1449,15 +1462,30 @@ img.aligncenter {
   }
 }
 
+.entry-utility {
+  margin-bottom: 3em;
+}
 
 .comments-link {
-  margin-bottom: 24px;
+  margin-bottom: 1em;
   display: inline-block;
 }
 
 #comments {
   margin-top: 20px;
+  padding: 10px 0;
   border-top: 1px solid grey;
+  font-size: 75%;
+
+  h3 {
+    margin: 0 0 .5em;
+    font-size: 100%;
+    font-size: 1.4em;
+  }
+
+  p {
+    margin: 0 0 1em;
+  }
 
   .comment-form-author .required {
     display: inline-block;
