@@ -472,7 +472,7 @@ input[type="submit"] {
 }
 
 #submit {
-  width: 100%;
+  width: auto;
   clear: both;
   border: 1px solid #c8c8ca;
   position: relative;
@@ -1437,18 +1437,16 @@ img.aligncenter {
 
 
 .signature {
-  height: 174px;
+  height: 136px;
   a {
     float: left;
     img {
-      border: 2px solid #a99005;
-      border-radius: 4px;
-
+      height: 115px;
     }
   }
   .signature-details {
     float: left;
-    margin: 10px 0 0 26px;
+    margin: 0 0 0 26px;
     h2, h3, p {
       margin: 0;
       text-align: left;
@@ -1458,6 +1456,11 @@ img.aligncenter {
     }
     h3 {
       font-size: 1em;
+    }
+    a {
+      @extend .btn;
+      margin-top: 18px;
+      box-shadow: none;
     }
   }
 }
@@ -1484,24 +1487,17 @@ img.aligncenter {
   }
 
   p {
-    margin: 0 0 1em;
+    margin-bottom: .8em;
   }
 
-  .comment-form-author .required {
-    display: inline-block;
-    width: 31px;
-  }
-  .required {
-    width: 33px;
-    display: inline-block;
-  }
-  .comment-form-url label {
-    display: inline-block;
-    width: 71px;
-  }
-  .comment-form-comment label {
-    display: inline-block;
+  label {
     width: 72px;
+  }
+  #submit {
+    @extend .btn-b;
+    font-size: 100%;
+    padding-bottom: 6px;
+    width: auto;
   }
 }
 // end wordpress styles

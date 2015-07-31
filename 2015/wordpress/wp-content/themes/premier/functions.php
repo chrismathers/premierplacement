@@ -576,7 +576,7 @@ function add_signature($text) {
  global $post;
  if(($post->post_type == 'post'))
     $text .= '<div class="signature">
-      <a href="/contact-us/" rel="attachment wp-att-211"><img class="" title="Laura Schmieder" src="../images/lauraheadshop.jpg" alt="Laura Schmieder" width="150" height="150" /></a><div class="signature-details">
+      <a href="/contact-us/" rel="attachment wp-att-211"><img title="Laura Schmieder" src="../images/lauraheadshop.jpg" alt="Laura Schmieder" /></a><div class="signature-details">
       <h2>Laura Schmieder</h2>
       <h3>President of Premier Placement, Inc.</h3>
       <p>(610) 395-9123</p>

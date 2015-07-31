@@ -1847,7 +1847,7 @@ input[type="submit"] {
   text-align: right;
   width: 100%;
   margin-bottom: 1em; }
-  #buttonBlock .btn, #buttonBlock .btn-a, #buttonBlock .btn-b, #buttonBlock .btn-c {
+  #buttonBlock .btn, #buttonBlock .btn-a, #buttonBlock .btn-b, #buttonBlock #comments #submit, #comments #buttonBlock #submit, #buttonBlock .btn-c, #buttonBlock .signature .signature-details a, .signature .signature-details #buttonBlock a {
     float: left;
     width: 48%;
     min-width: 108px;
@@ -1859,16 +1859,16 @@ input[type="submit"] {
   @media only screen and (max-width: 866px) and (min-width: 320px) {
     #buttonBlock {
       text-align: center; }
-      #buttonBlock .btn, #buttonBlock .btn-a, #buttonBlock .btn-b, #buttonBlock .btn-c,
+      #buttonBlock .btn, #buttonBlock .btn-a, #buttonBlock .btn-b, #buttonBlock #comments #submit, #comments #buttonBlock #submit, #buttonBlock .btn-c, #buttonBlock .signature .signature-details a, .signature .signature-details #buttonBlock a,
       #buttonBlock .btn-a {
         margin: 0;
         float: none; }
-      #buttonBlock .btn, #buttonBlock .btn-a, #buttonBlock .btn-b, #buttonBlock .btn-c {
+      #buttonBlock .btn, #buttonBlock .btn-a, #buttonBlock .btn-b, #buttonBlock #comments #submit, #comments #buttonBlock #submit, #buttonBlock .btn-c, #buttonBlock .signature .signature-details a, .signature .signature-details #buttonBlock a {
         float: none;
         display: block;
         margin: 0 auto 1em; } }
 
-.btn, .btn-a, .btn-b, .btn-c {
+.btn, .btn-a, .btn-b, #comments #submit, .btn-c, .signature .signature-details a {
   background: #67154f url("../images/btn-bg.png") repeat-x 0 100%;
   border: none;
   border-radius: 0;
@@ -1882,24 +1882,24 @@ input[type="submit"] {
   text-decoration: none;
   text-transform: uppercase;
   padding: 0 8px; }
-  .btn:hover, .btn-a:hover, .btn-b:hover, .btn-c:hover, .btn:focus, .btn-a:focus, .btn-b:focus, .btn-c:focus {
+  .btn:hover, .btn-a:hover, .btn-b:hover, #comments #submit:hover, .btn-c:hover, .signature .signature-details a:hover, .btn:focus, .btn-a:focus, .btn-b:focus, #comments #submit:focus, .btn-c:focus, .signature .signature-details a:focus {
     background-color: #911e6f;
     outline: none;
     color: white;
     background-position: 0 100%;
     text-decoration: none; }
-  .btn:active, .btn-a:active, .btn-b:active, .btn-c:active {
+  .btn:active, .btn-a:active, .btn-b:active, #comments #submit:active, .btn-c:active, .signature .signature-details a:active {
     background-image: url("../images/btn-bg.png");
     background-color: #d83daa;
     background-position: 0 100%;
     outline: none; }
-  .btn:visited, .btn-a:visited, .btn-b:visited, .btn-c:visited {
+  .btn:visited, .btn-a:visited, .btn-b:visited, #comments #submit:visited, .btn-c:visited, .signature .signature-details a:visited {
     color: white; }
 
 .btn-a {
   background-color: #3d1d7f; }
 
-.btn-b {
+.btn-b, #comments #submit {
   background-color: #ff8400; }
 
 .btn-c {
@@ -1935,7 +1935,7 @@ input[type="submit"] {
     color: white; }
 
 #submit {
-  width: 100%;
+  width: auto;
   clear: both;
   border: 1px solid #c8c8ca;
   position: relative;
@@ -2417,7 +2417,7 @@ input[type="submit"] {
     padding: 0; }
     .form-vertical .form-actions .btn-a {
       float: left; }
-    .form-vertical .form-actions .btn-b {
+    .form-vertical .form-actions .btn-b, .form-vertical .form-actions #comments #submit, #comments .form-vertical .form-actions #submit {
       padding: 0 13px 4px;
       float: right; }
     .form-vertical .form-actions.border-top {
@@ -2466,7 +2466,11 @@ input[type="submit"] {
 .input-append .btn,
 .input-append .btn-a,
 .input-append .btn-b,
-.input-append .btn-c {
+.input-append #comments #submit,
+#comments .input-append #submit,
+.input-append .btn-c,
+.input-append .signature .signature-details a,
+.signature .signature-details .input-append a {
   -webkit-border-radius: 3px 0 0 3px;
   -moz-border-radius: 3px 0 0 3px;
   border-radius: 3px 0 0 3px; }
@@ -2475,7 +2479,7 @@ input[type="submit"] {
   background-color: #a9dba9;
   border-color: #46a546; }
 
-.input-prepend .btn, .input-prepend .btn-a, .input-prepend .btn-b, .input-prepend .btn-c {
+.input-prepend .btn, .input-prepend .btn-a, .input-prepend .btn-b, .input-prepend #comments #submit, #comments .input-prepend #submit, .input-prepend .btn-c, .input-prepend .signature .signature-details a, .signature .signature-details .input-prepend a {
   margin-right: -1px; }
 
 .input-append input,
@@ -2492,7 +2496,11 @@ input[type="submit"] {
 .input-append .btn,
 .input-append .btn-a,
 .input-append .btn-b,
-.input-append .btn-c {
+.input-append #comments #submit,
+#comments .input-append #submit,
+.input-append .btn-c,
+.input-append .signature .signature-details a,
+.signature .signature-details .input-append a {
   margin-left: -1px;
   -webkit-border-radius: 0 3px 3px 0;
   -moz-border-radius: 0 3px 3px 0;
@@ -2650,15 +2658,14 @@ img.aligncenter {
   margin: 0; }
 
 .signature {
-  height: 174px; }
+  height: 136px; }
   .signature a {
     float: left; }
     .signature a img {
-      border: 2px solid #a99005;
-      border-radius: 4px; }
+      height: 115px; }
   .signature .signature-details {
     float: left;
-    margin: 10px 0 0 26px; }
+    margin: 0 0 0 26px; }
     .signature .signature-details h2, .signature .signature-details h3, .signature .signature-details p {
       margin: 0;
       text-align: left; }
@@ -2666,6 +2673,9 @@ img.aligncenter {
       font-size: 1.3em; }
     .signature .signature-details h3 {
       font-size: 1em; }
+    .signature .signature-details a {
+      margin-top: 18px;
+      box-shadow: none; }
 
 .entry-utility {
   margin-bottom: 3em; }
@@ -2684,18 +2694,12 @@ img.aligncenter {
     font-size: 100%;
     font-size: 1.4em; }
   #comments p {
-    margin: 0 0 1em; }
-  #comments .comment-form-author .required {
-    display: inline-block;
-    width: 31px; }
-  #comments .required {
-    width: 33px;
-    display: inline-block; }
-  #comments .comment-form-url label {
-    display: inline-block;
-    width: 71px; }
-  #comments .comment-form-comment label {
-    display: inline-block;
+    margin-bottom: .8em; }
+  #comments label {
     width: 72px; }
+  #comments #submit {
+    font-size: 100%;
+    padding-bottom: 6px;
+    width: auto; }
 
 /*# sourceMappingURL=main.css.map */
