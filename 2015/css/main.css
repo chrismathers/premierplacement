@@ -1743,14 +1743,14 @@ input[type="submit"] {
       align-items: center; }
     #col-left #main-nav li {
       list-style: none;
-      margin: 0 15px;
+      margin: 0 13px;
       display: inline-block;
       text-align: center;
       vertical-align: middle; }
       @media only screen and (max-width: 768px) {
         #col-left #main-nav li {
           width: 68px;
-          font-size: 14px; }
+          font-size: 13px; }
           #col-left #main-nav li:first-of-type {
             width: auto; } }
       #col-left #main-nav li a {
@@ -1802,6 +1802,7 @@ input[type="submit"] {
               margin: 0;
               width: 100%; }
               #col-left #main-nav li.dropdown-container .dropdown .dropdown-menu li a {
+                color: #656565;
                 margin: 0;
                 width: 100%;
                 text-align: left;
