@@ -2,9 +2,7 @@
 /**
  * The Sidebar containing the primary and secondary widget areas.
  *
- * @package WordPress
- * @subpackage Twenty_Ten
- * @since Twenty Ten 1.0
+ * @package Premier
  */
 ?>
 
@@ -19,7 +17,7 @@
             <h2>START HERE</h2>
 
             <div id="formDiv">
-                <form id="miniInput" action="post_resume.html" method="post">
+                <form id="miniInput" action="/post_resume.html" method="post">
                     <label for="firstName">First Name:</label>
                     <input class="form-control" id="firstName" name="firstName" type="text" value=""></input>
 

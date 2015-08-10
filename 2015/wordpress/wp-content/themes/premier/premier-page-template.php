@@ -14,7 +14,8 @@ get_header();
 ?>
 
 
-<?php
-echo('');
-get_footer();
-?>
+
+			</div>
+
+	<?php get_sidebar(); ?>
+<?php get_footer(); ?>

@@ -40,6 +40,39 @@
 <script>
 $(document).ready(function() {
 	$('.st_facebook_buttons').parent().addClass('digg_digg');
+
+	$('html, body').css('overflow', 'initial');
+
+	$(function() {
+    $('a[href*=#]:not([href=#])').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          $('html,body').animate({
+            scrollTop: target.offset().top
+          }, 1000);
+          return false;
+        }
+      }
+    });
+  });
+
+  $(window).scroll(function () {
+      if ($(this).scrollTop() > 100) {
+          $('.scrollup').fadeIn();
+      } else {
+          $('.scrollup').fadeOut();
+      }
+  });
+
+  $('.scrollup').click(function () {
+        $("html, body").animate({
+            scrollTop: 0
+        }, 600);
+        return false;
+    });
 });
 </script>
+
 </html>
