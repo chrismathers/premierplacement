@@ -29,7 +29,6 @@ $mypath = "http://www.premierplacement.com";
             type="text/javascript"></script>
     <script src="/scripts/hamburger.js"></script>
     <script src="/scripts/responsive-nav.js"></script>
-
 </head>
 <body>
 

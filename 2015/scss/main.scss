@@ -296,8 +296,12 @@ input[type="submit"] {
                 text-align: left;
                 padding: 6px 6px 6px 10px;
                 white-space: nowrap;
-                &:focus {
+                &:focus,
+                &:hover {
                   outline: none;
+                  background-image: none;
+                  background-color: transparent;
+                  color: $link-color;
                 }
               }
             }
@@ -1192,8 +1196,246 @@ input[type="submit"] {
   .add-on {
     cursor: pointer;
   }
-
 }
+
+.contentDiv,
+#blogContainer {
+  margin: 0 auto;
+  width: 100%;
+  font-size: 85%;
+  padding-top: 1em;
+  padding-bottom: 100px;
+  clear: both;
+
+  p {
+    line-height: 1.4em;
+    margin: 1em 0;
+  }
+
+  ul.ordered {
+    li {
+      list-style: none;
+    }
+  }
+  &#resume-guide, &#interview-guide {
+
+    ul {
+      margin: 0;
+      padding: 0;
+      &.ordered {
+        li {
+          list-style: none;
+        }
+      }
+    }
+
+    li {
+      list-style-type: none;
+      display: block;
+      clear: both;
+      line-height: 1.5em;
+      margin: 0;
+    }
+
+    #contents {
+      clear: both;
+      height: auto;
+      display: flex;
+      span, div {
+        font: bold 15px arial;
+        margin-right: 30px;
+      }
+
+      nav {
+        height: auto;
+        margin-bottom: 20px;
+        text-align: left;
+
+        ul {
+          margin: 0;
+          text-indent: -20px;
+        }
+        li {
+          list-style-type: none;
+          display: block;
+          clear: both;
+          line-height: 1.5em;
+          margin: 0;
+          a {
+            color: #888;
+            padding: 0 9px;
+            text-decoration: none;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+
+    &#interview-guide nav {
+      width: auto;
+
+      ul {
+        margin: 0;
+        padding: 0 0 0 20px;
+
+        li {
+          list-style: none;
+          margin-bottom: 3px;
+        }
+        &#dosdonts {
+          margin-left: 5px;
+          text-indent: -15px;
+          li {
+            list-style: none;
+            line-height: 1.3em;
+            margin: 0 0 9px 0;
+            text-indent: -15px;
+          }
+        }
+      }
+    }
+
+    dl {
+      width: 100%;
+      float: left;
+      vertical-align: top;
+      dt {
+        float: left;
+        width: 54px;
+        margin: 0 14px 0 0;
+        padding: 0;
+        display: inline;
+        clear: left;
+      }
+      &.facts dt {
+        font: bold 14px arial;
+        color: #999;
+      }
+      &.hackneyed dt, &.hackneyed dd {
+        width: 43%;
+        text-align: left;
+        margin-bottom: .7em;
+      }
+      &.contr dt, &.contr dd {
+        width: 47%;
+        text-align: left;
+        margin-bottom: .7em;
+        p {
+          margin: 0 0 6px 0;
+          padding: 0;
+        }
+      }
+      dd {
+        width: 90%;
+        margin: 0 0 9px 0;
+        padding: 0;
+        float: left;
+      }
+
+    }
+
+    td {
+      vertical-align: top;
+      padding-bottom: 9px;
+      line-height: 1.3em;
+    }
+
+    td ul {
+      margin: 0;
+      padding: 0 0 0 20px;
+      text-indent: -20px;
+      &#dosdonts {
+        margin-left: 5px;
+        text-indent: -15px;
+      }
+    }
+    td ul li {
+      list-style: none;
+      margin-bottom: 6px;
+    }
+
+    a.h1 {
+      width: 100%;
+      display: inline-block;
+      font-size: 16px;
+      font-weight: bold;
+      color: #777;
+      border-bottom: 1px solid #ccc;
+    }
+
+    a.h3 {
+      font: bold 15px arial;
+      color: #555;
+    }
+
+    td.h2 {
+      vertical-align: top;
+      width: 70px;
+      text-align: right;
+      p {
+        font: bold 14px arial;
+        color: #999;
+        padding: 0 9px 0 0;
+        vertical-align: top;
+        display: inline;
+      }
+    }
+
+    a.top {
+      display: block;
+      margin: 9px 0;
+    }
+    td.pList {
+      line-height: 1em;
+      p {
+        padding: 0;
+        margin: 0;
+        line-height: 1.3em;
+      }
+    }
+  }
+
+  #interview-guide {
+
+    li {
+      list-style-type: disc;
+      margin: 0 0 0 20px;
+      display: list-item;
+    }
+
+    #contents {
+      clear: both;
+      height: auto;
+      text-align: center;
+      span, div {
+        font: bold 15px arial;
+        margin-right: 20px;
+        width: 223px;
+        float: left;
+        text-align: right;
+      }
+      nav {
+        float: left;
+        height: auto;
+      }
+      nav li {
+        list-style: none;
+        display: block;
+        clear: both;
+        line-height: 1.2em;
+      }
+    }
+  }
+
+    &#aboutus {
+    ul {
+      padding-left: 2em;
+    }
+  }
+}
+
 
 .resume-file {
   p {
@@ -1502,3 +1744,19 @@ img.aligncenter {
   }
 }
 // end wordpress styles
+
+.scrollup {
+  background-color: #000;
+  opacity: .5;
+  width: 40px;
+  height: 20px;
+  position: fixed;
+  bottom: 50px;
+  right: 38%;
+  text-indent: -9999px;
+  display: inline;
+  background: url('/images/to_top_arrow.gif') no-repeat;
+  &:hover {
+    opacity: .8;
+  }
+}

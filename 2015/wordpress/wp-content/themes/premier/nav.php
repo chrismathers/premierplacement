@@ -29,6 +29,6 @@
                         </ul>
                     </div>
                 <li<?php if ($pagename == 'about-us') echo ' class="selected"' ?>><a href="/about-us">ABOUT US</a></li>
-                <li><a href="mailto:rob@basscapos.com">CONTACT US</a></li>
+                <li<?php if ($pagename == 'contact-us') echo ' class="selected"' ?>><a href="/contact-us">CONTACT US</a></li>
             </ul>
         </div>

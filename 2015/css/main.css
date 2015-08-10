@@ -24,7 +24,7 @@ and (max-width : 518px) {
   display: none;
 }
 */
-/*!
+/*
  * Bootstrap v3.3.1 (http://getbootstrap.com)
  * Copyright 2011-2014 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
@@ -788,10 +788,10 @@ bootstrap theme
   background-color: #2e6da4; }
 
 .navbar-default {
-  background-image: -webkit-linear-gradient(top, #ffffff 0%, #f8f8f8 100%);
-  background-image: -o-linear-gradient(top, #ffffff 0%, #f8f8f8 100%);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#f8f8f8));
-  background-image: linear-gradient(to bottom, #ffffff 0%, #f8f8f8 100%);
+  background-image: -webkit-linear-gradient(top, white 0%, #f8f8f8 100%);
+  background-image: -o-linear-gradient(top, white 0%, #f8f8f8 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(#f8f8f8));
+  background-image: linear-gradient(to bottom, white 0%, #f8f8f8 100%);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#fff8f8f8', GradientType=0);
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
@@ -1095,7 +1095,7 @@ input[type="checkbox"]:focus {
   border-radius: 4px;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+  -webkit-transition: border-color ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
   -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
   transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s; }
 
@@ -1515,11 +1515,13 @@ select[multiple].form-group-lg .form-control {
 @media (min-width: 768px) {
   .form-horizontal .form-group-sm .control-label {
     padding-top: 6px; } }
-/*! responsive-nav.js 1.0.32 by @viljamis */
+/* responsive-nav.js 1.0.32 by @viljamis */
 .nav-collapse {
   display: none; }
 
-@media only screen and (min-width: 0px) and (max-width: 600px) {
+@media only screen
+and (min-width : 0px)
+and (max-width : 600px) {
   display: none;
   .nav-collapse ul {
     margin: 0;
@@ -1564,7 +1566,7 @@ select[multiple].form-group-lg .form-control {
     pointer-events: none !important; }
 
   .nav-toggle {
-    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -1597,7 +1599,9 @@ select[multiple].form-group-lg .form-control {
       height: 2px;
       margin-top: 3px;
       width: 90%; } }
-@media only screen and (min-width: 0px) and (max-width: 600px) and (min-width: 684px) {
+@media only screen
+and (min-width : 0px)
+and (max-width : 600px) and screen and (min-width: 684px) {
   .js .nav-collapse {
     position: relative; }
 
@@ -1666,7 +1670,9 @@ input[type="submit"] {
   max-height: 142px;
   min-height: 142px;
   max-width: 500px; }
-  @media only screen and (max-width: 860px) and (min-width: 320px) {
+  @media only screen
+  and (max-width: 860px)
+  and (min-width: 320px) {
     #pp-logo {
       max-width: 100%;
       min-height: 0;
@@ -1676,15 +1682,19 @@ input[type="submit"] {
   max-width: 1024px;
   width: auto;
   margin: 0 auto; }
-  @media only screen and (max-width: 768px) {
+  @media only screen
+  and (max-width: 768px) {
     #content {
       min-width: 0;
       max-width: 768px; } }
-  @media only screen and (max-width: 320px) {
+  @media only screen
+  and (max-width : 320px) {
     #content {
       width: auto;
       margin: 10px; } }
-  @media only screen and (min-width: 320px) and (max-width: 518px) {
+  @media only screen
+  and (min-width : 320px)
+  and (max-width : 518px) {
     #content {
       width: auto; } }
 
@@ -1692,13 +1702,18 @@ input[type="submit"] {
   float: left;
   width: 65%;
   margin-left: 14px; }
-  @media only screen and (max-width: 1024px) and (min-width: 860px) {
+  @media only screen
+  and (max-width: 1024px)
+  and (min-width: 860px) {
     #col-left {
       width: 65%; } }
-  @media only screen and (max-width: 860px) and (min-width: 600px) {
+  @media only screen
+  and (max-width: 860px)
+  and (min-width: 600px) {
     #col-left {
       width: 60%; } }
-  @media only screen and (max-width: 600px) {
+  @media only screen
+  and (max-width: 600px) {
     #col-left {
       width: auto;
       margin: 14px;
@@ -1707,7 +1722,8 @@ input[type="submit"] {
         font-size: .7em; }
       #col-left h2 {
         font-size: 1em; } }
-  @media only screen and (max-width: 320px) {
+  @media only screen
+  and (max-width : 320px) {
     #col-left {
       width: 100%;
       float: none;
@@ -1719,10 +1735,12 @@ input[type="submit"] {
     letter-spacing: -0.2px;
     margin-bottom: 14px;
     width: 100%; }
-    @media only screen and (max-width: 600px) {
+    @media only screen
+    and (max-width: 600px) {
       #col-left #main-nav {
         display: none; } }
-    @media only screen and (max-width: 320px) {
+    @media only screen
+    and (max-width : 320px) {
       #col-left #main-nav {
         display: none; } }
     #col-left #main-nav ul {
@@ -1747,7 +1765,8 @@ input[type="submit"] {
       display: inline-block;
       text-align: center;
       vertical-align: middle; }
-      @media only screen and (max-width: 768px) {
+      @media only screen
+      and (max-width: 768px) {
         #col-left #main-nav li {
           width: 68px;
           font-size: 13px; }
@@ -1808,8 +1827,11 @@ input[type="submit"] {
                 text-align: left;
                 padding: 6px 6px 6px 10px;
                 white-space: nowrap; }
-                #col-left #main-nav li.dropdown-container .dropdown .dropdown-menu li a:focus {
-                  outline: none; }
+                #col-left #main-nav li.dropdown-container .dropdown .dropdown-menu li a:focus, #col-left #main-nav li.dropdown-container .dropdown .dropdown-menu li a:hover {
+                  outline: none;
+                  background-image: none;
+                  background-color: transparent;
+                  color: #b8cf32; }
           #col-left #main-nav li.dropdown-container .dropdown.open {
             z-index: 1;
             height: 68px; }
@@ -1823,16 +1845,20 @@ input[type="submit"] {
   float: right;
   width: 30%;
   margin: 0 14px 3em; }
-  @media only screen and (max-width: 1024px) and (min-width: 860px) {
+  @media only screen
+  and (max-width: 1024px)
+  and (min-width: 860px) {
     #col-right {
       min-width: 228px; } }
-  @media only screen and (max-width: 600px) {
+  @media only screen
+  and (max-width: 600px) {
     #col-right {
       width: auto;
       float: none; }
       #col-right #buttonBlock {
         display: none; } }
-  @media only screen and (max-width: 320px) {
+  @media only screen
+  and (max-width : 320px) {
     #col-right {
       width: auto;
       float: none; } }
@@ -1857,7 +1883,9 @@ input[type="submit"] {
   #buttonBlock .btn-a {
     margin-left: 10px;
     float: right; }
-  @media only screen and (max-width: 866px) and (min-width: 320px) {
+  @media only screen
+  and (max-width: 866px)
+  and (min-width: 320px) {
     #buttonBlock {
       text-align: center; }
       #buttonBlock .btn, #buttonBlock .btn-a, #buttonBlock .btn-b, #buttonBlock #comments #submit, #comments #buttonBlock #submit, #buttonBlock .btn-c, #buttonBlock .signature .signature-details a, .signature .signature-details #buttonBlock a,
@@ -1973,7 +2001,9 @@ input[type="submit"] {
     border-radius: 0;
     height: 24px;
     line-height: initial; }
-  @media only screen and (min-width: 320px) and (max-width: 866px) {
+  @media only screen
+  and (min-width: 320px)
+  and (max-width: 866px) {
     #miniInput label {
       float: none;
       display: block;
@@ -1988,10 +2018,12 @@ input[type="submit"] {
       padding: 0;
       width: 86%;
       border-radius: 0; } }
-  @media only screen and (max-width: 600px) {
+  @media only screen
+  and (max-width: 600px) {
     #miniInput .form-control {
       width: 92%; } }
-  @media only screen and (max-width: 320px) {
+  @media only screen
+  and (max-width : 320px) {
     #miniInput .form-control {
       width: 89%; } }
   #miniInput textarea {
@@ -2042,7 +2074,8 @@ input[type="submit"] {
   #job-listings h2 {
     margin-top: 1.3em;
     margin-bottom: .3em; }
-  @media only screen and (max-width: 600px) {
+  @media only screen
+  and (max-width: 600px) {
     #job-listings {
       height: 242px;
       padding-bottom: 330px;
@@ -2085,7 +2118,8 @@ input[type="submit"] {
   letter-spacing: 0; }
   .blog h2 span {
     font-size: .8em; }
-  @media only screen and (max-width: 996px) {
+  @media only screen
+    and (max-width: 996px) {
     .blog h2 {
       letter-spacing: 1px; } }
 .blog .entry-title {
@@ -2185,10 +2219,13 @@ input[type="submit"] {
   margin: 0 auto;
   width: 57%;
   padding-bottom: 24px; }
-  @media only screen and (min-width: 320px) and (max-width: 866px) {
+  @media only screen
+  and (min-width: 320px)
+  and (max-width: 866px) {
     .form-vertical {
       width: 80%; } }
-  @media only screen and (max-width: 320px) {
+  @media only screen
+  and (max-width : 320px) {
     .form-vertical {
       width: 100%; }
       .form-vertical .form-control {
@@ -2283,7 +2320,9 @@ input[type="submit"] {
           .form-vertical .control-group.phone .controls .form-control.phone, .form-vertical .control-group.optionalPhone .controls .form-control.phone {
             width: 100%;
             float: left; }
-            @media only screen and (max-width: 860px) and (min-width: 320px) {
+            @media only screen
+            and (max-width: 860px)
+            and (min-width: 320px) {
               .form-vertical .control-group.phone .controls .form-control.phone, .form-vertical .control-group.optionalPhone .controls .form-control.phone {
                 width: 100%; } }
       .form-vertical .control-group.phone .phoneType, .form-vertical .control-group.optionalPhone .phoneType {
@@ -2426,6 +2465,253 @@ input[type="submit"] {
       border-top: 1px solid #ddd; }
   .form-vertical .add-on {
     cursor: pointer; }
+
+.contentDiv,
+#blogContainer {
+  margin: 0 auto;
+  width: 100%;
+  font-size: 85%;
+  padding-top: 1em;
+  padding-bottom: 100px;
+  clear: both; }
+  .contentDiv p,
+  #blogContainer p {
+    line-height: 1.4em;
+    margin: 1em 0; }
+  .contentDiv ul.ordered li,
+  #blogContainer ul.ordered li {
+    list-style: none; }
+  .contentDiv#resume-guide ul, .contentDiv#interview-guide ul,
+  #blogContainer#resume-guide ul,
+  #blogContainer#interview-guide ul {
+    margin: 0;
+    padding: 0; }
+    .contentDiv#resume-guide ul.ordered li, .contentDiv#interview-guide ul.ordered li,
+    #blogContainer#resume-guide ul.ordered li,
+    #blogContainer#interview-guide ul.ordered li {
+      list-style: none; }
+  .contentDiv#resume-guide li, .contentDiv#interview-guide li,
+  #blogContainer#resume-guide li,
+  #blogContainer#interview-guide li {
+    list-style-type: none;
+    display: block;
+    clear: both;
+    line-height: 1.5em;
+    margin: 0; }
+  .contentDiv#resume-guide #contents, .contentDiv#interview-guide #contents,
+  #blogContainer#resume-guide #contents,
+  #blogContainer#interview-guide #contents {
+    clear: both;
+    height: auto;
+    display: flex; }
+    .contentDiv#resume-guide #contents span, .contentDiv#resume-guide #contents div, .contentDiv#interview-guide #contents span, .contentDiv#interview-guide #contents div,
+    #blogContainer#resume-guide #contents span,
+    #blogContainer#resume-guide #contents div,
+    #blogContainer#interview-guide #contents span,
+    #blogContainer#interview-guide #contents div {
+      font: bold 15px arial;
+      margin-right: 30px; }
+    .contentDiv#resume-guide #contents nav, .contentDiv#interview-guide #contents nav,
+    #blogContainer#resume-guide #contents nav,
+    #blogContainer#interview-guide #contents nav {
+      height: auto;
+      margin-bottom: 20px;
+      text-align: left; }
+      .contentDiv#resume-guide #contents nav ul, .contentDiv#interview-guide #contents nav ul,
+      #blogContainer#resume-guide #contents nav ul,
+      #blogContainer#interview-guide #contents nav ul {
+        margin: 0;
+        text-indent: -20px; }
+      .contentDiv#resume-guide #contents nav li, .contentDiv#interview-guide #contents nav li,
+      #blogContainer#resume-guide #contents nav li,
+      #blogContainer#interview-guide #contents nav li {
+        list-style-type: none;
+        display: block;
+        clear: both;
+        line-height: 1.5em;
+        margin: 0; }
+        .contentDiv#resume-guide #contents nav li a, .contentDiv#interview-guide #contents nav li a,
+        #blogContainer#resume-guide #contents nav li a,
+        #blogContainer#interview-guide #contents nav li a {
+          color: #888;
+          padding: 0 9px;
+          text-decoration: none; }
+          .contentDiv#resume-guide #contents nav li a:hover, .contentDiv#interview-guide #contents nav li a:hover,
+          #blogContainer#resume-guide #contents nav li a:hover,
+          #blogContainer#interview-guide #contents nav li a:hover {
+            text-decoration: underline; }
+  .contentDiv#resume-guide#interview-guide nav, .contentDiv#interview-guide#interview-guide nav,
+  #blogContainer#resume-guide#interview-guide nav,
+  #blogContainer#interview-guide#interview-guide nav {
+    width: auto; }
+    .contentDiv#resume-guide#interview-guide nav ul, .contentDiv#interview-guide#interview-guide nav ul,
+    #blogContainer#resume-guide#interview-guide nav ul,
+    #blogContainer#interview-guide#interview-guide nav ul {
+      margin: 0;
+      padding: 0 0 0 20px; }
+      .contentDiv#resume-guide#interview-guide nav ul li, .contentDiv#interview-guide#interview-guide nav ul li,
+      #blogContainer#resume-guide#interview-guide nav ul li,
+      #blogContainer#interview-guide#interview-guide nav ul li {
+        list-style: none;
+        margin-bottom: 3px; }
+      .contentDiv#resume-guide#interview-guide nav ul#dosdonts, .contentDiv#interview-guide#interview-guide nav ul#dosdonts,
+      #blogContainer#resume-guide#interview-guide nav ul#dosdonts,
+      #blogContainer#interview-guide#interview-guide nav ul#dosdonts {
+        margin-left: 5px;
+        text-indent: -15px; }
+        .contentDiv#resume-guide#interview-guide nav ul#dosdonts li, .contentDiv#interview-guide#interview-guide nav ul#dosdonts li,
+        #blogContainer#resume-guide#interview-guide nav ul#dosdonts li,
+        #blogContainer#interview-guide#interview-guide nav ul#dosdonts li {
+          list-style: none;
+          line-height: 1.3em;
+          margin: 0 0 9px 0;
+          text-indent: -15px; }
+  .contentDiv#resume-guide dl, .contentDiv#interview-guide dl,
+  #blogContainer#resume-guide dl,
+  #blogContainer#interview-guide dl {
+    width: 100%;
+    float: left;
+    vertical-align: top; }
+    .contentDiv#resume-guide dl dt, .contentDiv#interview-guide dl dt,
+    #blogContainer#resume-guide dl dt,
+    #blogContainer#interview-guide dl dt {
+      float: left;
+      width: 54px;
+      margin: 0 14px 0 0;
+      padding: 0;
+      display: inline;
+      clear: left; }
+    .contentDiv#resume-guide dl.facts dt, .contentDiv#interview-guide dl.facts dt,
+    #blogContainer#resume-guide dl.facts dt,
+    #blogContainer#interview-guide dl.facts dt {
+      font: bold 14px arial;
+      color: #999; }
+    .contentDiv#resume-guide dl.hackneyed dt, .contentDiv#resume-guide dl.hackneyed dd, .contentDiv#interview-guide dl.hackneyed dt, .contentDiv#interview-guide dl.hackneyed dd,
+    #blogContainer#resume-guide dl.hackneyed dt,
+    #blogContainer#resume-guide dl.hackneyed dd,
+    #blogContainer#interview-guide dl.hackneyed dt,
+    #blogContainer#interview-guide dl.hackneyed dd {
+      width: 43%;
+      text-align: left;
+      margin-bottom: .7em; }
+    .contentDiv#resume-guide dl.contr dt, .contentDiv#resume-guide dl.contr dd, .contentDiv#interview-guide dl.contr dt, .contentDiv#interview-guide dl.contr dd,
+    #blogContainer#resume-guide dl.contr dt,
+    #blogContainer#resume-guide dl.contr dd,
+    #blogContainer#interview-guide dl.contr dt,
+    #blogContainer#interview-guide dl.contr dd {
+      width: 47%;
+      text-align: left;
+      margin-bottom: .7em; }
+      .contentDiv#resume-guide dl.contr dt p, .contentDiv#resume-guide dl.contr dd p, .contentDiv#interview-guide dl.contr dt p, .contentDiv#interview-guide dl.contr dd p,
+      #blogContainer#resume-guide dl.contr dt p,
+      #blogContainer#resume-guide dl.contr dd p,
+      #blogContainer#interview-guide dl.contr dt p,
+      #blogContainer#interview-guide dl.contr dd p {
+        margin: 0 0 6px 0;
+        padding: 0; }
+    .contentDiv#resume-guide dl dd, .contentDiv#interview-guide dl dd,
+    #blogContainer#resume-guide dl dd,
+    #blogContainer#interview-guide dl dd {
+      width: 90%;
+      margin: 0 0 9px 0;
+      padding: 0;
+      float: left; }
+  .contentDiv#resume-guide td, .contentDiv#interview-guide td,
+  #blogContainer#resume-guide td,
+  #blogContainer#interview-guide td {
+    vertical-align: top;
+    padding-bottom: 9px;
+    line-height: 1.3em; }
+  .contentDiv#resume-guide td ul, .contentDiv#interview-guide td ul,
+  #blogContainer#resume-guide td ul,
+  #blogContainer#interview-guide td ul {
+    margin: 0;
+    padding: 0 0 0 20px;
+    text-indent: -20px; }
+    .contentDiv#resume-guide td ul#dosdonts, .contentDiv#interview-guide td ul#dosdonts,
+    #blogContainer#resume-guide td ul#dosdonts,
+    #blogContainer#interview-guide td ul#dosdonts {
+      margin-left: 5px;
+      text-indent: -15px; }
+  .contentDiv#resume-guide td ul li, .contentDiv#interview-guide td ul li,
+  #blogContainer#resume-guide td ul li,
+  #blogContainer#interview-guide td ul li {
+    list-style: none;
+    margin-bottom: 6px; }
+  .contentDiv#resume-guide a.h1, .contentDiv#interview-guide a.h1,
+  #blogContainer#resume-guide a.h1,
+  #blogContainer#interview-guide a.h1 {
+    width: 100%;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    color: #777;
+    border-bottom: 1px solid #ccc; }
+  .contentDiv#resume-guide a.h3, .contentDiv#interview-guide a.h3,
+  #blogContainer#resume-guide a.h3,
+  #blogContainer#interview-guide a.h3 {
+    font: bold 15px arial;
+    color: #555; }
+  .contentDiv#resume-guide td.h2, .contentDiv#interview-guide td.h2,
+  #blogContainer#resume-guide td.h2,
+  #blogContainer#interview-guide td.h2 {
+    vertical-align: top;
+    width: 70px;
+    text-align: right; }
+    .contentDiv#resume-guide td.h2 p, .contentDiv#interview-guide td.h2 p,
+    #blogContainer#resume-guide td.h2 p,
+    #blogContainer#interview-guide td.h2 p {
+      font: bold 14px arial;
+      color: #999;
+      padding: 0 9px 0 0;
+      vertical-align: top;
+      display: inline; }
+  .contentDiv#resume-guide a.top, .contentDiv#interview-guide a.top,
+  #blogContainer#resume-guide a.top,
+  #blogContainer#interview-guide a.top {
+    display: block;
+    margin: 9px 0; }
+  .contentDiv#resume-guide td.pList, .contentDiv#interview-guide td.pList,
+  #blogContainer#resume-guide td.pList,
+  #blogContainer#interview-guide td.pList {
+    line-height: 1em; }
+    .contentDiv#resume-guide td.pList p, .contentDiv#interview-guide td.pList p,
+    #blogContainer#resume-guide td.pList p,
+    #blogContainer#interview-guide td.pList p {
+      padding: 0;
+      margin: 0;
+      line-height: 1.3em; }
+  .contentDiv #interview-guide li,
+  #blogContainer #interview-guide li {
+    list-style-type: disc;
+    margin: 0 0 0 20px;
+    display: list-item; }
+  .contentDiv #interview-guide #contents,
+  #blogContainer #interview-guide #contents {
+    clear: both;
+    height: auto;
+    text-align: center; }
+    .contentDiv #interview-guide #contents span, .contentDiv #interview-guide #contents div,
+    #blogContainer #interview-guide #contents span,
+    #blogContainer #interview-guide #contents div {
+      font: bold 15px arial;
+      margin-right: 20px;
+      width: 223px;
+      float: left;
+      text-align: right; }
+    .contentDiv #interview-guide #contents nav,
+    #blogContainer #interview-guide #contents nav {
+      float: left;
+      height: auto; }
+    .contentDiv #interview-guide #contents nav li,
+    #blogContainer #interview-guide #contents nav li {
+      list-style: none;
+      display: block;
+      clear: both;
+      line-height: 1.2em; }
+  .contentDiv#aboutus ul,
+  #blogContainer#aboutus ul {
+    padding-left: 2em; }
 
 .resume-file p {
   margin-bottom: 1.3em; }
@@ -2703,4 +2989,16 @@ img.aligncenter {
     padding-bottom: 6px;
     width: auto; }
 
-/*# sourceMappingURL=main.css.map */
+.scrollup {
+  background-color: #000;
+  opacity: .5;
+  width: 40px;
+  height: 20px;
+  position: fixed;
+  bottom: 50px;
+  right: 38%;
+  text-indent: -9999px;
+  display: inline;
+  background: url("/images/to_top_arrow.gif") no-repeat; }
+  .scrollup:hover {
+    opacity: .8; }
