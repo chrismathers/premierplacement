@@ -29,6 +29,11 @@ $mypath = "http://www.premierplacement.com";
             type="text/javascript"></script>
     <script src="/scripts/hamburger.js"></script>
     <script src="/scripts/responsive-nav.js"></script>
+
+    <?php if ($pagename == 'registration')  ?>
+    <?php get_template_part( 'reg-scripts' );?>
+
+    <?>
 </head>
 <body>
 
