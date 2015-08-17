@@ -20,8 +20,11 @@ $mypath = "http://www.premierplacement.com";
     <meta name="description" content="Finding Premier people for Premier career opportunities since 1987, Premier Placement, Inc. provides search and recruiting services.  Specializing in the placement of Engineering, Manufacturing, Materials Management, and Finance candidates, as well as Sales, MIS, and HR personnel, we concentrate primarily in Eastern Pennsylvania and Western New Jersey">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <link rel="stylesheet" type="text/css" media="all" href="/css/main.css"/>
+    <?php if ($pagename == 'registration-page') { ?>
+        <link rel="stylesheet" media="screen" type="text/css" href="/css/datepicker.css" />
+    <?php } ?>
 
-    <link rel="stylesheet" type="text/css" media="all" href="/css/main.css"/>
     <!--[if IE]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -30,10 +33,13 @@ $mypath = "http://www.premierplacement.com";
     <script src="/scripts/hamburger.js"></script>
     <script src="/scripts/responsive-nav.js"></script>
 
-    <?php if ($pagename == 'registration')  ?>
-    <?php get_template_part( 'reg-scripts' );?>
+    <?php if ($pagename == 'registration-page') { ?>
+        <script type="text/javascript" src="/scripts/bootstrap-datepicker.js"></script>
+        <script type="text/javascript" src="/scripts/jquery.cookie.js"></script>
+        <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+        <?php get_template_part( 'reg-scripts' );?>
+    <?php } ?>
 
-    <?>
 </head>
 <body>
 

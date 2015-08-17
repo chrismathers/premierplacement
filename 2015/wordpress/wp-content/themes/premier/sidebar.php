@@ -13,29 +13,30 @@
             <a href="post_resume.html" class="btn-a">SUBMIT RESUME</a>
         </div>
 
-        <div id="submit">
-            <h2>START HERE</h2>
+        <?php if ($pagename != 'registration-page') { ?>
+            <div id="submit">
+                <h2>START HERE</h2>
+                <div id="formDiv">
+                    <form id="miniInput" action="/registration-page" method="post">
+                        <label for="firstName">First Name:</label>
+                        <input class="form-control" id="firstName" name="firstName" type="text" value=""></input>
 
-            <div id="formDiv">
-                <form id="miniInput" action="/post_resume.html" method="post">
-                    <label for="firstName">First Name:</label>
-                    <input class="form-control" id="firstName" name="firstName" type="text" value=""></input>
+                        <label for="lastName">Last Name:</label>
+                        <input class="form-control" id="lastName" name="lastName" type="text" value=""></input>
 
-                    <label for="lastName">Last Name:</label>
-                    <input class="form-control" id="lastName" name="lastName" type="text" value=""></input>
+                        <label for="email">Email:</label>
+                        <input class="form-control" id="email" name="email" type="text" value=""></input>
 
-                    <label for="email">Email:</label>
-                    <input class="form-control" id="email" name="email" type="text" value=""></input>
+                        <div id="emailError" class="help-inline">Please provide a valid email address</div>
 
-                    <div id="emailError" class="help-inline">Please provide a valid email address</div>
+                        <label for="zip">Zip:</label>
+                        <input class="form-control" id="zip" name="zip" type="text" value=""></input>
 
-                    <label for="zip">Zip:</label>
-                    <input class="form-control" id="zip" name="zip" type="text" value=""></input>
-
-                    <button class="submitButton btn-b" type="submit" value="Next Step">Next Step</button>
-                </form>
+                        <button class="submitButton btn-b" type="submit" value="Next Step">Next Step</button>
+                    </form>
+                </div>
             </div>
-        </div>
+        <?php } ?>
 
         <div class="blog full-page">
             <h2>PREMIER PERSPECTIVES</h2>
