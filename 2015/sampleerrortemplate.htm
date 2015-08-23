@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--
+This is a sample HTML error template for use with FormMail
+(from www.tectite.com).
+
+This sample uses a new tag format that works
+with FormMail version 8.25 and FMBadHandler 1.22 and later.
+The old tag format is available in another sample download.
+
+Use this to understand how error templates work and
+as a basis for your own template.
+
+The idea is that you can create a page that looks like
+a normal page on your website, but FormMail will insert
+the error text in the place(s) you specify.
+
+The basic error message is shown with this tag:
+    [fmerror /]
+
+The internal error code is shown with this tag:
+    [fmerrorcode /]
+(you generally wouldn't show that to the user).
+
+The extra information is shown with this tag:
+    [fmerrorextra /]
+
+To full error (fmerror + fmerrorextra) is shown with
+this tag:
+    [fmfullerror /]
+
+Individual error items can be shown with these tags:
+    [fmerroritem1 /]
+    [fmerroritem2 /]
+    .
+    .
+    .
+    [fmerroritem9 /]
+    [fmerroritem10 /]
+    .
+    .
+    .
+    [fmerroritemN /]
+
+The complete list of error items each enclosed
+in <li></li> tags:
+    [fmerroritemlist /]
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Form error</title>
+</head>
+<body>
+
+<h1>Form Error</h1>
+
+<p><i>Put your custom text here.</i></p>
+
+<!--
+The samples below allow you to see all the different types
+of error formats available.
+
+You should choose the one(s) that suit you best.
+-->
+<p><b>Here is the full error message:</b></p>
+[fmfullerror /]
+<hr />
+
+<p>The basic error message is: <b>[fmerror /]</b></p>
+<hr />
+
+<!--
+The following is included for user-level errors only.
+-->
+[fmusererror]
+    <p>This is a USER error!</p>
+    <p>Extra error information: <b>[fmerrorextra/]</b></p>
+    <hr />
+
+    <p>This is a list of items in error:</p>
+    <ul>
+        [fmerroritemlist /]
+    </ul>
+    <hr />
+
+    <p>The first and second items in error:</p>
+    <ul>
+        <li>[fmerroritem1 /]</li>
+        <li>[fmerroritem2 /]</li>
+    </ul>
+    <hr />
+    <!--
+    If you use fmbadhandler.php from www.tectite.com,
+    the following tag will insert the correct return link to the form.
+    You need to configure FMBadHandler correctly for this to work.
+    In particular, you need to set $TARGET_URLS appropriately.
+
+    Note that, in general, you only want a return link
+    for user-level errors.  There's no point in the user
+    returning to the form for system-level errors.
+    -->
+    [return_link /]
+[/fmusererror]
+
+<!--
+The following is only included for system-level errors.
+An example is when you haven't setup your email recipients properly.
+In general, the user cannot repair system-level errors by retrying the form.
+-->
+[fmsyserror]
+    <p>There is a problem with the server.  Please contact us
+    using email or telephone.</p>
+[/fmsyserror]
+
+</body>
+</html>

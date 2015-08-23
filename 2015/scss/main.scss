@@ -1431,8 +1431,28 @@ input[type="submit"] {
   p {
     margin-bottom: 1.3em;
   }
+
+  span#name {
+    text-transform: capitalize;
+  }
+
+  .form-vertical {
+    .control-label {
+      padding-top: 1px;
+      font-size: 0.875em;
+    }
+
+    .btn-a, .btn-b {
+      min-width: 138px;
+    }
+  }
 }
 
+article.thankyou {
+  p {
+    margin: 2em 0;
+  }
+}
 
 .input-append {
   margin-bottom: 5px;

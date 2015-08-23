@@ -273,7 +273,7 @@ $CONFIG_CHECK = array("TARGET_EMAIL");
 define("AT_MANGLE","");
 
             /* Help: http://www.tectite.com/fmdoc/target_urls.php */
-$TARGET_URLS = array('http://www.premierplacement.com/', 'http://premierplacement.com/');         // default; no URLs allowed
+$TARGET_URLS = array('http://www.premierplacement.com/', 'http://premierplacement.com/', 'http://dev.premierplacement.com/', 'http://staging.premierplacement.com/');         // default; no URLs allowed
 
             /* Help: http://www.tectite.com/fmdoc/head_crlf.php */
 define("HEAD_CRLF","\r\n");
@@ -338,7 +338,7 @@ $MULTIFORMDIR = "";         // directory for multi-form template files; empty st
                             // if you're not using multi-forms
 
             /* Help: http://www.tectite.com/fmdoc/multiformurl.php */
-$MULTIFORMURL = "http://staging.premierplacement.com";                 // default; no multi-forms templates URL
+$MULTIFORMURL = "http://dev.premierplacement.com";                 // default; no multi-forms templates URL
 
             /* Help: http://www.tectite.com/fmdoc/text_subs.php */
 $TEXT_SUBS = array(

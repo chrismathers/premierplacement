@@ -2707,6 +2707,16 @@ input[type="submit"] {
 
 .resume-file p {
   margin-bottom: 1.3em; }
+.resume-file span#name {
+  text-transform: capitalize; }
+.resume-file .form-vertical .control-label {
+  padding-top: 1px;
+  font-size: 0.875em; }
+.resume-file .form-vertical .btn-a, .resume-file .form-vertical .btn-b, .resume-file .form-vertical #comments #submit, #comments .resume-file .form-vertical #submit {
+  min-width: 138px; }
+
+article.thankyou p {
+  margin: 2em 0; }
 
 .input-append {
   margin-bottom: 5px; }

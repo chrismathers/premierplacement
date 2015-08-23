@@ -40,7 +40,6 @@
 
             $("#zip").change(function() {
                 var newZip = $("#zip").val();
-                alert(newZip);
                 $.ajax({
                     url: "http://production.shippingapis.com/ShippingAPI.dll?API=CityStateLookup&XML=<CityStateLookupRequest USERID='400XEMED2262'><ZipCode ID='0'><Zip5>" + newZip + "</Zip5></ZipCode></CityStateLookupRequest>",
                     cache: false,
@@ -53,7 +52,7 @@
                         $("#state").val(result.State);
                     },
                     error: function(result, success) {
-                        alert('error getting zipcode');
+                        //alert('error getting zipcode');
                     }
                 });
             });
@@ -139,7 +138,7 @@
             var realname;
             first = true;
             var focusThis = null;
-            var validateSet = new Array(fn, ln, em, ph, le);
+            var validateSet = new Array(fn, ln, em, ph);
 
             fixdigits();
             for(var i=0; i<validateSet.length; i++) {
@@ -172,8 +171,9 @@
                     }
                 }
             }
-            realname = fn + " " + ln;
+            realname = fn.val() + " " + ln.val();
             $("#realname").val(realname);
+            localStorage.setItem("realname", realname);
         }
 
         function fixdigits() {
