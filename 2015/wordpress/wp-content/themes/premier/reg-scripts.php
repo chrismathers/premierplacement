@@ -34,73 +34,66 @@
             $('#dp3').attr('data-date', formatted);
             $('#dp3').datepicker();
 
+            var firstName = localStorage.getItem("firstName");
+            if(firstName) {
+                $("#firstName").val(firstName);
+                $("#address").focus()
+            }
 
-            readCookie('premier');
-            if($("#firstName").val()) $("#address").focus();
+            $("#lastName").val(localStorage.getItem("lastName"));
+            $("#email").val(localStorage.getItem("email"));
+
 
             $("#zip").change(function() {
-                var newZip = $("#zip").val();
-                $.ajax({
-                    url: "http://production.shippingapis.com/ShippingAPI.dll?API=CityStateLookup&XML=<CityStateLookupRequest USERID='400XEMED2262'><ZipCode ID='0'><Zip5>" + newZip + "</Zip5></ZipCode></CityStateLookupRequest>",
-                    cache: false,
-                    dataType: "xml",
-                    type: "GET",
-                    data: "zip=" + newZip,
-                    success: function(result, success) {
-                        alert(result);
-                        $("#city").val(result.City); /* Fill the data */
-                        $("#state").val(result.State);
-                    },
-                    error: function(result, success) {
-                        //alert('error getting zipcode');
-                    }
-                });
-            });
-        });
-
-        function readCookie(name) {
-            var nameEQ = name + "=";
-            var ca = document.cookie.split(';');
-            for (var i = 0; i < ca.length; i++) {
-                var c = ca[i];
-                while (c.charAt(0) == ' ') c = c.substring(1, c.length);
-                keyVal = c.substring(nameEQ.length, c.length).split("&");
-                for (var x=0; x<keyVal.length; x++) {
-                    val = keyVal[x].split("=");
-                    if(val[0] == "zip" ) {
-                        $("#zip").val(val[1]);
-                        alert($("#zip").val(val[1]))
-                        readZip(val[1]);
-                    } else {
-                        $("#" + val[0]).val(unescape(val[1]));
-                    }
-                }
-            }
-            return null;
-        }
-
-        function readZip(zip) {
-            if(zip) {
-                var city = $("#city");
-                var state = $("#state");
-                if (!city.val()) {
-                    alert(city)
+                if(newZip) {
                     $.ajax({
-                        url:"http://production.shippingapis.com/ShippingAPI.dll?API=CityStateLookup&XML=<CityStateLookupRequest USERID='400XEMED2262'><ZipCode ID='0'><Zip5>" + newZip + "</Zip5></ZipCode></CityStateLookupRequest>",
+                        url: "http://api.zippopotam.us/us/" + newZip,
                         cache: false,
                         dataType: "json",
                         type: "GET",
-                        data: "zip=" + zip,
                         success: function(result, success) {
-                            city.val(result.City); /* Fill the data */
-                            state.val(result.State);
+
+                          // US Zip Code Records Officially Map to only 1 Primary Location
+                          places = result['places'][0];
+                          $("#city").val(places['place name']);
+                          $("#state").val(places['state']);
+                          $("#zip").val(newZip);
+                          $(".zip-error").addClass('success').removeClass('error');
                         },
                         error: function(result, success) {
-                            alert('error getting zipcode');
+                          $(".zip-error").removeClass('success').addClass('error');
                         }
                     });
                 }
+            });
+        });
+
+        function getZip(newZip) {
+            if(newZip) {
+                $.ajax({
+                    url: "http://api.zippopotam.us/us/" + newZip,
+                    cache: false,
+                    dataType: "json",
+                    type: "GET",
+                    success: function(result, success) {
+
+                      // US Zip Code Records Officially Map to only 1 Primary Location
+                      places = result['places'][0];
+                      $("#city").val(places['place name']);
+                      $("#state").val(places['state']);
+                      $("#zip").val(newZip);
+                      $(".zip-error").addClass('success').removeClass('error');
+                    },
+                    error: function(result, success) {
+                      $(".zip-error").removeClass('success').addClass('error');
+                    }
+                });
             }
+        };
+
+        var newZip = localStorage.getItem("zip");
+        if(newZip) {
+            getZip(newZip);
         }
 
         var phones = 1;

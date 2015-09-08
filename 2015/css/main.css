@@ -1701,7 +1701,8 @@ input[type="submit"] {
 #col-left {
   float: left;
   width: 65%;
-  margin-left: 14px; }
+  margin-left: 14px;
+  padding-bottom: 2em; }
   @media only screen
   and (max-width: 1024px)
   and (min-width: 860px) {
@@ -1800,6 +1801,11 @@ input[type="submit"] {
           top: 43%;
           right: -14px;
           content: ''; }
+          @media only screen
+            and (max-width: 1024px)
+            and (min-width: 860px) {
+            #col-left #main-nav li.dropdown-container a.dropdown-toggle:after {
+              right: 0; } }
         #col-left #main-nav li.dropdown-container .dropdown {
           position: absolute;
           overflow: hidden;
@@ -1868,6 +1874,32 @@ input[type="submit"] {
     width: 100%;
     text-align: center;
     display: inline-block; }
+  #col-right .blog h2 {
+    margin-bottom: 0; }
+  #col-right .blog li {
+    list-style: none; }
+    #col-right .blog li h3 {
+      line-height: 1em;
+      padding: 9px 0; }
+  #col-right .blog .entry-title {
+    margin: 0; }
+    #col-right .blog .entry-title a {
+      color: #566770;
+      font-size: 1em;
+      text-decoration: none; }
+      #col-right .blog .entry-title a:hover {
+        text-decoration: underline; }
+  #col-right .blog p {
+    font-size: .750em; }
+    #col-right .blog p a {
+      text-decoration: none;
+      color: #b8cf32;
+      display: inline-block;
+      margin-bottom: 2em; }
+      #col-right .blog p a:hover {
+        text-decoration: underline; }
+    #col-right .blog p span.meta-nav {
+      display: none; }
 
 #buttonBlock {
   float: right;
@@ -1996,7 +2028,7 @@ input[type="submit"] {
     padding: 4px 6px 0 10px; }
   #miniInput .form-control {
     margin: 0 6px 12px 0;
-    padding: 0;
+    padding: 0 7px;
     width: 60%;
     border-radius: 0;
     height: 24px;
@@ -2041,13 +2073,14 @@ input[type="submit"] {
 #emailError {
   display: none;
   text-align: right;
-  margin: -10px 0 10px;
-  color: #B94A48; }
+  margin: -10px 27px 10px 0;
+  color: #B94A48;
+  font-size: 0.750em; }
 
 .jobs-list ul {
   margin-bottom: 1em;
   overflow: hidden;
-  overflow-y: scroll;
+  overflow-y: auto;
   -webkit-overflow-scrolling: touch; }
 .jobs-list li {
   list-style: none; }
@@ -2059,6 +2092,12 @@ input[type="submit"] {
   font-weight: normal;
   font-size: 1em;
   color: #434343; }
+
+.zip-error {
+  color: red;
+  display: none; }
+  .zip-error .error {
+    display: block; }
 
 .jobListingsPage {
   width: 100%;
@@ -2440,8 +2479,6 @@ input[type="submit"] {
     left: 95px !important; }
   .form-vertical .optionalPhone {
     display: none; }
-  .form-vertical #emailError {
-    display: none; }
   .form-vertical .form-actions {
     text-align: right;
     width: 100%;
@@ -2473,6 +2510,12 @@ input[type="submit"] {
   .contentDiv ul.ordered li,
   #blogContainer ul.ordered li {
     list-style: none; }
+  .contentDiv#resume-guide h1, .contentDiv#interview-guide h1,
+  #blogContainer#resume-guide h1,
+  #blogContainer#interview-guide h1 {
+    font-size: 1.5em;
+    color: #3d1d7f;
+    margin: 0 0 1em; }
   .contentDiv#resume-guide ul, .contentDiv#interview-guide ul,
   #blogContainer#resume-guide ul,
   #blogContainer#interview-guide ul {
@@ -2704,6 +2747,17 @@ input[type="submit"] {
   .contentDiv#aboutus ul,
   #blogContainer#aboutus ul {
     padding-left: 2em; }
+  .contentDiv#aboutus .affiliates,
+  #blogContainer#aboutus .affiliates {
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    margin: 1em 0; }
+    .contentDiv#aboutus .affiliates img,
+    #blogContainer#aboutus .affiliates img {
+      width: 40%;
+      height: 100%;
+      align-self: baseline; }
 
 .resume-file p {
   margin-bottom: 1.3em; }

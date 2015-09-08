@@ -1,4 +1,3 @@
-
     <nav class="nav-collapse">
         <ul>
             <li><a href="faq.html">JOBS</a></li>
@@ -13,9 +12,6 @@
 
     <div id="col-left">
         <div id="main-nav">
-        <?php
-        echo('page name: ' . $pagename);
-        ?>
             <ul>
                 <li<?php if ($pagename == 'home') echo ' class="selected"' ?>><a href="/">HOME</a></li>
                 <li<?php if ($pagename =='job-listings-page') echo ' class="selected"' ?>><a href="/job-listings-page">JOBS</a></li>

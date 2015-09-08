@@ -62,7 +62,7 @@ $iframe = false;
 
 <?php
 if(!$iframe) {
-	echo('</div></div>');
+	echo('</div></div><a href="#" class="scrollup">scrollup</a>');
 	get_sidebar();
 	get_footer(); 
 }

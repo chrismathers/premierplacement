@@ -15,7 +15,7 @@
  */
 ?>
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
-
+    <a href="/"><img id="pp-logo" src="/images/pp-logo-499x142.png"/></a>
 				<div id="nav-above" class="navigation">
 					<div class="nav-previous"><?php previous_post_link( '%link', '%title' ); ?></div>
 					<div class="nav-next"><?php next_post_link( '%link', '%title' ); ?></div>

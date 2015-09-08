@@ -5,9 +5,7 @@
  * @package Premier
  */
 ?>
-
     <div id="col-right">
-
         <div id="buttonBlock">
             <a href="/job-listings-page" class="btn">SEARCH JOBS</a>
             <a href="post_resume.html" class="btn-a">SUBMIT RESUME</a>
@@ -41,21 +39,16 @@
         <div class="blog full-page">
             <h2>PREMIER PERSPECTIVES</h2>
             <span>by Laura Schmieder</span>
-
-            <h3 class="entry-title">
-                <a href="/cover-letter-no-nos-every-job-seeker-shouldwellknow/"
-                   title="Permalink to Cover Letter No-Nos Every Job Seeker Should …Well…Know." rel="bookmark">Cover
-                    Letter No-Nos Every Job Seeker Should …<em>Well…</em>Know.</a>
-            </h3>
-
-            <p>One thing people who are applying for jobs dread most is writing a cover letter. Even if you are a good
-                writer, it can be a chore and a pretty stressful process. Plus, if you aren’t one to frequently write …
-                <a href="/cover-letter-no-nos-every-job-seeker-shouldwellknow/">continue reading</a>
-            </p>
-            <p>One thing people who are applying for jobs dread most is writing a cover letter. Even if you are a good
-                writer, it can be a chore and a pretty stressful process. Plus, if you aren’t one to frequently write …
-                <a href="/cover-letter-no-nos-every-job-seeker-shouldwellknow/">continue reading</a>
-            </p>
+            <ul>
+		<?php $the_query = new WP_Query( 'posts_per_page=2' ); ?>
+		<?php while ($the_query -> have_posts()) : $the_query -> the_post(); ?>
+		<li><h3 class="entry-title"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h3></li>
+		<li><p><?php the_excerpt(__('(more…)')); ?></p></li>
+		<?php 
+		endwhile;
+		wp_reset_postdata();
+		?>
+		</ul>
 
             <a class="more btn-a" href="/blog/">All Posts</a>
         </div>
