@@ -17,7 +17,7 @@ $iframe = false;
 	}
 	if(!$iframe) {
 		get_header(); 
-		echo('<img id="pp-logo" src="/images/pp-logo-499x142.png"/>
+		echo('
 					<h1>Finding Premier people for Premier career opportunities since 1987</h1>
 					<h2 class="job-page">Here are just some of our job listings</h2><div class="jobListingsPage">');
 	}

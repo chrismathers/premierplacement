@@ -9,10 +9,6 @@
 
 get_header(); ?>
 
-		<div id="blogContainer">
-			<?php get_sidebar(); ?>
-			<div id="content" role="main">
-
 <?php
 	/* Queue the first post, that way we know who
 	 * the author is when we try to get their name,
@@ -54,7 +50,7 @@ if ( get_the_author_meta( 'description' ) ) : ?>
 	 */
 	 get_template_part( 'loop', 'author' );
 ?>
-			</div><!-- #content -->
-		</div><!-- #container -->
+	</div>
+	<?php get_sidebar(); ?>
 
 <?php get_footer(); ?>

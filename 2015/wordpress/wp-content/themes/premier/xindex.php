@@ -25,6 +25,9 @@ get_header(); ?>
 			 */
 			 get_template_part( 'loop', 'index' );
 			?>
+
+
+
 			</div><!-- #content -->
 		</div><!-- #container -->
 

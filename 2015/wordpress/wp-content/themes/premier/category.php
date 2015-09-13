@@ -9,9 +9,6 @@
 
 get_header(); ?>
 
-		<div id="blogContainer">
-			<div id="content" role="main">
-
 				<h1 class="page-title"><?php
 					printf( __( 'Category Archives: %s', 'twentyten' ), '<span>' . single_cat_title( '', false ) . '</span>' );
 				?></h1>
@@ -26,9 +23,7 @@ get_header(); ?>
 				 */
 				get_template_part( 'loop', 'category' );
 				?>
+	</div>
+	<?php get_sidebar(); ?>
 
-			</div><!-- #content -->
-		</div><!-- #container -->
-
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

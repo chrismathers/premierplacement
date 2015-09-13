@@ -45,4 +45,7 @@ $mypath = "http://www.premierplacement.com";
 
 <div id="content">
 
+	<?php c2c_reveal_template(); ?>
 	<?php get_template_part( 'nav' );?>
+       
+    	<a href="/"><img id="pp-logo" src="/images/pp-logo-499x142.png"/></a>

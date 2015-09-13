@@ -1,10 +1,11 @@
     <nav class="nav-collapse">
         <ul>
-            <li><a href="faq.html">JOBS</a></li>
-            <li><a href="installation.html">PREMIER PERSPECTIVES</a></li>
-            <li><a href="installers.html">CAREER ADVISOR</a></li>
-            <li><a href="other.html">ABOUT US</a></li>
-            <li><a href="mailto:rob@basscapos.com">CONTACT US</a></li>
+            <li><a href="/">HOME</a></li>
+	    <li><a href="/job-listings-page">JOBS</a></li>
+            <li><a href="/interview-guide">INTERVIEW GUIDE</a></li>
+            <li><a href="/resume-guide">RESUME GUIDE</a></li>
+            <li><a href="/about-us">ABOUT US</a></li>
+            <li><a href="/contact-us">CONTACT US</a></li>
         </ul>
     </nav>
 

@@ -39,9 +39,19 @@ and (max-width : 518px) {
 }
 */
 
+@import 'mixins';
 @import 'bootstrap';
 @import 'bootstrap-form';
 @import 'nav-toggle';
+
+@mixin vendor-prefix($name, $argument) {
+  -webkit-#{$name}: #{$argument};
+  -ms-#{$name}: #{$argument};
+  -moz-#{$name}: #{$argument};
+  -o-#{$name}: #{$argument};
+  #{$name}: #{$argument};
+}
+
 
 html {
   font-family: "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif;
@@ -110,6 +120,10 @@ input[type="submit"] {
   height: 35px;
 }
 
+img {
+  border: none;
+}
+
 #pp-logo {
   max-height: 142px;
   min-height: 142px;
@@ -172,7 +186,7 @@ input[type="submit"] {
     float: none;
 
     h1 {
-      font-size: .7em;
+      font-size: .8em;
     }
 
     h2 {
@@ -208,26 +222,19 @@ input[type="submit"] {
       border-bottom: 1px solid $link-color;
       padding: 2px 0 0 0;
       width: 100%;
-      //display: inline-block;
-      flex-flow: row nowrap;
-      justify-content: space-between;
-      display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-      display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
-      display: -ms-flexbox;      /* TWEENER - IE 10 */
-      display: -webkit-flex;     /* NEW - Chrome */
-      display: flex;
-      align-items: center;
+      @include flexbox;
+      @include flex-flow(row nowrap);
+      @include align-items(baseline);
+      @include justify-content(space-between);
     }
     li {
       list-style: none;
       margin: 0 13px;
       display: inline-block;
       text-align: center;
-      vertical-align: middle;
       @media only screen
       and (max-width: 768px) {
-        width: 68px;
-        font-size: 13px;
+        font-size: 0.813em;
         &:first-of-type {
           width: auto;
         }
@@ -271,13 +278,12 @@ input[type="submit"] {
             @media only screen
             and (max-width: 1024px)
             and (min-width: 860px) {
-              right: 0;
+              right: 10px;
             }
           }
         }
         .dropdown {
           position: absolute;
-          //display: none;
           overflow:hidden;
           height: 0;
           background-color: white;
@@ -354,6 +360,9 @@ input[type="submit"] {
   and (max-width : 320px) {
     width: auto;
     float: none;
+    float: none;
+    padding: 0;
+    margin: 0;
   }
 
   .right {
@@ -408,6 +417,9 @@ input[type="submit"] {
     }
   }
 
+  .interesting-reads {
+    margin: 2em 0;
+  }
 }
 
 
@@ -420,7 +432,7 @@ input[type="submit"] {
   .btn {
     float: left;
     width: 48%;
-    min-width: 108px;
+    min-width: 120px;
     margin-bottom: 1em;
     border-radius: 0;
   }
@@ -437,6 +449,7 @@ input[type="submit"] {
     .btn-a {
       margin: 0;
       float: none;
+      font-size: 0.750em;
     }
     .btn {
       float: none;
@@ -531,7 +544,8 @@ input[type="submit"] {
   clear: both;
   border: 1px solid #c8c8ca;
   position: relative;
-  margin-bottom: 2em;
+  margin: 2em 0;
+
   h2 {
     background: white;
     position: absolute;
@@ -683,9 +697,7 @@ input[type="submit"] {
   }
   @media only screen
   and (max-width: 600px) {
-    height: 242px;
-    padding-bottom: 330px;
-    margin-bottom: 2em;
+    margin-bottom: 6em;
     ul {
       height: inherit;
       overflow: hidden;
@@ -789,13 +801,130 @@ input[type="submit"] {
   }
 }
 
-.affiliates {
-  text-align: center;
-  img {
-    width: 80%;
-    margin-bottom: 2em;
+
+.widget-area {
+  margin-bottom: 1em;
+  position: relative;
+  z-index: 2;
+  padding-bottom: 0;
+
+  h2 {
+    letter-spacing: inherit;
   }
 
+  h3 {
+    margin: 1em 0 0 0;
+    font-size: .9em;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .widget-container a {
+    font-size: 0.750em;
+    margin: 3px 0 3px 0;
+    display: inline-block;
+  }
+
+  .screen-reader-text {
+    font-weight: bold;
+  }
+
+  ul {
+    list-style: none;
+    margin-top: 0;
+    padding: 0;
+    padding-left: 0;
+  }
+
+  li {
+    list-style: none;
+    a {
+      text-decoration: none;
+    }
+  }
+
+  .search-input-div {
+    width: 100%;
+    height: 22px;
+    margin-bottom: 14px;
+    @include flexbox;
+
+    a {
+      margin: 0;
+      :hover {
+        color: white;
+        cursor: pointer;
+      }
+
+      &:after {
+        content: "";
+        text-decoration: none;
+        display: inline-block;
+        padding: 0;
+      }
+    }
+
+    input[type="text"] {
+      -webkit-appearance: none;
+      background: url(/images/toolbar_find.png) no-repeat 3px 0;
+      background-size: 7%;
+      @include flex-grow(1);
+      font-size: .750em;
+      height: 22px;
+      -webkit-border-radius:0;
+      border-radius:0;
+      border: 1px solid #ccc;
+      border-top-left-radius: 4px;
+      border-bottom-left-radius: 4px;
+      border-right: 0;
+      padding: 0 0 0 24px;
+      &:focus {
+        outline: #ccc;
+        box-shadow: inset 0 0 0 1px #ccc;
+      }
+
+      @media only screen
+      and (max-width : 320px) {
+        -webkit-border-radius: 4px;
+        border-radius:4px;
+        margin-right: 9px;
+        -webkit-background-size: 7%, 7%;
+        background-position-y: 2px;
+      }
+    }
+
+    input[type="submit"] {
+      width: 26px;
+      height: 22px;
+      background-color: #ccc;
+      border: 1px solid #ccc;
+      border-radius:0;
+      border-top-right-radius: 4px;
+      border-bottom-right-radius: 4px;
+      padding: 0 2px;
+      font-size: .813em;
+      font-weight: bold;
+      &:focus {
+        outline: #ccc;
+        box-shadow: inset 0 0 0 1px #ccc;
+      }
+      @media only screen
+      and (max-width : 320px) {
+        -webkit-border-radius: 4px;
+        border-radius:4px;
+        margin-right: 9px;
+        width: 34px;
+      }
+    }
+  }
+}
+
+.affiliates {
+  text-align: center;
+  margin-bottom: 2em;
+  img {
+    width: 80%;
+    margin: 2em 0 0;
+  }
 }
 
 #follow-list {
@@ -843,16 +972,12 @@ input[type="submit"] {
   text-align: right;
   width: 100%;
   padding-right: 28px;
-  display: flex;
-  flex-direction: row-reverse;
+  @include flexbox;
+  @include justify-content(flex-end);
   font-size: .85em;
-
   a {
     color: $link-color;
-  }
-  p {
-    padding-left: 20px;
-    text-align: right;
+    margin-left: 14px;
   }
 }
 
@@ -961,16 +1086,11 @@ input[type="submit"] {
 
     &.firstMiddle {
       .controls {
-        display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-        display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
-        display: -ms-flexbox;      /* TWEENER - IE 10 */
-        display: -webkit-flex;     /* NEW - Chrome */
-        display: flex;
+        @include flexbox;
         clear: both;
         .form-control {
-          float: left;
           &.firstName {
-            //width: 304px;
+            @include vendor-prefix(flex-grow, 1);
             @media only screen
             and (max-width: 860px)
             and (min-width: 320px) {
@@ -996,11 +1116,7 @@ input[type="submit"] {
       float: left;
       .controls {
         margin-bottom: 0;
-        display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-        display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
-        display: -ms-flexbox;      /* TWEENER - IE 10 */
-        display: -webkit-flex;     /* NEW - Chrome */
-        display: flex;
+        @include flexbox;
         .form-control {
           margin-bottom: 0;
           &.phone {
@@ -1111,7 +1227,7 @@ input[type="submit"] {
       }
       input[type="radio"] {
         margin-left: -17px;
-        margin-top: 3px;
+        margin-top: 0;
       }
     }
 
@@ -1127,11 +1243,7 @@ input[type="submit"] {
       }
 
       .controls.flex {
-        display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-        display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
-        display: -ms-flexbox;      /* TWEENER - IE 10 */
-        display: -webkit-flex;     /* NEW - Chrome */
-        display: flex;
+        @include flexbox;
         margin-top: 7px;
       }
 
@@ -1158,7 +1270,7 @@ input[type="submit"] {
 
     &.first_file {
       margin-top: 1em;
-      display: flex;
+      @include flexbox;
     }
   }
 
@@ -1249,7 +1361,7 @@ input[type="submit"] {
   width: 100%;
   font-size: 85%;
   padding-top: 1em;
-  padding-bottom: 100px;
+  padding-bottom: 40px;
   clear: both;
 
   p {
@@ -1290,7 +1402,7 @@ input[type="submit"] {
     #contents {
       clear: both;
       height: auto;
-      display: flex;
+      @include flexbox;
       span, div {
         font: bold 15px arial;
         margin-right: 30px;
@@ -1301,19 +1413,28 @@ input[type="submit"] {
         margin-bottom: 20px;
         text-align: left;
 
-        ul {
+        ol {
           margin: 0;
-          text-indent: -20px;
+          padding: 0;
         }
         li {
           list-style-type: none;
-          display: block;
           clear: both;
           line-height: 1.5em;
           margin: 0;
+          display: table-row;
+          counter-increment: table-ol;
+
+          &:before {
+            content: counter(table-ol) ".";
+            display: table-cell;
+            padding-right: 0.4em;
+            text-align: right;
+          }
+
           a {
             color: #888;
-            padding: 0 9px;
+            padding: 0;
             text-decoration: none;
             &:hover {
               text-decoration: underline;
@@ -1486,16 +1607,19 @@ input[type="submit"] {
 
     .affiliates {
       text-align: center;
-      display: flex;
-      justify-content: space-around;
-      margin: 1em 0;
-
+      @include flexbox;
+      @include justify-content(space-around);
+      margin: 0 0 2em 0;
+      @include align-items(baseline);
       img {
-        width: 40%;
+        width: 66%;
         height: 100%;
-        align-self: baseline;
+        @include align-self(baseline);
       }
 
+      a:nth-of-type(1) img {
+        width: 88%;
+      }
     }
   }
 }
@@ -1599,7 +1723,7 @@ article.thankyou {
   clear: both;
 }
 #nav-below.navigation {
-  margin: 10px 0;
+  margin: 10px 0 3em 0;
   height: 1em;
 }
 
@@ -1696,7 +1820,8 @@ article.thankyou {
   font-size: 85%;
 }
 
-.entry-content {
+.entry-content,
+.entry-summary {
   font-size: 85%;
   p {
     line-height: 1.4em;

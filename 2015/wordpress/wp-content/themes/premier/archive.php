@@ -14,9 +14,6 @@
 
 get_header(); ?>
 
-	<div class="contentDiv" role="main">
-
-<?php get_sidebar(); ?>
 <?php
 	/* Queue the first post, that way we know
 	 * what date we're dealing with (if that is the case).
@@ -53,7 +50,7 @@ get_header(); ?>
 	 */
 	 get_template_part( 'loop', 'archive' );
 ?>
-
-			</div>
+	</div>
+	<?php get_sidebar(); ?>
 
 <?php get_footer(); ?>
