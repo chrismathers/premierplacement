@@ -38,13 +38,13 @@
 
 	<?php if ($pagename != 'blog') { ?>
         <div class="blog full-page">
-            <h2>PREMIER PERSPECTIVES</h2>
+            <h2><a href="<?php the_permalink() ?>">PREMIER PERSPECTIVES</a></h2>
             <span>by Laura Schmieder</span>
             <ul>
 		<?php $the_query = new WP_Query( 'posts_per_page=2' ); ?>
 		<?php while ($the_query -> have_posts()) : $the_query -> the_post(); ?>
 		<li><h3 class="entry-title"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h3></li>
-		<li><p><?php the_excerpt(__('(more…)')); ?></p></li>
+		<li><p><a href="<?php the_permalink() ?>"><?php the_excerpt(__('(more…)')); ?></a></p></li>
 		<?php 
 		endwhile;
 		wp_reset_postdata();

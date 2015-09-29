@@ -43,16 +43,20 @@ $iframe = false;
 
 				<li>
 					<a name="<?php echo(the_ID()); ?>"></a>
-					<h3><?php echo(types_render_field("job-title", array("arg1"=>"val1","arg2"=>"val2"))); ?></h3>
-					<p>
-					<?php if($iframe) { 
-						echo(am_get_content(100, types_render_field("job-description", array())) );
-					} else {
-						echo(types_render_field("job-description", array())); 
-					}
-					if($iframe) { ?>
-						<span class="learnmore"><a href="/job-listings-page/#<?php echo(the_ID()); ?>" target="_parent">learn more</a></span>
+
+					<?php if($iframe) { ?>	
+						<h3><a href="/job-listings-page/#<?php echo(the_ID()); ?>" target="_parent"><?php echo(types_render_field("job-title", array("arg1"=>"val1","arg2"=>"val2"))); ?></a></h3>
+						<p><a href="/job-listings-page/#<?php echo(the_ID()); ?>" target="_parent"><?php echo(am_get_content(100, types_render_field("job-description", array())) ); ?></a>
+					<?php } else { ?>
+						<h3><?php echo(types_render_field("job-title", array("arg1"=>"val1","arg2"=>"val2"))); ?></h3>
+						<p><?php echo(types_render_field("job-description", array())); ?>
 					<?php } ?>
+
+					<?php if($iframe) { ?>
+						<span class="learnmore"><a href="/job-listings-page/#<?php echo(the_ID()); ?>" target="_parent">learn more</a></span>
+					<?php } else { ?>
+						<span class="learnmore">&nbsp;<a href="registration-page/" target="_parent">submit resume</a></span>
+					<?php } ?>					
 					</p>
 				</li>
 

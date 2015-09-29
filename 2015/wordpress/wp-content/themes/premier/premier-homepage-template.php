@@ -9,7 +9,7 @@ get_header();
         <h1>Laura Schmieder is President of Premier Placement, Inc., which specializes in the placement of Manufacturing, Supply Chain, Production Management, Engineering, HR, IT, Finance, Sales, and Marketing candidates throughout the United States with additional global opportunities.</h1>
 
         <div id="job-listings">
-            <h2>JOB LISTINGS</h2>
+            <h2><a href="/job-listings-page">JOB LISTINGS</a></h2>
             <div id="jobsWidget" class="jobs-list">
 
             </div>

@@ -2,6 +2,7 @@
         <ul>
             <li><a href="/">HOME</a></li>
 	    <li><a href="/job-listings-page">JOBS</a></li>
+	    <li><a href="/blog/">BLOG</a></li>
             <li><a href="/interview-guide">INTERVIEW GUIDE</a></li>
             <li><a href="/resume-guide">RESUME GUIDE</a></li>
             <li><a href="/about-us">ABOUT US</a></li>

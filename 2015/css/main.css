@@ -1645,6 +1645,18 @@ h2, h3, p {
 h2 {
   font-size: 1.5em;
   color: #3d1d7f; }
+  h2 a {
+    color: #3d1d7f;
+    text-decoration: none; }
+    h2 a:visited {
+      color: #3d1d7f;
+      text-decoration: none; }
+    h2 a:active {
+      color: #3d1d7f;
+      text-decoration: none; }
+    h2 a:hover {
+      color: #5126a9;
+      text-decoration: none; }
 
 h3 {
   font-size: 12px;
@@ -1862,6 +1874,8 @@ img {
     display: inline-block; }
   #col-right .blog h2 {
     margin-bottom: 0; }
+  #col-right .blog ul {
+    margin-bottom: 10px; }
   #col-right .blog li {
     list-style: none; }
     #col-right .blog li h3 {
@@ -1874,18 +1888,21 @@ img {
       font-size: 1em;
       text-decoration: none; }
       #col-right .blog .entry-title a:hover {
-        text-decoration: underline; }
-  #col-right .blog p {
-    font-size: .750em; }
-    #col-right .blog p a {
+        text-decoration: none;
+        color: #888; }
+  #col-right .blog p a {
+    font-size: 1em;
+    display: inline;
+    color: #434343; }
+    #col-right .blog p a:hover {
       text-decoration: none;
-      color: #b8cf32;
-      display: inline-block;
-      margin-bottom: 2em; }
-      #col-right .blog p a:hover {
-        text-decoration: underline; }
-    #col-right .blog p span.meta-nav {
-      display: none; }
+      color: #888; }
+  #col-right .blog p a + a {
+    color: #b8cf32; }
+    #col-right .blog p a + a:hover {
+      color: #888; }
+  #col-right .blog p span.meta-nav {
+    display: none; }
   #col-right .interesting-reads {
     margin: 2em 0; }
 
@@ -2071,10 +2088,23 @@ img {
   font-weight: bold;
   font-size: 1em;
   color: #566770; }
+  .jobs-list h3 a {
+    font-weight: bold;
+    font-size: 1em;
+    color: #566770;
+    text-decoration: none; }
+    .jobs-list h3 a:hover {
+      color: #888; }
 .jobs-list p {
   font-weight: normal;
   font-size: 1em;
   color: #434343; }
+  .jobs-list p a {
+    text-decoration: none; }
+  .jobs-list p a + a {
+    color: #b8cf32; }
+    .jobs-list p a + a:hover {
+      color: #888; }
 
 .zip-error {
   color: red;
@@ -2118,6 +2148,8 @@ img {
   font-size: 1em; }
   .learnmore a:hover {
     text-decoration: underline; }
+  .learnmore a:visited {
+    color: #888; }
 
 .more,
 .submitButton {
