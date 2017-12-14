@@ -1,0 +1,6 @@
+Sitemap: http://www.premierplacement.com/sitemap.xml
+User-agent: *
+Disallow: /resume/
+Disallow: /registration-page/
+Disallow: /thankyou-page/
+Disallow: /fmbadhandler/
