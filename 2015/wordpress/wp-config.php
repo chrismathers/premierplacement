@@ -25,7 +25,7 @@ define('DB_USER', 'premier1');
 define('DB_PASSWORD', 'l0ggerd0gger');
 
 /** MySQL hostname */
-define('DB_HOST', 'localhost');
+define('DB_HOST', '');
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
@@ -78,3 +78,7 @@ if ( !defined('ABSPATH') )
 
 /** Sets up WordPress vars and included files. */
 require_once(ABSPATH . 'wp-settings.php');
+
+
+/*define('WP_HOME','http://dev.premierplacement.com');
+define('WP_SITEURL','http://dev.premierplacement.com/wordpress');*/
