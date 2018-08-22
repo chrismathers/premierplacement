@@ -1,0 +1,83 @@
+<html>
+<!--
+This is the second page in a sample multi-page form
+sequence (from www.tectite.com).
+
+Use this to help understand how multi-page forms work.
+
+You can find a how-to guide for multi-page forms
+at http://www.tectite.com/guides.php
+
+To use multi-page form sequences, you need version
+7.00 or later of FormMail.
+
+To use this sample, which demonstrates "Forward Remembrance"
+you need version 7.02 or later of FormMail.
+ -->
+<head>
+<title>Multi-Page Form Sample - Page 2</title>
+</head>
+<body>
+<p>This is page two of a sample multi-page form.</p>
+<form name="MultiSample" method="post" action="http://www.premierplacement.com/formtest/formmail.php">
+        <!-- ACTION: FormMail provides the correct URL
+            in the this_form_url field.  You must use it to
+            set the field "this_form" if you want the
+            FMBadHandler to work properly. -->
+    <input type="hidden" name="this_form" value="$this_form_url" />
+
+        <!-- ACTION: Put the name of the second form in the
+            form sequence in a the field called "next_form" -->
+    <input type="hidden" name="next_form" value="multitest3.htm" />
+
+        <!-- OPTIONAL: For good error handling, use bad_template
+            and put the file into your $TEMPLATEDIR or
+            $TEMPLATEURL location. -->
+    <input type="hidden" name="bad_template" value="multierror.htm" />
+
+        <!-- OPTIONAL: Enable the bad_url field if you
+            have installed and configured FMBadHandler.
+            Error handling works best with FMBadHandler. -->
+    <input type="hidden" name="bad_url" value="http://www.premierplacement.com/secure/fmbadhandler.php" />
+
+    <input type="hidden" name="required" value="addr1:Address line 1" />
+
+        <!-- ACTION: Specify the fields that you want to be remembered
+            and restored when the user goes backwards and *then forwards
+            to this form* . -->
+    <input type="hidden" name="multi_keep" value="addr1,addr2,addr3" />
+
+    <table border="0">
+    <tr>
+        <td><p>Your name:</p></td>
+        <td><p>$name</p></td>
+    </tr>
+    <tr>
+        <td><p>Your email address:</p></td>
+        <td><p>$emailaddr</p></td>
+    </tr>
+    <tr>
+        <td><p>The product code:</p></td>
+        <td><p>$product</p>
+        </td>
+    </tr>
+    <tr>
+        <td><p>Quantity selected:</p></td>
+        <td><p>$qty</p></td>
+    </tr>
+    <tr>
+        <td valign="top"><p>Enter delivery address:</p></td>
+        <td><p>
+            <input type="text" name="addr1" value="1 Some Street" /><br />
+            <input type="text" name="addr2" value="Somewhere" /><br />
+            <input type="text" name="addr3" value="Somestate" /><br />
+            </p></td>
+    </tr>
+    <tr>
+        <td><input type="submit" name="multi_go_back" value="< Back" /></td>
+        <td><input type="submit" name="submit" value="Next >" /></td>
+    </tr>
+    </table>
+</form>
+</body>
+</html>
