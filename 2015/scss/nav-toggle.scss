@@ -10,7 +10,7 @@ and (max-width : 600px) {
   display: none;
 
   .nav-collapse ul {
-    margin: 0;
+    margin: 0 0 0 10px;
     padding: 0;
     width: 100%;
     display: block;
@@ -28,6 +28,7 @@ and (max-width : 600px) {
       font-weight: 400;
       font-size: 112.5%;
       letter-spacing: 2px;
+      line-height: 1em;
       color: white;
       text-decoration: none;
       width: 100%;
@@ -49,7 +50,7 @@ and (max-width : 600px) {
 
   .nav-collapse.opened {
     max-height: 9999px;
-    margin: -10px -10px 10px -10px;
+    /*margin: -10px -10px 10px -10px;*/
   }
 
   .disable-pointer-events {
